@@ -1,0 +1,1491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MedicsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MedicsModelStoreContainer">
+    <EntitySet Name="Administradores" EntityType="MedicsModel.Store.Administradores" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Alergias" EntityType="MedicsModel.Store.Alergias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlergiasConsultas" EntityType="MedicsModel.Store.AlergiasConsultas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Analisis" EntityType="MedicsModel.Store.Analisis" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnalisisConsulta" EntityType="MedicsModel.Store.AnalisisConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnalisisEspecialidades" EntityType="MedicsModel.Store.AnalisisEspecialidades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnalisisInstituciones" EntityType="MedicsModel.Store.AnalisisInstituciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AntecedentesAlergicosPaciente" EntityType="MedicsModel.Store.AntecedentesAlergicosPaciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AntecedentesEnfermedadesPaciente" EntityType="MedicsModel.Store.AntecedentesEnfermedadesPaciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AntecedentesProcedimientos" EntityType="MedicsModel.Store.AntecedentesProcedimientos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AntecedentesToxicosPaciente" EntityType="MedicsModel.Store.AntecedentesToxicosPaciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Consultas" EntityType="MedicsModel.Store.Consultas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetallesProcedimientos" EntityType="MedicsModel.Store.DetallesProcedimientos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Enfermedades" EntityType="MedicsModel.Store.Enfermedades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnfermedadesConsulta" EntityType="MedicsModel.Store.EnfermedadesConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnfermedadesEspecialidad" EntityType="MedicsModel.Store.EnfermedadesEspecialidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EnfermedadesHereditariasPaciente" EntityType="MedicsModel.Store.EnfermedadesHereditariasPaciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Especialidades" EntityType="MedicsModel.Store.Especialidades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Examenes" EntityType="MedicsModel.Store.Examenes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Instituciones" EntityType="MedicsModel.Store.Instituciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Medicamentos" EntityType="MedicsModel.Store.Medicamentos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MedicamentosConsulta" EntityType="MedicsModel.Store.MedicamentosConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Medicos" EntityType="MedicsModel.Store.Medicos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MedicosInstituciones" EntityType="MedicsModel.Store.MedicosInstituciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MedicosPacientes" EntityType="MedicsModel.Store.MedicosPacientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PacienteFamiliarConsaguineo" EntityType="MedicsModel.Store.PacienteFamiliarConsaguineo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Paises" EntityType="MedicsModel.Store.Paises" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas" EntityType="MedicsModel.Store.Personas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Procedimientos" EntityType="MedicsModel.Store.Procedimientos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Provincias" EntityType="MedicsModel.Store.Provincias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReferimientosConsulta" EntityType="MedicsModel.Store.ReferimientosConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SintomasConsulta" EntityType="MedicsModel.Store.SintomasConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Toxicos" EntityType="MedicsModel.Store.Toxicos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="zAdministradores" EntityType="MedicsModel.Store.zAdministradores" store:Type="Tables" store:Schema="dbo" store:Name="zAdministradores">
+      <DefiningQuery>SELECT 
+      [zAdministradores].[idPersona] AS [idPersona], 
+      [zAdministradores].[idInstitucion] AS [idInstitucion], 
+      [zAdministradores].[Username] AS [Username], 
+      [zAdministradores].[Password] AS [Password], 
+      [zAdministradores].[Email] AS [Email], 
+      [zAdministradores].[Tipo] AS [Tipo], 
+      [zAdministradores].[FechaDeBorrado] AS [FechaDeBorrado]
+      FROM [dbo].[zAdministradores] AS [zAdministradores]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="zAntecedentesEnfermedadesPaciente" EntityType="MedicsModel.Store.zAntecedentesEnfermedadesPaciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="zAntecedentesToxicosPaciente" EntityType="MedicsModel.Store.zAntecedentesToxicosPaciente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VAdministradores" EntityType="MedicsModel.Store.VAdministradores" store:Type="Views" store:Schema="dbo" store:Name="VAdministradores">
+      <DefiningQuery>SELECT 
+      [VAdministradores].[Username] AS [Username], 
+      [VAdministradores].[Tipo] AS [Tipo], 
+      [VAdministradores].[Institución] AS [Institución]
+      FROM [dbo].[VAdministradores] AS [VAdministradores]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VInstituciones" EntityType="MedicsModel.Store.VInstituciones" store:Type="Views" store:Schema="dbo" store:Name="VInstituciones">
+      <DefiningQuery>SELECT 
+      [VInstituciones].[ID] AS [ID], 
+      [VInstituciones].[Nombre] AS [Nombre], 
+      [VInstituciones].[Tipo] AS [Tipo], 
+      [VInstituciones].[Países] AS [Países], 
+      [VInstituciones].[Provincia] AS [Provincia], 
+      [VInstituciones].[Direccion] AS [Direccion], 
+      [VInstituciones].[Teléfono] AS [Teléfono]
+      FROM [dbo].[VInstituciones] AS [VInstituciones]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VMedicosPacientes" EntityType="MedicsModel.Store.VMedicosPacientes" store:Type="Views" store:Schema="dbo" store:Name="VMedicosPacientes">
+      <DefiningQuery>SELECT 
+      [VMedicosPacientes].[idPersona] AS [idPersona], 
+      [VMedicosPacientes].[idMedico] AS [idMedico], 
+      [VMedicosPacientes].[Nombres] AS [Nombres], 
+      [VMedicosPacientes].[Apellidos] AS [Apellidos], 
+      [VMedicosPacientes].[Cédula] AS [Cédula], 
+      [VMedicosPacientes].[Fecha de Nacimiento] AS [Fecha de Nacimiento], 
+      [VMedicosPacientes].[Fecha de última consulta] AS [Fecha de última consulta], 
+      [VMedicosPacientes].[Motivo de consulta] AS [Motivo de consulta]
+      FROM [dbo].[VMedicosPacientes] AS [VMedicosPacientes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VPersonas" EntityType="MedicsModel.Store.VPersonas" store:Type="Views" store:Schema="dbo" store:Name="VPersonas">
+      <DefiningQuery>SELECT 
+      [VPersonas].[idPersona] AS [idPersona], 
+      [VPersonas].[Nombres] AS [Nombres], 
+      [VPersonas].[Apellidos] AS [Apellidos], 
+      [VPersonas].[Cédula] AS [Cédula], 
+      [VPersonas].[Fecha de Nacimiento] AS [Fecha de Nacimiento], 
+      [VPersonas].[Sexo] AS [Sexo], 
+      [VPersonas].[Teléfono Residencial] AS [Teléfono Residencial], 
+      [VPersonas].[Teléfono Celular] AS [Teléfono Celular], 
+      [VPersonas].[País] AS [País], 
+      [VPersonas].[Provincia] AS [Provincia], 
+      [VPersonas].[Dirección] AS [Dirección], 
+      [VPersonas].[Tipo de Sangre] AS [Tipo de Sangre], 
+      [VPersonas].[Correo Electrónico] AS [Correo Electrónico]
+      FROM [dbo].[VPersonas] AS [VPersonas]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Administr__idIns__30F848ED" Association="MedicsModel.Store.FK__Administr__idIns__30F848ED">
+      <End Role="Instituciones" EntitySet="Instituciones" />
+      <End Role="Administradores" EntitySet="Administradores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlergiasC__idAle__46B27FE2" Association="MedicsModel.Store.FK__AlergiasC__idAle__46B27FE2">
+      <End Role="Alergias" EntitySet="Alergias" />
+      <End Role="AlergiasConsultas" EntitySet="AlergiasConsultas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AlergiasConsulta__45BE5BA9" Association="MedicsModel.Store.FK__AlergiasConsulta__45BE5BA9">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="AlergiasConsultas" EntitySet="AlergiasConsultas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalisisC__idAna__7B5B524B" Association="MedicsModel.Store.FK__AnalisisC__idAna__7B5B524B">
+      <End Role="Analisis" EntitySet="Analisis" />
+      <End Role="AnalisisConsulta" EntitySet="AnalisisConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalisisConsulta__7A672E12" Association="MedicsModel.Store.FK__AnalisisConsulta__7A672E12">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="AnalisisConsulta" EntitySet="AnalisisConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalisisE__idAna__5629CD9C" Association="MedicsModel.Store.FK__AnalisisE__idAna__5629CD9C">
+      <End Role="Analisis" EntitySet="Analisis" />
+      <End Role="AnalisisEspecialidades" EntitySet="AnalisisEspecialidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalisisE__idEsp__571DF1D5" Association="MedicsModel.Store.FK__AnalisisE__idEsp__571DF1D5">
+      <End Role="Especialidades" EntitySet="Especialidades" />
+      <End Role="AnalisisEspecialidades" EntitySet="AnalisisEspecialidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalisisI__idAna__4AB81AF0" Association="MedicsModel.Store.FK__AnalisisI__idAna__4AB81AF0">
+      <End Role="Analisis" EntitySet="Analisis" />
+      <End Role="AnalisisInstituciones" EntitySet="AnalisisInstituciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnalisisI__idIns__4BAC3F29" Association="MedicsModel.Store.FK__AnalisisI__idIns__4BAC3F29">
+      <End Role="Instituciones" EntitySet="Instituciones" />
+      <End Role="AnalisisInstituciones" EntitySet="AnalisisInstituciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idAle__40058253" Association="MedicsModel.Store.FK__Anteceden__idAle__40058253">
+      <End Role="Alergias" EntitySet="Alergias" />
+      <End Role="AntecedentesAlergicosPaciente" EntitySet="AntecedentesAlergicosPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idEnf__18EBB532" Association="MedicsModel.Store.FK__Anteceden__idEnf__18EBB532">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="AntecedentesEnfermedadesPaciente" EntitySet="AntecedentesEnfermedadesPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPac__03F0984C" Association="MedicsModel.Store.FK__Anteceden__idPac__03F0984C">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesProcedimientos" EntitySet="AntecedentesProcedimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__19DFD96B" Association="MedicsModel.Store.FK__Anteceden__idPer__19DFD96B">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesEnfermedadesPaciente" EntitySet="AntecedentesEnfermedadesPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__37703C52" Association="MedicsModel.Store.FK__Anteceden__idPer__37703C52">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesToxicosPaciente" EntitySet="AntecedentesToxicosPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__40F9A68C" Association="MedicsModel.Store.FK__Anteceden__idPer__40F9A68C">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesAlergicosPaciente" EntitySet="AntecedentesAlergicosPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPro__02FC7413" Association="MedicsModel.Store.FK__Anteceden__idPro__02FC7413">
+      <End Role="Procedimientos" EntitySet="Procedimientos" />
+      <End Role="AntecedentesProcedimientos" EntitySet="AntecedentesProcedimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idTox__367C1819" Association="MedicsModel.Store.FK__Anteceden__idTox__367C1819">
+      <End Role="Toxicos" EntitySet="Toxicos" />
+      <End Role="AntecedentesToxicosPaciente" EntitySet="AntecedentesToxicosPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Consultas__idMed__6477ECF3" Association="MedicsModel.Store.FK__Consultas__idMed__6477ECF3">
+      <End Role="Medicos" EntitySet="Medicos" />
+      <End Role="Consultas" EntitySet="Consultas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Consultas__idPac__656C112C" Association="MedicsModel.Store.FK__Consultas__idPac__656C112C">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="Consultas" EntitySet="Consultas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallesP__idPer__09A971A2" Association="MedicsModel.Store.FK__DetallesP__idPer__09A971A2">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="DetallesProcedimientos" EntitySet="DetallesProcedimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetallesP__idPro__08B54D69" Association="MedicsModel.Store.FK__DetallesP__idPro__08B54D69">
+      <End Role="Procedimientos" EntitySet="Procedimientos" />
+      <End Role="DetallesProcedimientos" EntitySet="DetallesProcedimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEnf__14270015" Association="MedicsModel.Store.FK__Enfermeda__idEnf__14270015">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesHereditariasPaciente" EntitySet="EnfermedadesHereditariasPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEnf__208CD6FA" Association="MedicsModel.Store.FK__Enfermeda__idEnf__208CD6FA">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesConsulta" EntitySet="EnfermedadesConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEnf__5EBF139D" Association="MedicsModel.Store.FK__Enfermeda__idEnf__5EBF139D">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesEspecialidad" EntitySet="EnfermedadesEspecialidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEsp__5FB337D6" Association="MedicsModel.Store.FK__Enfermeda__idEsp__5FB337D6">
+      <End Role="Especialidades" EntitySet="Especialidades" />
+      <End Role="EnfermedadesEspecialidad" EntitySet="EnfermedadesEspecialidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idPer__1332DBDC" Association="MedicsModel.Store.FK__Enfermeda__idPer__1332DBDC">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="EnfermedadesHereditariasPaciente" EntitySet="EnfermedadesHereditariasPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EnfermedadesCons__1F98B2C1" Association="MedicsModel.Store.FK__EnfermedadesCons__1F98B2C1">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="EnfermedadesConsulta" EntitySet="EnfermedadesConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Examenes__IdPers__55009F39" Association="MedicsModel.Store.FK__Examenes__IdPers__55009F39">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="Examenes" EntitySet="Examenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Instituci__idPro__2C3393D0" Association="MedicsModel.Store.FK__Instituci__idPro__2C3393D0">
+      <End Role="Provincias" EntitySet="Provincias" />
+      <End Role="Instituciones" EntitySet="Instituciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Medicamen__idMed__2DE6D218" Association="MedicsModel.Store.FK__Medicamen__idMed__2DE6D218">
+      <End Role="Medicamentos" EntitySet="Medicamentos" />
+      <End Role="MedicamentosConsulta" EntitySet="MedicamentosConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicamentosCons__2EDAF651" Association="MedicsModel.Store.FK__MedicamentosCons__2EDAF651">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="MedicamentosConsulta" EntitySet="MedicamentosConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Medicos__idPerso__35BCFE0A" Association="MedicsModel.Store.FK__Medicos__idPerso__35BCFE0A">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="Medicos" EntitySet="Medicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicosIn__idIns__3B75D760" Association="MedicsModel.Store.FK__MedicosIn__idIns__3B75D760">
+      <End Role="Instituciones" EntitySet="Instituciones" />
+      <End Role="MedicosInstituciones" EntitySet="MedicosInstituciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicosIn__idMed__3A81B327" Association="MedicsModel.Store.FK__MedicosIn__idMed__3A81B327">
+      <End Role="Medicos" EntitySet="Medicos" />
+      <End Role="MedicosInstituciones" EntitySet="MedicosInstituciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicosPa__idMed__5165187F" Association="MedicsModel.Store.FK__MedicosPa__idMed__5165187F">
+      <End Role="Medicos" EntitySet="Medicos" />
+      <End Role="MedicosPacientes" EntitySet="MedicosPacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicosPa__idPer__5070F446" Association="MedicsModel.Store.FK__MedicosPa__idPer__5070F446">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="MedicosPacientes" EntitySet="MedicosPacientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PacienteF__idFam__4C6B5938" Association="MedicsModel.Store.FK__PacienteF__idFam__4C6B5938">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="PacienteFamiliarConsaguineo" EntitySet="PacienteFamiliarConsaguineo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PacienteF__idPer__4B7734FF" Association="MedicsModel.Store.FK__PacienteF__idPer__4B7734FF">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="PacienteFamiliarConsaguineo" EntitySet="PacienteFamiliarConsaguineo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Personas__idProv__267ABA7A" Association="MedicsModel.Store.FK__Personas__idProv__267ABA7A">
+      <End Role="Provincias" EntitySet="Provincias" />
+      <End Role="Personas" EntitySet="Personas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Provincia__idPai__22AA2996" Association="MedicsModel.Store.FK__Provincia__idPai__22AA2996">
+      <End Role="Paises" EntitySet="Paises" />
+      <End Role="Provincias" EntitySet="Provincias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Referimie__idMed__75A278F5" Association="MedicsModel.Store.FK__Referimie__idMed__75A278F5">
+      <End Role="Medicos" EntitySet="Medicos" />
+      <End Role="ReferimientosConsulta" EntitySet="ReferimientosConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReferimientosCon__74AE54BC" Association="MedicsModel.Store.FK__ReferimientosCon__74AE54BC">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="ReferimientosConsulta" EntitySet="ReferimientosConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SintomasConsulta__0E6E26BF" Association="MedicsModel.Store.FK__SintomasConsulta__0E6E26BF">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="SintomasConsulta" EntitySet="SintomasConsulta" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Administradores">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" />
+    <Property Name="idInstitucion" Type="int" />
+    <Property Name="Username" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Password" Type="varchar" MaxLength="64" />
+    <Property Name="Email" Type="varchar" MaxLength="45" />
+    <Property Name="Tipo" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Alergias">
+    <Key>
+      <PropertyRef Name="idAlergia" />
+    </Key>
+    <Property Name="idAlergia" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TipoDeAlergia" Type="varchar" MaxLength="40" />
+    <Property Name="ElemmentoAlergico" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="AlergiasConsultas">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+      <PropertyRef Name="idAlergia" />
+    </Key>
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="idAlergia" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Analisis">
+    <Key>
+      <PropertyRef Name="idAnalisis" />
+    </Key>
+    <Property Name="idAnalisis" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Tipo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AnalisisConsulta">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+      <PropertyRef Name="idAnalisis" />
+    </Key>
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="idAnalisis" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnalisisEspecialidades">
+    <Key>
+      <PropertyRef Name="idAnalisis" />
+      <PropertyRef Name="idEspecialidad" />
+    </Key>
+    <Property Name="idAnalisis" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idEspecialidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnalisisInstituciones">
+    <Key>
+      <PropertyRef Name="idAnalisis" />
+      <PropertyRef Name="idInstitucion" />
+    </Key>
+    <Property Name="idAnalisis" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idInstitucion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AntecedentesAlergicosPaciente">
+    <Key>
+      <PropertyRef Name="idAlergia" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idAlergia" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AntecedentesEnfermedadesPaciente">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idEnfermedad" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idEnfermedad" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AntecedentesProcedimientos">
+    <Key>
+      <PropertyRef Name="idProcedimiento" />
+      <PropertyRef Name="idPaciente" />
+    </Key>
+    <Property Name="idProcedimiento" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idPaciente" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AntecedentesToxicosPaciente">
+    <Key>
+      <PropertyRef Name="idToxico" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idToxico" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Consultas">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="idPaciente" Type="uniqueidentifier" />
+    <Property Name="MotivoDeConsulta" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="DetallesProcedimientos">
+    <Key>
+      <PropertyRef Name="idProcedimiento" />
+      <PropertyRef Name="FechaProcedimiento" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idProcedimiento" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FechaProcedimiento" Type="datetime" Nullable="false" />
+    <Property Name="MedicoPrincipal" Type="bigint" />
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Detalles" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Enfermedades">
+    <Key>
+      <PropertyRef Name="idEnfermedad" />
+    </Key>
+    <Property Name="idEnfermedad" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="EsHereditaria" Type="bit" />
+  </EntityType>
+  <EntityType Name="EnfermedadesConsulta">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+      <PropertyRef Name="idEnfermedad" />
+    </Key>
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="idEnfermedad" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EnfermedadesEspecialidad">
+    <Key>
+      <PropertyRef Name="idEnfermedad" />
+      <PropertyRef Name="idEspecialidad" />
+    </Key>
+    <Property Name="idEnfermedad" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idEspecialidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EnfermedadesHereditariasPaciente">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idEnfermedad" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idEnfermedad" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Especialidades">
+    <Key>
+      <PropertyRef Name="idEspecialidad" />
+    </Key>
+    <Property Name="idEspecialidad" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Examenes">
+    <Key>
+      <PropertyRef Name="idAnalisis" />
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="idAnalisis" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="IdPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ValorMedido" Type="real" />
+  </EntityType>
+  <EntityType Name="Instituciones">
+    <Key>
+      <PropertyRef Name="IdInstitucion" />
+    </Key>
+    <Property Name="IdInstitucion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="55" />
+    <Property Name="Direccion" Type="varchar" MaxLength="60" />
+    <Property Name="Telefono" Type="bigint" />
+    <Property Name="Tipo" Type="varchar" MaxLength="20" />
+    <Property Name="idProvincia" Type="int" />
+  </EntityType>
+  <EntityType Name="Medicamentos">
+    <Key>
+      <PropertyRef Name="idMedicamento" />
+    </Key>
+    <Property Name="idMedicamento" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="MedicamentosConsulta">
+    <Key>
+      <PropertyRef Name="idMedicamento" />
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="idMedicamento" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Medicos">
+    <Key>
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="idMedico" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idPersona" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="MedicosInstituciones">
+    <Key>
+      <PropertyRef Name="idMedico" />
+      <PropertyRef Name="idInstitucion" />
+    </Key>
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="idInstitucion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MedicosPacientes">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PacienteFamiliarConsaguineo">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idFamiliar" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idFamiliar" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Paises">
+    <Key>
+      <PropertyRef Name="idPais" />
+    </Key>
+    <Property Name="idPais" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="60" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="60" />
+    <Property Name="Cedula" Type="bigint" />
+    <Property Name="FechaDeNacimiento" Type="date" />
+    <Property Name="Email" Type="varchar" MaxLength="45" />
+    <Property Name="TelefonoResidencial" Type="bigint" />
+    <Property Name="TelefonoCelular" Type="bigint" />
+    <Property Name="idProvincia" Type="int" />
+    <Property Name="Direccion" Type="varchar" MaxLength="60" />
+    <Property Name="HuellaDigitalDerecha1" Type="varbinary(max)" />
+    <Property Name="HuellaDigitalDerecha2" Type="varbinary(max)" />
+    <Property Name="HuellaDigitalDerecha3" Type="varbinary(max)" />
+    <Property Name="HuellaDIgitalIzquierda1" Type="varbinary(max)" />
+    <Property Name="HuellaDIgitalIzquierda2" Type="varbinary(max)" />
+    <Property Name="HuellaDIgitalIzquierda3" Type="varbinary(max)" />
+    <Property Name="TipoDeSangre" Type="varchar" MaxLength="3" />
+    <Property Name="sexo" Type="varchar" MaxLength="1" />
+    <Property Name="FechaDeDefuncion" Type="date" />
+    <Property Name="Username" Type="varchar" MaxLength="32" />
+    <Property Name="Password" Type="varchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="Procedimientos">
+    <Key>
+      <PropertyRef Name="idProcedimiento" />
+    </Key>
+    <Property Name="idProcedimiento" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Provincias">
+    <Key>
+      <PropertyRef Name="idProvincia" />
+    </Key>
+    <Property Name="idProvincia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="45" />
+    <Property Name="idPais" Type="int" />
+  </EntityType>
+  <EntityType Name="ReferimientosConsulta">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="idMedicoReferido" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SintomasConsulta">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+      <PropertyRef Name="Sintoma" />
+    </Key>
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="Sintoma" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Toxicos">
+    <Key>
+      <PropertyRef Name="idToxico" />
+    </Key>
+    <Property Name="idToxico" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Medics.dbo.zAdministradores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="zAdministradores">
+    <Key>
+      <PropertyRef Name="idInstitucion" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" />
+    <Property Name="idInstitucion" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="32" />
+    <Property Name="Password" Type="varchar" MaxLength="64" />
+    <Property Name="Email" Type="varchar" MaxLength="45" />
+    <Property Name="Tipo" Type="varchar" MaxLength="20" />
+    <Property Name="FechaDeBorrado" Type="datetime" />
+  </EntityType>
+  <EntityType Name="zAntecedentesEnfermedadesPaciente">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idEnfermedad" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idEnfermedad" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FechaDeBorrado" Type="datetime" />
+  </EntityType>
+  <EntityType Name="zAntecedentesToxicosPaciente">
+    <Key>
+      <PropertyRef Name="idToxico" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idToxico" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FechaDeBorrado" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Medics.dbo.VAdministradores' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VAdministradores">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Tipo" Type="varchar" MaxLength="20" />
+    <Property Name="Institución" Type="varchar" MaxLength="55" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Medics.dbo.VInstituciones' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VInstituciones">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="55" />
+    <Property Name="Tipo" Type="varchar" MaxLength="20" />
+    <Property Name="Países" Type="varchar" MaxLength="45" />
+    <Property Name="Provincia" Type="varchar" MaxLength="45" />
+    <Property Name="Direccion" Type="varchar" MaxLength="60" />
+    <Property Name="Teléfono" Type="bigint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Medics.dbo.VMedicosPacientes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VMedicosPacientes">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idMedico" />
+      <PropertyRef Name="Fecha de última consulta" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idMedico" Type="bigint" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="60" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="60" />
+    <Property Name="Cédula" Type="bigint" />
+    <Property Name="Fecha de Nacimiento" Type="date" />
+    <Property Name="Fecha de última consulta" Type="datetime" Nullable="false" />
+    <Property Name="Motivo de consulta" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Medics.dbo.VPersonas' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VPersonas">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="60" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="60" />
+    <Property Name="Cédula" Type="bigint" />
+    <Property Name="Fecha de Nacimiento" Type="date" />
+    <Property Name="Sexo" Type="varchar" MaxLength="1" />
+    <Property Name="Teléfono Residencial" Type="bigint" />
+    <Property Name="Teléfono Celular" Type="bigint" />
+    <Property Name="País" Type="varchar" MaxLength="45" />
+    <Property Name="Provincia" Type="varchar" MaxLength="45" />
+    <Property Name="Dirección" Type="varchar" MaxLength="60" />
+    <Property Name="Tipo de Sangre" Type="varchar" MaxLength="3" />
+    <Property Name="Correo Electrónico" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <Association Name="FK__Administr__idIns__30F848ED">
+    <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Administradores" Type="MedicsModel.Store.Administradores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instituciones">
+        <PropertyRef Name="IdInstitucion" />
+      </Principal>
+      <Dependent Role="Administradores">
+        <PropertyRef Name="idInstitucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlergiasC__idAle__46B27FE2">
+    <End Role="Alergias" Type="MedicsModel.Store.Alergias" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AlergiasConsultas" Type="MedicsModel.Store.AlergiasConsultas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alergias">
+        <PropertyRef Name="idAlergia" />
+      </Principal>
+      <Dependent Role="AlergiasConsultas">
+        <PropertyRef Name="idAlergia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AlergiasConsulta__45BE5BA9">
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AlergiasConsultas" Type="MedicsModel.Store.AlergiasConsultas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="AlergiasConsultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalisisC__idAna__7B5B524B">
+    <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalisisConsulta" Type="MedicsModel.Store.AnalisisConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analisis">
+        <PropertyRef Name="idAnalisis" />
+      </Principal>
+      <Dependent Role="AnalisisConsulta">
+        <PropertyRef Name="idAnalisis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalisisConsulta__7A672E12">
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalisisConsulta" Type="MedicsModel.Store.AnalisisConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="AnalisisConsulta">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalisisE__idAna__5629CD9C">
+    <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalisisEspecialidades" Type="MedicsModel.Store.AnalisisEspecialidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analisis">
+        <PropertyRef Name="idAnalisis" />
+      </Principal>
+      <Dependent Role="AnalisisEspecialidades">
+        <PropertyRef Name="idAnalisis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalisisE__idEsp__571DF1D5">
+    <End Role="Especialidades" Type="MedicsModel.Store.Especialidades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalisisEspecialidades" Type="MedicsModel.Store.AnalisisEspecialidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidades">
+        <PropertyRef Name="idEspecialidad" />
+      </Principal>
+      <Dependent Role="AnalisisEspecialidades">
+        <PropertyRef Name="idEspecialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalisisI__idAna__4AB81AF0">
+    <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalisisInstituciones" Type="MedicsModel.Store.AnalisisInstituciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analisis">
+        <PropertyRef Name="idAnalisis" />
+      </Principal>
+      <Dependent Role="AnalisisInstituciones">
+        <PropertyRef Name="idAnalisis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnalisisI__idIns__4BAC3F29">
+    <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalisisInstituciones" Type="MedicsModel.Store.AnalisisInstituciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instituciones">
+        <PropertyRef Name="IdInstitucion" />
+      </Principal>
+      <Dependent Role="AnalisisInstituciones">
+        <PropertyRef Name="idInstitucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idAle__40058253">
+    <End Role="Alergias" Type="MedicsModel.Store.Alergias" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesAlergicosPaciente" Type="MedicsModel.Store.AntecedentesAlergicosPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alergias">
+        <PropertyRef Name="idAlergia" />
+      </Principal>
+      <Dependent Role="AntecedentesAlergicosPaciente">
+        <PropertyRef Name="idAlergia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idEnf__18EBB532">
+    <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesEnfermedadesPaciente" Type="MedicsModel.Store.AntecedentesEnfermedadesPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedad" />
+      </Principal>
+      <Dependent Role="AntecedentesEnfermedadesPaciente">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPac__03F0984C">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesProcedimientos" Type="MedicsModel.Store.AntecedentesProcedimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesProcedimientos">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__19DFD96B">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesEnfermedadesPaciente" Type="MedicsModel.Store.AntecedentesEnfermedadesPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesEnfermedadesPaciente">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__37703C52">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesToxicosPaciente" Type="MedicsModel.Store.AntecedentesToxicosPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesToxicosPaciente">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__40F9A68C">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesAlergicosPaciente" Type="MedicsModel.Store.AntecedentesAlergicosPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesAlergicosPaciente">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPro__02FC7413">
+    <End Role="Procedimientos" Type="MedicsModel.Store.Procedimientos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesProcedimientos" Type="MedicsModel.Store.AntecedentesProcedimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Procedimientos">
+        <PropertyRef Name="idProcedimiento" />
+      </Principal>
+      <Dependent Role="AntecedentesProcedimientos">
+        <PropertyRef Name="idProcedimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idTox__367C1819">
+    <End Role="Toxicos" Type="MedicsModel.Store.Toxicos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesToxicosPaciente" Type="MedicsModel.Store.AntecedentesToxicosPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Toxicos">
+        <PropertyRef Name="idToxico" />
+      </Principal>
+      <Dependent Role="AntecedentesToxicosPaciente">
+        <PropertyRef Name="idToxico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Consultas__idMed__6477ECF3">
+    <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1" />
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicos">
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="Consultas">
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Consultas__idPac__656C112C">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Consultas">
+        <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallesP__idPer__09A971A2">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DetallesProcedimientos" Type="MedicsModel.Store.DetallesProcedimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="DetallesProcedimientos">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetallesP__idPro__08B54D69">
+    <End Role="Procedimientos" Type="MedicsModel.Store.Procedimientos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DetallesProcedimientos" Type="MedicsModel.Store.DetallesProcedimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Procedimientos">
+        <PropertyRef Name="idProcedimiento" />
+      </Principal>
+      <Dependent Role="DetallesProcedimientos">
+        <PropertyRef Name="idProcedimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idEnf__14270015">
+    <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesHereditariasPaciente" Type="MedicsModel.Store.EnfermedadesHereditariasPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedad" />
+      </Principal>
+      <Dependent Role="EnfermedadesHereditariasPaciente">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idEnf__208CD6FA">
+    <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesConsulta" Type="MedicsModel.Store.EnfermedadesConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedad" />
+      </Principal>
+      <Dependent Role="EnfermedadesConsulta">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idEnf__5EBF139D">
+    <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesEspecialidad" Type="MedicsModel.Store.EnfermedadesEspecialidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedad" />
+      </Principal>
+      <Dependent Role="EnfermedadesEspecialidad">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idEsp__5FB337D6">
+    <End Role="Especialidades" Type="MedicsModel.Store.Especialidades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesEspecialidad" Type="MedicsModel.Store.EnfermedadesEspecialidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidades">
+        <PropertyRef Name="idEspecialidad" />
+      </Principal>
+      <Dependent Role="EnfermedadesEspecialidad">
+        <PropertyRef Name="idEspecialidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idPer__1332DBDC">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesHereditariasPaciente" Type="MedicsModel.Store.EnfermedadesHereditariasPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="EnfermedadesHereditariasPaciente">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EnfermedadesCons__1F98B2C1">
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesConsulta" Type="MedicsModel.Store.EnfermedadesConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="EnfermedadesConsulta">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Examenes__IdPers__55009F39">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1" />
+    <End Role="Examenes" Type="MedicsModel.Store.Examenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Examenes">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Instituci__idPro__2C3393D0">
+    <End Role="Provincias" Type="MedicsModel.Store.Provincias" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincias">
+        <PropertyRef Name="idProvincia" />
+      </Principal>
+      <Dependent Role="Instituciones">
+        <PropertyRef Name="idProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Medicamen__idMed__2DE6D218">
+    <End Role="Medicamentos" Type="MedicsModel.Store.Medicamentos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicamentosConsulta" Type="MedicsModel.Store.MedicamentosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicamentos">
+        <PropertyRef Name="idMedicamento" />
+      </Principal>
+      <Dependent Role="MedicamentosConsulta">
+        <PropertyRef Name="idMedicamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicamentosCons__2EDAF651">
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicamentosConsulta" Type="MedicsModel.Store.MedicamentosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="MedicamentosConsulta">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Medicos__idPerso__35BCFE0A">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Medicos">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicosIn__idIns__3B75D760">
+    <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicosInstituciones" Type="MedicsModel.Store.MedicosInstituciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instituciones">
+        <PropertyRef Name="IdInstitucion" />
+      </Principal>
+      <Dependent Role="MedicosInstituciones">
+        <PropertyRef Name="idInstitucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicosIn__idMed__3A81B327">
+    <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1" />
+    <End Role="MedicosInstituciones" Type="MedicsModel.Store.MedicosInstituciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicos">
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="MedicosInstituciones">
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicosPa__idMed__5165187F">
+    <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicosPacientes" Type="MedicsModel.Store.MedicosPacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicos">
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="MedicosPacientes">
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicosPa__idPer__5070F446">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1" />
+    <End Role="MedicosPacientes" Type="MedicsModel.Store.MedicosPacientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="MedicosPacientes">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PacienteF__idFam__4C6B5938">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1" />
+    <End Role="PacienteFamiliarConsaguineo" Type="MedicsModel.Store.PacienteFamiliarConsaguineo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="PacienteFamiliarConsaguineo">
+        <PropertyRef Name="idFamiliar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PacienteF__idPer__4B7734FF">
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PacienteFamiliarConsaguineo" Type="MedicsModel.Store.PacienteFamiliarConsaguineo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="PacienteFamiliarConsaguineo">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Personas__idProv__267ABA7A">
+    <End Role="Provincias" Type="MedicsModel.Store.Provincias" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincias">
+        <PropertyRef Name="idProvincia" />
+      </Principal>
+      <Dependent Role="Personas">
+        <PropertyRef Name="idProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Provincia__idPai__22AA2996">
+    <End Role="Paises" Type="MedicsModel.Store.Paises" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Provincias" Type="MedicsModel.Store.Provincias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paises">
+        <PropertyRef Name="idPais" />
+      </Principal>
+      <Dependent Role="Provincias">
+        <PropertyRef Name="idPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Referimie__idMed__75A278F5">
+    <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="0..1" />
+    <End Role="ReferimientosConsulta" Type="MedicsModel.Store.ReferimientosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicos">
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="ReferimientosConsulta">
+        <PropertyRef Name="idMedicoReferido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReferimientosCon__74AE54BC">
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ReferimientosConsulta" Type="MedicsModel.Store.ReferimientosConsulta" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="ReferimientosConsulta">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SintomasConsulta__0E6E26BF">
+    <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SintomasConsulta" Type="MedicsModel.Store.SintomasConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="SintomasConsulta">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.MedicionesRTPaciente' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="MedicionesRTPaciente">
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="TipoMedicion" Type="varchar" MaxLength="30" />
+        <Property Name="ValorDeMedicion" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.MedicosEspecialidades' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="MedicosEspecialidades">
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idEspecialidad" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zAlergiasConsultas' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zAlergiasConsultas">
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idAlergia" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zAnalisisConsulta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zAnalisisConsulta">
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idAnalisis" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zAnalisisEspecialidades' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zAnalisisEspecialidades">
+        <Property Name="idAnalisis" Type="uniqueidentifier" />
+        <Property Name="idEspecialidad" Type="int" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zAnalisisInstituciones' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zAnalisisInstituciones">
+        <Property Name="idAnalisis" Type="uniqueidentifier" />
+        <Property Name="idInstitucion" Type="int" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zAntecedentesAlergicosPaciente' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zAntecedentesAlergicosPaciente">
+        <Property Name="idAlergia" Type="uniqueidentifier" />
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zAntecedentesProcedimientos' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zAntecedentesProcedimientos">
+        <Property Name="idProcedimiento" Type="uniqueidentifier" />
+        <Property Name="idPaciente" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zConsultas' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zConsultas">
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idPaciente" Type="uniqueidentifier" />
+        <Property Name="MotivoDeConsulta" Type="varchar" MaxLength="500" />
+        <Property Name="ExamenFisico" Type="varchar" MaxLength="1000" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zDetallesProcedimientos' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zDetallesProcedimientos">
+        <Property Name="idProcedimiento" Type="uniqueidentifier" />
+        <Property Name="FechaProcedimiento" Type="datetime" />
+        <Property Name="MedicoPrincipal" Type="bigint" />
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="Detalles" Type="varchar" MaxLength="1000" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zEnfermedadesConsulta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zEnfermedadesConsulta">
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idEnfermedad" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zEnfermedadesEspecialidad' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zEnfermedadesEspecialidad">
+        <Property Name="idEnfermedad" Type="uniqueidentifier" />
+        <Property Name="idEspecialidad" Type="int" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zEnfermedadesHereditariasPaciente' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zEnfermedadesHereditariasPaciente">
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="idEnfermedad" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zInstituciones' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zInstituciones">
+        <Property Name="IdInstitucion" Type="int" />
+        <Property Name="Nombre" Type="varchar" MaxLength="55" />
+        <Property Name="Direccion" Type="varchar" MaxLength="60" />
+        <Property Name="Telefono" Type="bigint" />
+        <Property Name="Tipo" Type="varchar" MaxLength="20" />
+        <Property Name="idProvincia" Type="int" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zMedicamentosConsulta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zMedicamentosConsulta">
+        <Property Name="idMedicamento" Type="uniqueidentifier" />
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zMedicos' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zMedicos">
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zMedicosEspecialidades' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zMedicosEspecialidades">
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idEspecialidad" Type="int" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zMedicosInstituciones' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zMedicosInstituciones">
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idInstitucion" Type="int" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zMedicosPacientes' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zMedicosPacientes">
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zPacienteFamiliarConsaguineo' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zPacienteFamiliarConsaguineo">
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="idFamiliar" Type="uniqueidentifier" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zPersonas' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zPersonas">
+        <Property Name="idPersona" Type="uniqueidentifier" />
+        <Property Name="Nombres" Type="varchar" MaxLength="60" />
+        <Property Name="Apellidos" Type="varchar" MaxLength="60" />
+        <Property Name="Cedula" Type="bigint" />
+        <Property Name="FechaDeNacimiento" Type="date" />
+        <Property Name="Email" Type="varchar" MaxLength="45" />
+        <Property Name="TelefonoResidencial" Type="bigint" />
+        <Property Name="TelefonoCelular" Type="bigint" />
+        <Property Name="idProvincia" Type="int" />
+        <Property Name="Direccion" Type="varchar" MaxLength="60" />
+        <Property Name="HuellaDigitalDerecha1" Type="varbinary(max)" />
+        <Property Name="HuellaDigitalDerecha2" Type="varbinary(max)" />
+        <Property Name="HuellaDigitalDerecha3" Type="varbinary(max)" />
+        <Property Name="HuellaDIgitalIzquierda1" Type="varbinary(max)" />
+        <Property Name="HuellaDIgitalIzquierda2" Type="varbinary(max)" />
+        <Property Name="HuellaDIgitalIzquierda3" Type="varbinary(max)" />
+        <Property Name="TipoDeSangre" Type="varchar" MaxLength="3" />
+        <Property Name="sexo" Type="varchar" MaxLength="1" />
+        <Property Name="FechaDeDefuncion" Type="date" />
+        <Property Name="Username" Type="varchar" MaxLength="32" />
+        <Property Name="Password" Type="varchar" MaxLength="64" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zReferimientosConsulta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zReferimientosConsulta">
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="idMedicoReferido" Type="bigint" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Medics.dbo.zSintomasConsulta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="zSintomasConsulta">
+        <Property Name="Fecha" Type="datetime" />
+        <Property Name="idMedico" Type="bigint" />
+        <Property Name="Sintoma" Type="varchar" MaxLength="100" />
+        <Property Name="FechaDeBorrado" Type="datetime" />
+      </EntityType>-->
+</Schema>

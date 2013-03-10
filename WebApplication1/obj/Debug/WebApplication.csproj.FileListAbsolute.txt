@@ -1,0 +1,11 @@
+C:\Working\RessService\WebApplication1\bin\System.Web.Http.dll
+C:\Working\RessService\WebApplication1\bin\System.Net.Http.dll
+C:\Working\RessService\WebApplication1\bin\System.Net.Http.Formatting.dll
+C:\Working\RessService\WebApplication1\bin\System.Web.Http.xml
+C:\Working\RessService\WebApplication1\bin\System.Net.Http.xml
+C:\Working\RessService\WebApplication1\bin\System.Net.Http.Formatting.xml
+C:\Working\RessService\WebApplication1\bin\WebApplication.dll
+C:\Working\RessService\WebApplication1\bin\WebApplication.pdb
+C:\Working\RessService\WebApplication1\obj\Debug\WebApplication.dll
+C:\Working\RessService\WebApplication1\obj\Debug\WebApplication.pdb
+C:\Working\RessService\WebApplication1\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
