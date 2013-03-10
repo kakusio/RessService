@@ -49,6 +49,30 @@ namespace mvc4.Controllers
 			}
 		}
 
+		public JsonResult GetPacientes(Guid id)
+		{
+			using (var entities = new Medics())
+			{
+				var medico = entities.Medicos.FirstOrDefault(x => x.idPersona == id);
+				if (medico == null) return Json("Id no es valido o no pertenece a un medico.", JsonRequestBehavior.AllowGet);
+				
+				var personas = medico.Personas1.Select(x => x.ToObject()).ToList();
+				return Json(personas, JsonRequestBehavior.AllowGet);
+			}
+		}
+
+		public JsonResult GetMedicos(Guid id)
+		{
+			using (var entities = new Medics())
+			{
+				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
+				if (persona == null) return Json("Id no valido", JsonRequestBehavior.AllowGet);
+				
+				var historial = persona.Medicos1.Select(x => x.ToObject()).ToList();
+				return Json(historial, JsonRequestBehavior.AllowGet);
+			}
+		}
+
 		public string AddPariente([FromUri] Guid idPersona, [FromUri] Guid idPariente)
 		{
 			using (var entities = new Medics())
