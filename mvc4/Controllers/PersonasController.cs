@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using AutoMapper;
 using mvc4.Models.Entities;
 using mvc4.Models.EntitiesEditCreate;
-using mvc4.Models.EntitiesView;
 
 namespace mvc4.Controllers
 {
@@ -38,10 +37,9 @@ namespace mvc4.Controllers
 
 		public JsonResult GetHistorial(Guid id)
 		{
-			Personas persona;
 			using (var entities = new Medics())
 			{
-				persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
+				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
 				if (persona == null) return Json("Id no valido", JsonRequestBehavior.AllowGet);
 				
 				var historial = persona.HistorialMedico();
@@ -98,18 +96,18 @@ namespace mvc4.Controllers
 
 		public JsonResult GetPersona ([FromUri] string Username)
 		{
-			Guid Id;
+			Guid id;
 			using (var entities = new Medics())
 			{
 				var personas = entities.Personas.FirstOrDefault(x => x.Username == Username);
 				if (personas == null)
 					return  Json("Username no valido", JsonRequestBehavior.AllowGet);
-				Id = personas.idPersona;
+				id = personas.idPersona;
 			}
-			var json = GetMedico(Id);
+			var json = GetMedico(id);
 			if (Equals(json.Data, "Id no valido"))
 			{
-				json = GetDetails(Id);
+				json = GetDetails(id);
 			}
 			return json;
 		}

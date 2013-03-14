@@ -26,14 +26,11 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="514" fromTop="0" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="129" fromTop="5" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Administrador.cs" caret="411" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="708" fromTop="0" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1907" fromTop="20" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="1533" fromTop="18" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="1533" fromTop="21" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1907" fromTop="50" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="5835" fromTop="11" />
   </RecentFiles>
   <RecentEdits>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="989" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="890" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1295" fromTop="18" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="345" fromTop="11" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="233" fromTop="7" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="55" fromTop="1" />
@@ -59,5 +56,10 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1886" fromTop="14" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1919" fromTop="16" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3484" fromTop="11" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="2234" fromTop="27" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1817" fromTop="19" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1444" fromTop="12" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="2163" fromTop="20" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1647" fromTop="9" />
   </RecentEdits>
 </RecentFiles>
