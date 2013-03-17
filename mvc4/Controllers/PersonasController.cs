@@ -6,205 +6,182 @@ using System.Web.Mvc;
 using AutoMapper;
 using mvc4.Models.Entities;
 using mvc4.Models.EntitiesEditCreate;
+using mvc4.Models.IEnumerables;
 
 namespace mvc4.Controllers
 {
-	public class PersonasController : Controller
-	{
-		public JsonResult Get()
-		{
+	public class PersonasController : Controller{
+		public JsonResult Get(){
 			List<Personas> personas;
-			using (var entities = new Medics())
-			{
-				personas = entities.Personas.ToList();
-			}
+			using (var entities = new Medics()) personas = entities.Personas.ToList();
+
 			var personasView = personas.Select(x => x.ToObject());
 			return Json(personasView, JsonRequestBehavior.AllowGet);
 		}
 
-		public JsonResult GetDetails(Guid id)
-		{
+		public JsonResult GetDetails(Guid id){
 			Personas persona;
-			using (var entities = new Medics())
-			{
+			using (var entities = new Medics()){
 				persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
 			}
-			if (persona == null) return Json("Id no valido", JsonRequestBehavior.AllowGet);
+			if (persona == null) return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 			
 			var personasView = persona.ToObject();
 			return Json(personasView, JsonRequestBehavior.AllowGet);
 		}
 
-		public JsonResult GetHistorial(Guid id)
-		{
-			using (var entities = new Medics())
-			{
+		public JsonResult GetHistorial(Guid id){
+			using (var entities = new Medics()){
 				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
-				if (persona == null) return Json("Id no valido", JsonRequestBehavior.AllowGet);
+				if (persona == null) return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 				
 				var historial = persona.HistorialMedico();
 				return Json(historial, JsonRequestBehavior.AllowGet);
 			}
 		}
 
-		public JsonResult GetPacientes(Guid id)
-		{
-			using (var entities = new Medics())
-			{
+		public JsonResult GetPacientes(Guid id){
+			using (var entities = new Medics()){
 				var medico = entities.Medicos.FirstOrDefault(x => x.idPersona == id);
-				if (medico == null) return Json("Id no es valido o no pertenece a un medico.", JsonRequestBehavior.AllowGet);
+				if (medico == null) return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 				
 				var personas = medico.Personas1.Select(x => x.ToObject()).ToList();
 				return Json(personas, JsonRequestBehavior.AllowGet);
 			}
 		}
 
-		public JsonResult GetMedicos(Guid id)
-		{
-			using (var entities = new Medics())
-			{
+		public JsonResult GetMedicos(Guid id){
+			using (var entities = new Medics()){
 				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
-				if (persona == null) return Json("Id no valido", JsonRequestBehavior.AllowGet);
+				if (persona == null) return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 				
 				var historial = persona.Medicos1.Select(x => x.ToObject()).ToList();
 				return Json(historial, JsonRequestBehavior.AllowGet);
 			}
 		}
 
-		public string AddPariente([FromUri] Guid idPersona, [FromUri] Guid idPariente)
-		{
-			using (var entities = new Medics())
-			{
+		public string AddPariente([FromUri] Guid idPersona, [FromUri] Guid idPariente){
+			using (var entities = new Medics()){
 				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == idPersona);
 				var pariente = entities.Personas.FirstOrDefault(x => x.idPersona == idPariente);
 
-				if (persona == null || pariente == null)return "Error con los Id.";
-				try
-				{
+				if (persona == null || pariente == null) return Notificaciones.ErrorUsuario.Value;
+				try{
 					persona.Personas2.Add(pariente);
 					pariente.Personas2.Add(persona);
 					entities.SaveChanges();
 				}
-				catch (Exception e)
-				{
+				catch (Exception e){
 					return e.Message;
 				}
 				
 			}
-			return "Se a agregado un familiar.";
+			return Notificaciones.AgregacionCorrecta.Value;
 		}
 
-		public JsonResult GetPersona ([FromUri] string Username)
-		{
+		public JsonResult GetPersona ([FromUri] string Username){
 			Guid id;
-			using (var entities = new Medics())
-			{
+			using (var entities = new Medics()){
 				var personas = entities.Personas.FirstOrDefault(x => x.Username == Username);
-				if (personas == null)
-					return  Json("Username no valido", JsonRequestBehavior.AllowGet);
+				if (personas == null) return  Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 				id = personas.idPersona;
 			}
 			var json = GetMedico(id);
-			if (Equals(json.Data, "Id no valido"))
-			{
-				json = GetDetails(id);
-			}
+			if (Equals(json.Data, Notificaciones.ErrorUsuario.Value)) json = GetDetails(id);
 			return json;
 		}
 
-		public JsonResult GetMedico([FromUri] Guid idMedico)
-		{
+		public JsonResult GetMedico([FromUri] Guid idMedico){
 			Medicos medico;
-			using (var entities = new Medics())
-			{
+			using (var entities = new Medics()){
 				medico = entities.Medicos.FirstOrDefault(x => x.idPersona == idMedico);
 			}
-			if (medico != null)
-			{
+			if (medico != null){
 				var medicoView = medico.ToObject();
 				return Json(medicoView, JsonRequestBehavior.AllowGet);
 			}
-			return Json("Id no valido", JsonRequestBehavior.AllowGet);
+			return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 
 		}
 
-		public string AddPaciente([FromUri] Guid idMedico, [FromUri] Guid idPaciente)
-		{
-			using (var entities = new Medics())
-			{
+		public string AddPaciente([FromUri] Guid idMedico, [FromUri] Guid idPaciente){
+			using (var entities = new Medics()){
 				var medico = entities.Medicos.FirstOrDefault(x => x.idPersona == idMedico);
 				var paciente = entities.Personas.FirstOrDefault(x => x.idPersona == idPaciente);
 
-				if (medico == null || paciente == null) return "Error con los Id";
-				try
-				{
+				if (medico == null || paciente == null) return Notificaciones.ErrorUsuario.Value;
+				try{
 					medico.Personas1.Add(paciente);
 					entities.SaveChanges();
 				}
-				catch (Exception e)
-				{
+				catch (Exception e){
 					return e.Message;
 				}
 			}
-			return "Se a agregado un paciente.";
+			return Notificaciones.AgregacionCorrecta.Value;
 		}
 
-		public string Post([FromUri] PersonasEditCreateModel persona)
-		{
+		public string Post([FromUri] PersonasEditCreateModel persona){
 			Mapper.CreateMap <PersonasEditCreateModel, Personas>();
 			var personas = Mapper.Map<PersonasEditCreateModel, Personas>(persona);
 
-			using (var entities = new Medics())
-			{
-				try
-				{
+			using (var entities = new Medics()){
+				try{
 					entities.AddToPersonas(personas);
 					entities.SaveChanges();
 				}
-				catch (Exception e)
-				{
+				catch (Exception e){
 					return e.Message;
 				}
 			}
-			return "You have Create the entity persona where Name = " + persona.Nombres;
+			return Notificaciones.CreacionCorrecta.Value;
 		}
 
-		public string Put(Guid id, [FromUri] PersonasEditModel persona)
-		{
-			using (var entities = new Medics())
-			{
+		public string Put(Guid id, [FromUri] PersonasEditModel persona){
+			using (var entities = new Medics()){
 				var oldPersona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
-				if (oldPersona == null) return "Error para identificar la persona.";
-				try
-				{
+				if (oldPersona == null) return Notificaciones.ErrorUsuario.Value;
+				try{
 					oldPersona.Update(persona);
 					entities.SaveChanges();
 				}
-				catch (Exception e)
-				{
+				catch (Exception e){
 					return e.Message;
 				}
 			}
-			return "You have edit the entity persona where Id = " + id;
+			return Notificaciones.EdicionCorrecta.Value;
 		}
 
-		public string Delete(Guid id)
-		{
-			using (var entities = new Medics())
-			{
+		public string Delete(Guid id){
+			using (var entities = new Medics()){
 				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
-				if (persona == null) return "Error para borrar, persona no encontrada.";
-				try
-				{
+				if (persona == null) return Notificaciones.ErrorUsuario.Value;
+				try{
 					entities.Personas.DeleteObject(persona);
 					entities.SaveChanges();
 				}
-				catch (Exception e)
-				{
+				catch (Exception e){
 					return e.Message;
 				}
 			}
-			return "You have delete the entity persona where Id = " + id;
+			return Notificaciones.EliminacionCorrecta.Value;
+		}
+
+		public string DeleteMedico([FromUri] Guid id, [FromUri] Guid idMedico){
+			using (var entities = new Medics()){
+				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
+				var medico = entities.Medicos.FirstOrDefault(x => x.idPersona == idMedico);
+
+				if (medico == null || persona == null) return Notificaciones.ErrorUsuario.Value;
+				try{
+					persona.Medicos1.Remove(medico);
+					entities.SaveChanges();
+				}
+				catch (Exception e){
+					return e.Message;
+				}
+			}
+			return Notificaciones.RemovidoCorrecta.Value;
 		}
 	}
 }

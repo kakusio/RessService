@@ -1,7 +1,5 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesEditCreate/f:PersonasEditModel.cs" caret="76" fromTop="4" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.Release.config" caret="486" fromTop="10" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.Debug.config" caret="0" fromTop="0" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Global.asax.cs" caret="0" fromTop="0" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:packages.config" caret="0" fromTop="0" />
@@ -11,7 +9,6 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Examenes.cs" caret="104" fromTop="2" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:ExamenesController.cs" caret="388" fromTop="14" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="725" fromTop="20" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:App_Start/f:RouteConfig.cs" caret="1975" fromTop="11" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medicos.cs" caret="250" fromTop="7" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Provincias.cs" caret="0" fromTop="0" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Paises.cs" caret="0" fromTop="0" />
@@ -23,43 +20,47 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="55" fromTop="1" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:MedicosViewModel.cs" caret="335" fromTop="10" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3484" fromTop="11" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="514" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:ValidateGuid.cs" caret="66" fromTop="3" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:App_Start/f:RouteConfig.cs" caret="329" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:SecureEncrypt.cs" caret="1085" fromTop="8" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1907" fromTop="50" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="129" fromTop="5" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Administrador.cs" caret="411" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="1533" fromTop="21" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1907" fromTop="50" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="5835" fromTop="11" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1338" fromTop="40" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="2607" fromTop="62" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="97" fromTop="4" />
   </RecentFiles>
   <RecentEdits>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="345" fromTop="11" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="233" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="55" fromTop="1" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1935" fromTop="20" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1935" fromTop="20" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1935" fromTop="20" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="606" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1935" fromTop="21" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1900" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1900" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1900" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1900" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1900" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1900" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1399" fromTop="8" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="281" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="50" fromTop="1" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="284" fromTop="27" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="284" fromTop="17" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="282" fromTop="5" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="282" fromTop="13" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Alergias.cs" caret="285" fromTop="13" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1886" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1919" fromTop="16" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3484" fromTop="11" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="2234" fromTop="27" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1817" fromTop="19" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1444" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="2163" fromTop="20" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1647" fromTop="9" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:App_Start/f:RouteConfig.cs" caret="1110" fromTop="12" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:App_Start/f:RouteConfig.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="3087" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="556" fromTop="17" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="441" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="2524" fromTop="5" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="2847" fromTop="16" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="876" fromTop="21" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="1488" fromTop="19" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="3087" fromTop="22" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="3083" fromTop="23" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="3091" fromTop="21" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="3094" fromTop="18" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:ValidateGuid.cs" caret="61" fromTop="2" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="378" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="693" fromTop="18" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="1007" fromTop="20" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="1326" fromTop="22" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="659" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="353" fromTop="13" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="440" fromTop="8" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="33" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:AuthenticateFilterAction.cs" caret="219" fromTop="8" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="1116" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="1116" fromTop="12" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="1116" fromTop="9" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="1116" fromTop="13" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="1116" fromTop="39" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="1118" fromTop="17" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:CriptoUtil.cs" caret="96" fromTop="4" />
   </RecentEdits>
 </RecentFiles>

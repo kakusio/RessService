@@ -4,7 +4,6 @@
     <EntitySetMapping Name="Administradores">
       <EntityTypeMapping TypeName="MedicsModel.Administradores">
         <MappingFragment StoreEntitySet="Administradores">
-          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
           <ScalarProperty Name="idInstitucion" ColumnName="idInstitucion" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
@@ -188,12 +187,58 @@
     <EntitySetMapping Name="zAdministradores">
       <EntityTypeMapping TypeName="MedicsModel.zAdministradores">
         <MappingFragment StoreEntitySet="zAdministradores">
-          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
           <ScalarProperty Name="idInstitucion" ColumnName="idInstitucion" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zAlergiasConsultas">
+      <EntityTypeMapping TypeName="MedicsModel.zAlergiasConsultas">
+        <MappingFragment StoreEntitySet="zAlergiasConsultas">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idAlergia" ColumnName="idAlergia" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zAnalisisConsulta">
+      <EntityTypeMapping TypeName="MedicsModel.zAnalisisConsulta">
+        <MappingFragment StoreEntitySet="zAnalisisConsulta">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idAnalisis" ColumnName="idAnalisis" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zAnalisisEspecialidades">
+      <EntityTypeMapping TypeName="MedicsModel.zAnalisisEspecialidades">
+        <MappingFragment StoreEntitySet="zAnalisisEspecialidades">
+          <ScalarProperty Name="idAnalisis" ColumnName="idAnalisis" />
+          <ScalarProperty Name="idEspecialidad" ColumnName="idEspecialidad" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zAnalisisInstituciones">
+      <EntityTypeMapping TypeName="MedicsModel.zAnalisisInstituciones">
+        <MappingFragment StoreEntitySet="zAnalisisInstituciones">
+          <ScalarProperty Name="idAnalisis" ColumnName="idAnalisis" />
+          <ScalarProperty Name="idInstitucion" ColumnName="idInstitucion" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zAntecedentesAlergicosPaciente">
+      <EntityTypeMapping TypeName="MedicsModel.zAntecedentesAlergicosPaciente">
+        <MappingFragment StoreEntitySet="zAntecedentesAlergicosPaciente">
+          <ScalarProperty Name="idAlergia" ColumnName="idAlergia" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
           <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -207,11 +252,179 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="zAntecedentesProcedimientos">
+      <EntityTypeMapping TypeName="MedicsModel.zAntecedentesProcedimientos">
+        <MappingFragment StoreEntitySet="zAntecedentesProcedimientos">
+          <ScalarProperty Name="idProcedimiento" ColumnName="idProcedimiento" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="zAntecedentesToxicosPaciente">
       <EntityTypeMapping TypeName="MedicsModel.zAntecedentesToxicosPaciente">
         <MappingFragment StoreEntitySet="zAntecedentesToxicosPaciente">
           <ScalarProperty Name="idToxico" ColumnName="idToxico" />
           <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zConsultas">
+      <EntityTypeMapping TypeName="MedicsModel.zConsultas">
+        <MappingFragment StoreEntitySet="zConsultas">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="MotivoDeConsulta" ColumnName="MotivoDeConsulta" />
+          <ScalarProperty Name="ExamenFisico" ColumnName="ExamenFisico" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zDetallesProcedimientos">
+      <EntityTypeMapping TypeName="MedicsModel.zDetallesProcedimientos">
+        <MappingFragment StoreEntitySet="zDetallesProcedimientos">
+          <ScalarProperty Name="idProcedimiento" ColumnName="idProcedimiento" />
+          <ScalarProperty Name="FechaProcedimiento" ColumnName="FechaProcedimiento" />
+          <ScalarProperty Name="MedicoPrincipal" ColumnName="MedicoPrincipal" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="Detalles" ColumnName="Detalles" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zEnfermedadesConsulta">
+      <EntityTypeMapping TypeName="MedicsModel.zEnfermedadesConsulta">
+        <MappingFragment StoreEntitySet="zEnfermedadesConsulta">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idEnfermedad" ColumnName="idEnfermedad" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zEnfermedadesEspecialidad">
+      <EntityTypeMapping TypeName="MedicsModel.zEnfermedadesEspecialidad">
+        <MappingFragment StoreEntitySet="zEnfermedadesEspecialidad">
+          <ScalarProperty Name="idEnfermedad" ColumnName="idEnfermedad" />
+          <ScalarProperty Name="idEspecialidad" ColumnName="idEspecialidad" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zInstituciones">
+      <EntityTypeMapping TypeName="MedicsModel.zInstituciones">
+        <MappingFragment StoreEntitySet="zInstituciones">
+          <ScalarProperty Name="IdInstitucion" ColumnName="IdInstitucion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zMedicamentosConsulta">
+      <EntityTypeMapping TypeName="MedicsModel.zMedicamentosConsulta">
+        <MappingFragment StoreEntitySet="zMedicamentosConsulta">
+          <ScalarProperty Name="idMedicamento" ColumnName="idMedicamento" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zMedicos">
+      <EntityTypeMapping TypeName="MedicsModel.zMedicos">
+        <MappingFragment StoreEntitySet="zMedicos">
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zMedicosEspecialidades">
+      <EntityTypeMapping TypeName="MedicsModel.zMedicosEspecialidades">
+        <MappingFragment StoreEntitySet="zMedicosEspecialidades">
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idEspecialidad" ColumnName="idEspecialidad" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zMedicosInstituciones">
+      <EntityTypeMapping TypeName="MedicsModel.zMedicosInstituciones">
+        <MappingFragment StoreEntitySet="zMedicosInstituciones">
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idInstitucion" ColumnName="idInstitucion" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zMedicosPacientes">
+      <EntityTypeMapping TypeName="MedicsModel.zMedicosPacientes">
+        <MappingFragment StoreEntitySet="zMedicosPacientes">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zPacienteFamiliarConsaguineo">
+      <EntityTypeMapping TypeName="MedicsModel.zPacienteFamiliarConsaguineo">
+        <MappingFragment StoreEntitySet="zPacienteFamiliarConsaguineo">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idFamiliar" ColumnName="idFamiliar" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zPersonas">
+      <EntityTypeMapping TypeName="MedicsModel.zPersonas">
+        <MappingFragment StoreEntitySet="zPersonas">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="FechaDeNacimiento" ColumnName="FechaDeNacimiento" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TelefonoResidencial" ColumnName="TelefonoResidencial" />
+          <ScalarProperty Name="TelefonoCelular" ColumnName="TelefonoCelular" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="HuellaDigitalDerecha1" ColumnName="HuellaDigitalDerecha1" />
+          <ScalarProperty Name="HuellaDigitalDerecha2" ColumnName="HuellaDigitalDerecha2" />
+          <ScalarProperty Name="HuellaDigitalDerecha3" ColumnName="HuellaDigitalDerecha3" />
+          <ScalarProperty Name="HuellaDIgitalIzquierda1" ColumnName="HuellaDIgitalIzquierda1" />
+          <ScalarProperty Name="HuellaDIgitalIzquierda2" ColumnName="HuellaDIgitalIzquierda2" />
+          <ScalarProperty Name="HuellaDIgitalIzquierda3" ColumnName="HuellaDIgitalIzquierda3" />
+          <ScalarProperty Name="TipoDeSangre" ColumnName="TipoDeSangre" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="FechaDeDefuncion" ColumnName="FechaDeDefuncion" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zReferimientosConsulta">
+      <EntityTypeMapping TypeName="MedicsModel.zReferimientosConsulta">
+        <MappingFragment StoreEntitySet="zReferimientosConsulta">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="idMedicoReferido" ColumnName="idMedicoReferido" />
+          <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zSintomasConsulta">
+      <EntityTypeMapping TypeName="MedicsModel.zSintomasConsulta">
+        <MappingFragment StoreEntitySet="zSintomasConsulta">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="Sintoma" ColumnName="Sintoma" />
           <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -222,6 +435,20 @@
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Tipo" ColumnName="Tipo" />
           <ScalarProperty Name="Institución" ColumnName="Institución" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VConsultas">
+      <EntityTypeMapping TypeName="MedicsModel.VConsultas">
+        <MappingFragment StoreEntitySet="VConsultas">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+          <ScalarProperty Name="Fecha_de_Nacimiento" ColumnName="Fecha de Nacimiento" />
+          <ScalarProperty Name="Fecha_de_consulta" ColumnName="Fecha de consulta" />
+          <ScalarProperty Name="Motivo_de_consulta" ColumnName="Motivo de consulta" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -249,6 +476,18 @@
           <ScalarProperty Name="Fecha_de_Nacimiento" ColumnName="Fecha de Nacimiento" />
           <ScalarProperty Name="Fecha_de_última_consulta" ColumnName="Fecha de última consulta" />
           <ScalarProperty Name="Motivo_de_consulta" ColumnName="Motivo de consulta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VMedicosPacientesHome">
+      <EntityTypeMapping TypeName="MedicsModel.VMedicosPacientesHome">
+        <MappingFragment StoreEntitySet="VMedicosPacientesHome">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Cédula" ColumnName="Cédula" />
+          <ScalarProperty Name="Fecha_de_Nacimiento" ColumnName="Fecha de Nacimiento" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -368,6 +607,14 @@
       </EndProperty>
       <EndProperty Name="Consultas">
         <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MedicosEspecialidades" TypeName="MedicsModel.MedicosEspecialidades" StoreEntitySet="MedicosEspecialidades">
+      <EndProperty Name="Especialidades">
+        <ScalarProperty Name="idEspecialidad" ColumnName="idEspecialidad" />
+      </EndProperty>
+      <EndProperty Name="Medicos">
         <ScalarProperty Name="idMedico" ColumnName="idMedico" />
       </EndProperty>
     </AssociationSetMapping>

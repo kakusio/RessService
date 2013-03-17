@@ -1,5 +1,3 @@
-using System;
-
 namespace mvc4.Models.EntitiesEditCreate
 {
 	public class PersonasEditModel

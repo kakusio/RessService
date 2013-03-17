@@ -150,6 +150,7 @@
     <Compile Include="Models\Entities\Procedimientos.cs" />
     <Compile Include="Models\Entities\Provincias.cs" />
     <Compile Include="Models\Entities\Toxicos.cs" />
+    <Compile Include="Models\IEnumerables\Notificaciones.cs" />
     <Compile Include="Models\IEnumerables\Enumeration.cs" />
     <Compile Include="Models\IEnumerables\TipoSangre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
