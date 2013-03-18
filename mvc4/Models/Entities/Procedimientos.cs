@@ -3,11 +3,13 @@ using mvc4.Models.EntitiesView;
 
 namespace mvc4.Models.Entities
 {
-	public partial class Procedimientos {
-		public DescripcionViewModel ToObject()
+	public partial class DetallesProcedimientos {
+		public DescripcionComentViewModel ToObject()
 		{
-			Mapper.CreateMap<Procedimientos, DescripcionViewModel>();
-			return Mapper.Map<Procedimientos, DescripcionViewModel>(this);
+			return new DescripcionComentViewModel{
+			       		Comentarios = Detalles,
+			       		Descripcion = Procedimientos.Descripcion
+			       	};
 		}
 	}
 }
