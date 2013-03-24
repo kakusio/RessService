@@ -5,10 +5,11 @@ namespace mvc4.Models.Entities
 	public partial class AlergiasDiagnostico {
 		public AlergiaViewModel ToObject(){
 			return new AlergiaViewModel{
-			       		Comentarios = Comentarios,
-						ElemmentoAlergico = Alergias.ElemmentoAlergico,
-						TipoDeAlergia = Alergias.TipoDeAlergia
-			       	};
+			    Comentarios = Comentarios,
+				ElemmentoAlergico = Alergias.ElemmentoAlergico,
+				TipoDeAlergia = Alergias.TipoDeAlergia,
+				Fecha = Fecha
+			};
 		}
 	}
 }

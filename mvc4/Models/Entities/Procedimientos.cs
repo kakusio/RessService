@@ -8,7 +8,8 @@ namespace mvc4.Models.Entities
 		{
 			return new DescripcionComentViewModel{
 			       		Comentarios = Detalles,
-			       		Descripcion = Procedimientos.Descripcion
+			       		Descripcion = Procedimientos.Descripcion,
+						Fecha = FechaProcedimiento
 			       	};
 		}
 	}
