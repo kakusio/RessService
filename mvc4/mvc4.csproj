@@ -117,6 +117,7 @@
     <Compile Include="Account\AuthenticateFilterAction.cs" />
     <Compile Include="Account\CriptoUtil.cs" />
     <Compile Include="Account\SecureEncrypt.cs" />
+    <Compile Include="Controllers\AnalisisController.cs" />
     <Compile Include="Controllers\ExamenesController.cs" />
     <Compile Include="Controllers\PersonasController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Models\EntitiesEditCreate\ExamenesEditCreateModel.cs" />
     <Compile Include="Models\EntitiesEditCreate\PersonasEditCreateModel.cs" />
     <Compile Include="Models\EntitiesView\AlergiaViewModel.cs" />
+    <Compile Include="Models\EntitiesView\AnalisisViewModel.cs" />
     <Compile Include="Models\EntitiesView\DescripcionComentViewModel.cs" />
     <Compile Include="Models\EntitiesView\DescripcionViewModel.cs" />
     <Compile Include="Models\EntitiesView\DiagnosticoViewModel.cs" />
@@ -137,6 +139,7 @@
     <Compile Include="Models\EntitiesView\PersonasViewModel.cs" />
     <Compile Include="Models\Entities\Administrador.cs" />
     <Compile Include="Models\Entities\AlergiasDiagnostico.cs" />
+    <Compile Include="Models\Entities\Analisis.cs" />
     <Compile Include="Models\Entities\Diagnostico.cs" />
     <Compile Include="Models\Entities\Enfermedades.cs" />
     <Compile Include="Models\Entities\EnfermedadesDiagnostico.cs" />

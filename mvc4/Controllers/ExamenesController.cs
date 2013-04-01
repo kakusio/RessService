@@ -6,69 +6,74 @@ using System.Web.Mvc;
 using AutoMapper;
 using mvc4.Models.Entities;
 using mvc4.Models.EntitiesEditCreate;
+using mvc4.Models.IEnumerables;
 
 namespace mvc4.Controllers
 {
-
 	public class ExamenesController : Controller
 	{
-		public ActionResult Get()
-		{
+		public ActionResult Get(){
 			List<Examenes> examenes;
-			using (var entities = new Medics())
-			{
+			using (var entities = new Medics()){
 				examenes = entities.Examenes.ToList();
 			}
 			var ExamenesView = examenes.Select(x => x.ToObject());
 			return Json(ExamenesView, JsonRequestBehavior.AllowGet);
 		}
 
-		public ActionResult GetDetails(Guid id)
-		{
+		public ActionResult GetDetails(Guid id){
 			List<Examenes> examenes;
-			using (var entities = new Medics())
-			{
-				examenes = entities.Examenes.Where( x => x.IdPersona == id).ToList();
+			using (var entities = new Medics()){
+				examenes = entities.Examenes.Where(x => x.IdPersona == id).ToList();
 			}
 			var ExamenesView = examenes.Select(x => x.ToObject());
 			return Json(ExamenesView, JsonRequestBehavior.AllowGet);
 		}
 
-		public string Post([FromUri] ExamenesEditCreateModel examenes)
-		{
-			examenes.Fecha = DateTime.Today;
+		public string Post([FromUri] ExamenesEditCreateModel examenes){
+			examenes.Fecha = DateTime.Now;
 			Mapper.CreateMap<ExamenesEditCreateModel, Examenes>();
-			var examen =  Mapper.Map<ExamenesEditCreateModel, Examenes>(examenes);
-
-			using (var entities = new Medics())
-			{
-				entities.AddToExamenes(examen);
-				entities.SaveChanges();
+			var examen = Mapper.Map<ExamenesEditCreateModel, Examenes>(examenes);
+			using (var entities = new Medics()){
+				try{
+					entities.AddToExamenes(examen);
+					entities.SaveChanges();
+				}
+				catch (Exception e){
+					return e.Message;
+				}
 			}
-			return "You have Create the entity examenes where Name = " + examenes.idAnalisis;
-
+			return Notificaciones.CreacionCorrecta.Value;
 		}
 
-		public string Put(Guid id, [FromUri] ExamenesEditCreateModel Examene)
-		{
-			using (var entities = new Medics())
-			{
-				var oldExamene = entities.Examenes.FirstOrDefault(x => x.IdPersona== id && x.idAnalisis == Examene.idAnalisis && x.Fecha == Examene.Fecha);
-				oldExamene.Update(Examene);
-				entities.SaveChanges();
+		public string Put(Guid id, [FromUri] ExamenesEditCreateModel Examene){
+			using (var entities = new Medics()){
+				try{
+					var oldExamene = entities.Examenes.FirstOrDefault( x => x.IdPersona == id && x.idAnalisis == Examene.idAnalisis && x.Fecha == Examene.Fecha);
+					if (oldExamene != null) oldExamene.Update(Examene);
+					entities.SaveChanges();
+				}
+				catch (Exception e){
+					return e.Message;
+				}
 			}
-			return "You have edit the entity examenes where Id = " + Examene.idAnalisis;
+			return Notificaciones.EdicionCorrecta.Value;
 		}
 
-		public string Delete(Guid id,[FromUri] ExamenesEditCreateModel Examene )
-		{
-			using (var entities = new Medics())
-			{
-				var oldExamene = entities.Examenes.FirstOrDefault(x => x.IdPersona== id && x.idAnalisis == Examene.idAnalisis && x.Fecha == Examene.Fecha);
-				entities.Examenes.DeleteObject(oldExamene);
-				entities.SaveChanges();
+		public string Delete(Guid id, [FromUri] ExamenesEditCreateModel Examene){
+			using (var entities = new Medics()){
+				try{
+					var oldExamene =
+						entities.Examenes.FirstOrDefault(
+							x => x.IdPersona == id && x.idAnalisis == Examene.idAnalisis && x.Fecha == Examene.Fecha);
+					entities.Examenes.DeleteObject(oldExamene);
+					entities.SaveChanges();
+				}
+				catch (Exception e){
+					return e.Message;
+				}
 			}
-			return "You have delete the entity examenes where Id = " + id;
+			return Notificaciones.EliminacionCorrecta.Value;
 		}
 	}
 }

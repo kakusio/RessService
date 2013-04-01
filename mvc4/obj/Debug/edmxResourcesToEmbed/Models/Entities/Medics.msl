@@ -47,7 +47,7 @@
           <ScalarProperty Name="Fecha" ColumnName="Fecha" />
           <ScalarProperty Name="idMedico" ColumnName="idMedico" />
           <ScalarProperty Name="idAnalisis" ColumnName="idAnalisis" />
-          <ScalarProperty Name="urlPath" ColumnName="urlPath" />
+          <ScalarProperty Name="idAnalisisConsulta" ColumnName="idAnalisisConsulta" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -58,6 +58,7 @@
           <ScalarProperty Name="idMedico" ColumnName="idMedico" />
           <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
           <ScalarProperty Name="MotivoDeConsulta" ColumnName="MotivoDeConsulta" />
+          <ScalarProperty Name="Notas" ColumnName="Notas" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -274,6 +275,16 @@
           <ScalarProperty Name="Provincia" ColumnName="Provincia" />
           <ScalarProperty Name="Direccion" ColumnName="Direccion" />
           <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VMedicos">
+      <EntityTypeMapping TypeName="MedicsModel.VMedicos">
+        <MappingFragment StoreEntitySet="VMedicos">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -20,19 +20,20 @@ using System.Xml.Serialization;
 #region EDM Relationship Metadata
 
 [assembly: EdmRelationshipAttribute("MedicsModel", "FK__Administr__idIns__300424B4", "Instituciones", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Instituciones), "Administradores", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Administradores), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AlergiasD__idAle__4E53A1AA", "Alergias", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Alergias), "AlergiasDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AlergiasDiagnostico), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AlergiasDiagnost__4D5F7D71", "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Diagnostico), "AlergiasDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AlergiasDiagnostico), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AnalisisC__idAna__6EF57B66", "Analisis", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Analisis), "AnalisisConsulta", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AnalisisConsulta), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AnalisisConsulta__6E01572D", "Consultas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Consultas), "AnalisisConsulta", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AnalisisConsulta), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AlergiasD__idAle__2B0A656D", "Alergias", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Alergias), "AlergiasDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AlergiasDiagnostico), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AlergiasDiagnost__2A164134", "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Diagnostico), "AlergiasDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AlergiasDiagnostico), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AnalisisC__idAna__6EF57B66", "Analisis", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Analisis), "AnalisisConsulta", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AnalisisConsulta), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__AnalisisConsulta__6E01572D", "Consultas", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Consultas), "AnalisisConsulta", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.AnalisisConsulta), true)]
 [assembly: EdmRelationshipAttribute("MedicsModel", "FK__Consultas__idMed__6383C8BA", "Medicos", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Medicos), "Consultas", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Consultas), true)]
 [assembly: EdmRelationshipAttribute("MedicsModel", "FK__Consultas__idPac__6477ECF3", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Personas), "Consultas", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Consultas), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__DetallesP__idPer__778AC167", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Personas), "DetallesProcedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.DetallesProcedimientos), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__DetallesP__idPro__76969D2E", "Procedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Procedimientos), "DetallesProcedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.DetallesProcedimientos), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Diagnosti__idMed__40F9A68C", "Medicos", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Medicos), "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Diagnostico), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Diagnosti__idPac__40058253", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Personas), "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Diagnostico), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__EnfermedadesDiag__498EEC8D", "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Diagnostico), "EnfermedadesDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.EnfermedadesDiagnostico), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Enfermeda__idEnf__4A8310C6", "Enfermedades", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Enfermedades), "EnfermedadesDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.EnfermedadesDiagnostico), true)]
-[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Examenes__IdPers__339FAB6E", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Personas), "Examenes", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Examenes), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__DetallesP__idPer__76969D2E", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Personas), "DetallesProcedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.DetallesProcedimientos), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__DetallesP__idPro__75A278F5", "Procedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Procedimientos), "DetallesProcedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.DetallesProcedimientos), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__DetallesP__Medic__778AC167", "Medicos", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Medicos), "DetallesProcedimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.DetallesProcedimientos), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Diagnosti__idMed__236943A5", "Medicos", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Medicos), "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Diagnostico), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Diagnosti__idPac__22751F6C", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Personas), "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Diagnostico), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__EnfermedadesDiag__2645B050", "Diagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Diagnostico), "EnfermedadesDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.EnfermedadesDiagnostico), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Enfermeda__idEnf__2739D489", "Enfermedades", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Enfermedades), "EnfermedadesDiagnostico", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.EnfermedadesDiagnostico), true)]
+[assembly: EdmRelationshipAttribute("MedicsModel", "FK__Examenes__IdPers__37703C52", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Personas), "Examenes", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Examenes), true)]
 [assembly: EdmRelationshipAttribute("MedicsModel", "FK__Instituci__idPro__2B3F6F97", "Provincias", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Provincias), "Instituciones", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Instituciones), true)]
 [assembly: EdmRelationshipAttribute("MedicsModel", "FK__Medicos__idPerso__34C8D9D1", "Personas", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(mvc4.Models.Entities.Personas), "Medicos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Medicos), true)]
 [assembly: EdmRelationshipAttribute("MedicsModel", "FK__Referimie__idMed__693CA210", "Medicos", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(mvc4.Models.Entities.Medicos), "Referimientos", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(mvc4.Models.Entities.Referimientos), true)]
@@ -522,6 +523,22 @@ namespace mvc4.Models.Entities
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
+        public ObjectSet<VMedicos> VMedicos
+        {
+            get
+            {
+                if ((_VMedicos == null))
+                {
+                    _VMedicos = base.CreateObjectSet<VMedicos>("VMedicos");
+                }
+                return _VMedicos;
+            }
+        }
+        private ObjectSet<VMedicos> _VMedicos;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
         public ObjectSet<VMedicosPacientes> VMedicosPacientes
         {
             get
@@ -777,6 +794,14 @@ namespace mvc4.Models.Entities
         public void AddToVInstituciones(VInstituciones vInstituciones)
         {
             base.AddObject("VInstituciones", vInstituciones);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the VMedicos EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToVMedicos(VMedicos vMedicos)
+        {
+            base.AddObject("VMedicos", vMedicos);
         }
     
         /// <summary>
@@ -1117,18 +1142,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasD__idAle__4E53A1AA", "AlergiasDiagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasD__idAle__2B0A656D", "AlergiasDiagnostico")]
         public EntityCollection<AlergiasDiagnostico> AlergiasDiagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasD__idAle__4E53A1AA", "AlergiasDiagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasD__idAle__2B0A656D", "AlergiasDiagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasD__idAle__4E53A1AA", "AlergiasDiagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasD__idAle__2B0A656D", "AlergiasDiagnostico", value);
                 }
             }
         }
@@ -1333,16 +1358,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasD__idAle__4E53A1AA", "Alergias")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasD__idAle__2B0A656D", "Alergias")]
         public Alergias Alergias
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__4E53A1AA", "Alergias").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__2B0A656D", "Alergias").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__4E53A1AA", "Alergias").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__2B0A656D", "Alergias").Value = value;
             }
         }
         /// <summary>
@@ -1354,13 +1379,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__4E53A1AA", "Alergias");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__2B0A656D", "Alergias");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__4E53A1AA", "Alergias", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Alergias>("MedicsModel.FK__AlergiasD__idAle__2B0A656D", "Alergias", value);
                 }
             }
         }
@@ -1371,16 +1396,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasDiagnost__4D5F7D71", "Diagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasDiagnost__2A164134", "Diagnostico")]
         public Diagnostico Diagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__4D5F7D71", "Diagnostico").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__2A164134", "Diagnostico").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__4D5F7D71", "Diagnostico").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__2A164134", "Diagnostico").Value = value;
             }
         }
         /// <summary>
@@ -1392,13 +1417,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__4D5F7D71", "Diagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__2A164134", "Diagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__4D5F7D71", "Diagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Diagnostico>("MedicsModel.FK__AlergiasDiagnost__2A164134", "Diagnostico", value);
                 }
             }
         }
@@ -1595,15 +1620,11 @@ namespace mvc4.Models.Entities
         /// <summary>
         /// Create a new AnalisisConsulta object.
         /// </summary>
-        /// <param name="fecha">Initial value of the Fecha property.</param>
-        /// <param name="idMedico">Initial value of the idMedico property.</param>
-        /// <param name="idAnalisis">Initial value of the idAnalisis property.</param>
-        public static AnalisisConsulta CreateAnalisisConsulta(global::System.DateTime fecha, global::System.Int64 idMedico, global::System.Guid idAnalisis)
+        /// <param name="idAnalisisConsulta">Initial value of the idAnalisisConsulta property.</param>
+        public static AnalisisConsulta CreateAnalisisConsulta(global::System.Guid idAnalisisConsulta)
         {
             AnalisisConsulta analisisConsulta = new AnalisisConsulta();
-            analisisConsulta.Fecha = fecha;
-            analisisConsulta.idMedico = idMedico;
-            analisisConsulta.idAnalisis = idAnalisis;
+            analisisConsulta.idAnalisisConsulta = idAnalisisConsulta;
             return analisisConsulta;
         }
 
@@ -1614,9 +1635,9 @@ namespace mvc4.Models.Entities
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.DateTime Fecha
+        public Nullable<global::System.DateTime> Fecha
         {
             get
             {
@@ -1624,26 +1645,23 @@ namespace mvc4.Models.Entities
             }
             set
             {
-                if (_Fecha != value)
-                {
-                    OnFechaChanging(value);
-                    ReportPropertyChanging("Fecha");
-                    _Fecha = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("Fecha");
-                    OnFechaChanged();
-                }
+                OnFechaChanging(value);
+                ReportPropertyChanging("Fecha");
+                _Fecha = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("Fecha");
+                OnFechaChanged();
             }
         }
-        private global::System.DateTime _Fecha;
-        partial void OnFechaChanging(global::System.DateTime value);
+        private Nullable<global::System.DateTime> _Fecha;
+        partial void OnFechaChanging(Nullable<global::System.DateTime> value);
         partial void OnFechaChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.Int64 idMedico
+        public Nullable<global::System.Int64> idMedico
         {
             get
             {
@@ -1651,26 +1669,23 @@ namespace mvc4.Models.Entities
             }
             set
             {
-                if (_idMedico != value)
-                {
-                    OnidMedicoChanging(value);
-                    ReportPropertyChanging("idMedico");
-                    _idMedico = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("idMedico");
-                    OnidMedicoChanged();
-                }
+                OnidMedicoChanging(value);
+                ReportPropertyChanging("idMedico");
+                _idMedico = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("idMedico");
+                OnidMedicoChanged();
             }
         }
-        private global::System.Int64 _idMedico;
-        partial void OnidMedicoChanging(global::System.Int64 value);
+        private Nullable<global::System.Int64> _idMedico;
+        partial void OnidMedicoChanging(Nullable<global::System.Int64> value);
         partial void OnidMedicoChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
-        public global::System.Guid idAnalisis
+        public Nullable<global::System.Guid> idAnalisis
         {
             get
             {
@@ -1678,43 +1693,43 @@ namespace mvc4.Models.Entities
             }
             set
             {
-                if (_idAnalisis != value)
-                {
-                    OnidAnalisisChanging(value);
-                    ReportPropertyChanging("idAnalisis");
-                    _idAnalisis = StructuralObject.SetValidValue(value);
-                    ReportPropertyChanged("idAnalisis");
-                    OnidAnalisisChanged();
-                }
+                OnidAnalisisChanging(value);
+                ReportPropertyChanging("idAnalisis");
+                _idAnalisis = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("idAnalisis");
+                OnidAnalisisChanged();
             }
         }
-        private global::System.Guid _idAnalisis;
-        partial void OnidAnalisisChanging(global::System.Guid value);
+        private Nullable<global::System.Guid> _idAnalisis;
+        partial void OnidAnalisisChanging(Nullable<global::System.Guid> value);
         partial void OnidAnalisisChanged();
     
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [DataMemberAttribute()]
-        public global::System.String urlPath
+        public global::System.Guid idAnalisisConsulta
         {
             get
             {
-                return _urlPath;
+                return _idAnalisisConsulta;
             }
             set
             {
-                OnurlPathChanging(value);
-                ReportPropertyChanging("urlPath");
-                _urlPath = StructuralObject.SetValidValue(value, true);
-                ReportPropertyChanged("urlPath");
-                OnurlPathChanged();
+                if (_idAnalisisConsulta != value)
+                {
+                    OnidAnalisisConsultaChanging(value);
+                    ReportPropertyChanging("idAnalisisConsulta");
+                    _idAnalisisConsulta = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("idAnalisisConsulta");
+                    OnidAnalisisConsultaChanged();
+                }
             }
         }
-        private global::System.String _urlPath;
-        partial void OnurlPathChanging(global::System.String value);
-        partial void OnurlPathChanged();
+        private global::System.Guid _idAnalisisConsulta;
+        partial void OnidAnalisisConsultaChanging(global::System.Guid value);
+        partial void OnidAnalisisConsultaChanged();
 
         #endregion
 
@@ -1929,6 +1944,30 @@ namespace mvc4.Models.Entities
         private global::System.String _MotivoDeConsulta;
         partial void OnMotivoDeConsultaChanging(global::System.String value);
         partial void OnMotivoDeConsultaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Notas
+        {
+            get
+            {
+                return _Notas;
+            }
+            set
+            {
+                OnNotasChanging(value);
+                ReportPropertyChanging("Notas");
+                _Notas = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Notas");
+                OnNotasChanged();
+            }
+        }
+        private global::System.String _Notas;
+        partial void OnNotasChanging(global::System.String value);
+        partial void OnNotasChanged();
 
         #endregion
 
@@ -2272,16 +2311,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPer__778AC167", "Personas")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPer__76969D2E", "Personas")]
         public Personas Personas
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__778AC167", "Personas").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__76969D2E", "Personas").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__778AC167", "Personas").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__76969D2E", "Personas").Value = value;
             }
         }
         /// <summary>
@@ -2293,13 +2332,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__778AC167", "Personas");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__76969D2E", "Personas");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__778AC167", "Personas", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Personas>("MedicsModel.FK__DetallesP__idPer__76969D2E", "Personas", value);
                 }
             }
         }
@@ -2310,16 +2349,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPro__76969D2E", "Procedimientos")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPro__75A278F5", "Procedimientos")]
         public Procedimientos Procedimientos
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__76969D2E", "Procedimientos").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__75A278F5", "Procedimientos").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__76969D2E", "Procedimientos").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__75A278F5", "Procedimientos").Value = value;
             }
         }
         /// <summary>
@@ -2331,13 +2370,51 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__76969D2E", "Procedimientos");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__75A278F5", "Procedimientos");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__76969D2E", "Procedimientos", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Procedimientos>("MedicsModel.FK__DetallesP__idPro__75A278F5", "Procedimientos", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__Medic__778AC167", "Medicos")]
+        public Medicos Medicos
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__DetallesP__Medic__778AC167", "Medicos").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__DetallesP__Medic__778AC167", "Medicos").Value = value;
+            }
+        }
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<Medicos> MedicosReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__DetallesP__Medic__778AC167", "Medicos");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Medicos>("MedicsModel.FK__DetallesP__Medic__778AC167", "Medicos", value);
                 }
             }
         }
@@ -2491,18 +2568,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasDiagnost__4D5F7D71", "AlergiasDiagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__AlergiasDiagnost__2A164134", "AlergiasDiagnostico")]
         public EntityCollection<AlergiasDiagnostico> AlergiasDiagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasDiagnost__4D5F7D71", "AlergiasDiagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasDiagnost__2A164134", "AlergiasDiagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasDiagnost__4D5F7D71", "AlergiasDiagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<AlergiasDiagnostico>("MedicsModel.FK__AlergiasDiagnost__2A164134", "AlergiasDiagnostico", value);
                 }
             }
         }
@@ -2513,16 +2590,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idMed__40F9A68C", "Medicos")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idMed__236943A5", "Medicos")]
         public Medicos Medicos
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__40F9A68C", "Medicos").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__236943A5", "Medicos").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__40F9A68C", "Medicos").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__236943A5", "Medicos").Value = value;
             }
         }
         /// <summary>
@@ -2534,13 +2611,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__40F9A68C", "Medicos");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__236943A5", "Medicos");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__40F9A68C", "Medicos", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Medicos>("MedicsModel.FK__Diagnosti__idMed__236943A5", "Medicos", value);
                 }
             }
         }
@@ -2551,16 +2628,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idPac__40058253", "Personas")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idPac__22751F6C", "Personas")]
         public Personas Personas
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__40058253", "Personas").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__22751F6C", "Personas").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__40058253", "Personas").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__22751F6C", "Personas").Value = value;
             }
         }
         /// <summary>
@@ -2572,13 +2649,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__40058253", "Personas");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__22751F6C", "Personas");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__40058253", "Personas", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Personas>("MedicsModel.FK__Diagnosti__idPac__22751F6C", "Personas", value);
                 }
             }
         }
@@ -2589,18 +2666,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__EnfermedadesDiag__498EEC8D", "EnfermedadesDiagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__EnfermedadesDiag__2645B050", "EnfermedadesDiagnostico")]
         public EntityCollection<EnfermedadesDiagnostico> EnfermedadesDiagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__EnfermedadesDiag__498EEC8D", "EnfermedadesDiagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__EnfermedadesDiag__2645B050", "EnfermedadesDiagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__EnfermedadesDiag__498EEC8D", "EnfermedadesDiagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__EnfermedadesDiag__2645B050", "EnfermedadesDiagnostico", value);
                 }
             }
         }
@@ -2720,18 +2797,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Enfermeda__idEnf__4A8310C6", "EnfermedadesDiagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Enfermeda__idEnf__2739D489", "EnfermedadesDiagnostico")]
         public EntityCollection<EnfermedadesDiagnostico> EnfermedadesDiagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__Enfermeda__idEnf__4A8310C6", "EnfermedadesDiagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__Enfermeda__idEnf__2739D489", "EnfermedadesDiagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__Enfermeda__idEnf__4A8310C6", "EnfermedadesDiagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<EnfermedadesDiagnostico>("MedicsModel.FK__Enfermeda__idEnf__2739D489", "EnfermedadesDiagnostico", value);
                 }
             }
         }
@@ -2980,16 +3057,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__EnfermedadesDiag__498EEC8D", "Diagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__EnfermedadesDiag__2645B050", "Diagnostico")]
         public Diagnostico Diagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__498EEC8D", "Diagnostico").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__2645B050", "Diagnostico").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__498EEC8D", "Diagnostico").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__2645B050", "Diagnostico").Value = value;
             }
         }
         /// <summary>
@@ -3001,13 +3078,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__498EEC8D", "Diagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__2645B050", "Diagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__498EEC8D", "Diagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Diagnostico>("MedicsModel.FK__EnfermedadesDiag__2645B050", "Diagnostico", value);
                 }
             }
         }
@@ -3018,16 +3095,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Enfermeda__idEnf__4A8310C6", "Enfermedades")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Enfermeda__idEnf__2739D489", "Enfermedades")]
         public Enfermedades Enfermedades
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__4A8310C6", "Enfermedades").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__2739D489", "Enfermedades").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__4A8310C6", "Enfermedades").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__2739D489", "Enfermedades").Value = value;
             }
         }
         /// <summary>
@@ -3039,13 +3116,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__4A8310C6", "Enfermedades");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__2739D489", "Enfermedades");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__4A8310C6", "Enfermedades", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Enfermedades>("MedicsModel.FK__Enfermeda__idEnf__2739D489", "Enfermedades", value);
                 }
             }
         }
@@ -3350,16 +3427,16 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Examenes__IdPers__339FAB6E", "Personas")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Examenes__IdPers__37703C52", "Personas")]
         public Personas Personas
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__339FAB6E", "Personas").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__37703C52", "Personas").Value;
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__339FAB6E", "Personas").Value = value;
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__37703C52", "Personas").Value = value;
             }
         }
         /// <summary>
@@ -3371,13 +3448,13 @@ namespace mvc4.Models.Entities
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__339FAB6E", "Personas");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__37703C52", "Personas");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__339FAB6E", "Personas", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<Personas>("MedicsModel.FK__Examenes__IdPers__37703C52", "Personas", value);
                 }
             }
         }
@@ -3911,18 +3988,40 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idMed__40F9A68C", "Diagnostico")]
-        public EntityCollection<Diagnostico> Diagnostico
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__Medic__778AC167", "DetallesProcedimientos")]
+        public EntityCollection<DetallesProcedimientos> DetallesProcedimientos
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idMed__40F9A68C", "Diagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__Medic__778AC167", "DetallesProcedimientos");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idMed__40F9A68C", "Diagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__Medic__778AC167", "DetallesProcedimientos", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idMed__236943A5", "Diagnostico")]
+        public EntityCollection<Diagnostico> Diagnostico
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idMed__236943A5", "Diagnostico");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idMed__236943A5", "Diagnostico", value);
                 }
             }
         }
@@ -4775,18 +4874,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPer__778AC167", "DetallesProcedimientos")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPer__76969D2E", "DetallesProcedimientos")]
         public EntityCollection<DetallesProcedimientos> DetallesProcedimientos
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPer__778AC167", "DetallesProcedimientos");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPer__76969D2E", "DetallesProcedimientos");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPer__778AC167", "DetallesProcedimientos", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPer__76969D2E", "DetallesProcedimientos", value);
                 }
             }
         }
@@ -4797,18 +4896,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idPac__40058253", "Diagnostico")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Diagnosti__idPac__22751F6C", "Diagnostico")]
         public EntityCollection<Diagnostico> Diagnostico
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idPac__40058253", "Diagnostico");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idPac__22751F6C", "Diagnostico");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idPac__40058253", "Diagnostico", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Diagnostico>("MedicsModel.FK__Diagnosti__idPac__22751F6C", "Diagnostico", value);
                 }
             }
         }
@@ -4819,18 +4918,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Examenes__IdPers__339FAB6E", "Examenes")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__Examenes__IdPers__37703C52", "Examenes")]
         public EntityCollection<Examenes> Examenes
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Examenes>("MedicsModel.FK__Examenes__IdPers__339FAB6E", "Examenes");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<Examenes>("MedicsModel.FK__Examenes__IdPers__37703C52", "Examenes");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Examenes>("MedicsModel.FK__Examenes__IdPers__339FAB6E", "Examenes", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<Examenes>("MedicsModel.FK__Examenes__IdPers__37703C52", "Examenes", value);
                 }
             }
         }
@@ -5118,18 +5217,18 @@ namespace mvc4.Models.Entities
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPro__76969D2E", "DetallesProcedimientos")]
+        [EdmRelationshipNavigationPropertyAttribute("MedicsModel", "FK__DetallesP__idPro__75A278F5", "DetallesProcedimientos")]
         public EntityCollection<DetallesProcedimientos> DetallesProcedimientos
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPro__76969D2E", "DetallesProcedimientos");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPro__75A278F5", "DetallesProcedimientos");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPro__76969D2E", "DetallesProcedimientos", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<DetallesProcedimientos>("MedicsModel.FK__DetallesP__idPro__75A278F5", "DetallesProcedimientos", value);
                 }
             }
         }
@@ -6233,6 +6332,140 @@ namespace mvc4.Models.Entities
         private Nullable<global::System.Int64> _Teléfono;
         partial void OnTeléfonoChanging(Nullable<global::System.Int64> value);
         partial void OnTeléfonoChanged();
+
+        #endregion
+
+    
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="MedicsModel", Name="VMedicos")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class VMedicos : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new VMedicos object.
+        /// </summary>
+        /// <param name="idPersona">Initial value of the idPersona property.</param>
+        /// <param name="idMedico">Initial value of the idMedico property.</param>
+        public static VMedicos CreateVMedicos(global::System.Guid idPersona, global::System.Int64 idMedico)
+        {
+            VMedicos vMedicos = new VMedicos();
+            vMedicos.idPersona = idPersona;
+            vMedicos.idMedico = idMedico;
+            return vMedicos;
+        }
+
+        #endregion
+
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Guid idPersona
+        {
+            get
+            {
+                return _idPersona;
+            }
+            set
+            {
+                if (_idPersona != value)
+                {
+                    OnidPersonaChanging(value);
+                    ReportPropertyChanging("idPersona");
+                    _idPersona = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("idPersona");
+                    OnidPersonaChanged();
+                }
+            }
+        }
+        private global::System.Guid _idPersona;
+        partial void OnidPersonaChanging(global::System.Guid value);
+        partial void OnidPersonaChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int64 idMedico
+        {
+            get
+            {
+                return _idMedico;
+            }
+            set
+            {
+                if (_idMedico != value)
+                {
+                    OnidMedicoChanging(value);
+                    ReportPropertyChanging("idMedico");
+                    _idMedico = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("idMedico");
+                    OnidMedicoChanged();
+                }
+            }
+        }
+        private global::System.Int64 _idMedico;
+        partial void OnidMedicoChanging(global::System.Int64 value);
+        partial void OnidMedicoChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Nombres
+        {
+            get
+            {
+                return _Nombres;
+            }
+            set
+            {
+                OnNombresChanging(value);
+                ReportPropertyChanging("Nombres");
+                _Nombres = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Nombres");
+                OnNombresChanged();
+            }
+        }
+        private global::System.String _Nombres;
+        partial void OnNombresChanging(global::System.String value);
+        partial void OnNombresChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String Apellidos
+        {
+            get
+            {
+                return _Apellidos;
+            }
+            set
+            {
+                OnApellidosChanging(value);
+                ReportPropertyChanging("Apellidos");
+                _Apellidos = StructuralObject.SetValidValue(value, true);
+                ReportPropertyChanged("Apellidos");
+                OnApellidosChanged();
+            }
+        }
+        private global::System.String _Apellidos;
+        partial void OnApellidosChanging(global::System.String value);
+        partial void OnApellidosChanged();
 
         #endregion
 
