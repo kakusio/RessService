@@ -118,6 +118,7 @@
     <Compile Include="Account\CriptoUtil.cs" />
     <Compile Include="Account\SecureEncrypt.cs" />
     <Compile Include="Controllers\AnalisisController.cs" />
+    <Compile Include="Controllers\InstitucionesController.cs" />
     <Compile Include="Controllers\ExamenesController.cs" />
     <Compile Include="Controllers\PersonasController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Models\EntitiesEditCreate\ExamenesEditCreateModel.cs" />
     <Compile Include="Models\EntitiesEditCreate\PersonasEditCreateModel.cs" />
     <Compile Include="Models\EntitiesView\AlergiaViewModel.cs" />
+    <Compile Include="Models\EntitiesView\AnalisisConsultaViewModel.cs" />
     <Compile Include="Models\EntitiesView\AnalisisViewModel.cs" />
     <Compile Include="Models\EntitiesView\DescripcionComentViewModel.cs" />
     <Compile Include="Models\EntitiesView\DescripcionViewModel.cs" />
@@ -137,9 +139,12 @@
     <Compile Include="Models\EntitiesView\MedicosViewModel.cs" />
     <Compile Include="Models\EntitiesView\ExamenesViewModel.cs" />
     <Compile Include="Models\EntitiesView\PersonasViewModel.cs" />
+    <Compile Include="Models\EntitiesView\ResultadoAnalisisConsultaViewModel.cs" />
     <Compile Include="Models\Entities\Administrador.cs" />
     <Compile Include="Models\Entities\AlergiasDiagnostico.cs" />
     <Compile Include="Models\Entities\Analisis.cs" />
+    <Compile Include="Models\Entities\AnalisisConsulta.cs" />
+    <Compile Include="Models\Entities\Consultas.cs" />
     <Compile Include="Models\Entities\Diagnostico.cs" />
     <Compile Include="Models\Entities\Enfermedades.cs" />
     <Compile Include="Models\Entities\EnfermedadesDiagnostico.cs" />
@@ -156,6 +161,7 @@
     <Compile Include="Models\Entities\Personas.cs" />
     <Compile Include="Models\Entities\Procedimientos.cs" />
     <Compile Include="Models\Entities\Provincias.cs" />
+    <Compile Include="Models\Entities\ResultadoAnalisisConsulta.cs" />
     <Compile Include="Models\Entities\Toxicos.cs" />
     <Compile Include="Models\IEnumerables\Notificaciones.cs" />
     <Compile Include="Models\IEnumerables\Enumeration.cs" />

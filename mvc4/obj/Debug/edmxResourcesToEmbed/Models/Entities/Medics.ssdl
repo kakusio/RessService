@@ -33,6 +33,7 @@
     <EntitySet Name="Procedimientos" EntityType="MedicsModel.Store.Procedimientos" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Provincias" EntityType="MedicsModel.Store.Provincias" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Referimientos" EntityType="MedicsModel.Store.Referimientos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ResultadoAnalisisConsulta" EntityType="MedicsModel.Store.ResultadoAnalisisConsulta" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Toxicos" EntityType="MedicsModel.Store.Toxicos" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="zAdministradores" EntityType="MedicsModel.Store.zAdministradores" store:Type="Tables" store:Schema="dbo" store:Name="zAdministradores">
       <DefiningQuery>SELECT 
@@ -122,175 +123,179 @@
       [VPersonas].[Correo Electrónico] AS [Correo Electrónico]
       FROM [dbo].[VPersonas] AS [VPersonas]</DefiningQuery>
     </EntitySet>
-    <AssociationSet Name="FK__Administr__idIns__300424B4" Association="MedicsModel.Store.FK__Administr__idIns__300424B4">
+    <AssociationSet Name="FK__Administr__idIns__1920BF5C" Association="MedicsModel.Store.FK__Administr__idIns__1920BF5C">
       <End Role="Instituciones" EntitySet="Instituciones" />
       <End Role="Administradores" EntitySet="Administradores" />
     </AssociationSet>
-    <AssociationSet Name="FK__AlergiasC__idAle__1DB06A4F" Association="MedicsModel.Store.FK__AlergiasC__idAle__1DB06A4F">
+    <AssociationSet Name="FK__AlergiasC__idAle__3493CFA7" Association="MedicsModel.Store.FK__AlergiasC__idAle__3493CFA7">
       <End Role="Alergias" EntitySet="Alergias" />
       <End Role="AlergiasConsultas" EntitySet="AlergiasConsultas" />
     </AssociationSet>
-    <AssociationSet Name="FK__AlergiasConsulta__1CBC4616" Association="MedicsModel.Store.FK__AlergiasConsulta__1CBC4616">
+    <AssociationSet Name="FK__AlergiasConsulta__339FAB6E" Association="MedicsModel.Store.FK__AlergiasConsulta__339FAB6E">
       <End Role="Consultas" EntitySet="Consultas" />
       <End Role="AlergiasConsultas" EntitySet="AlergiasConsultas" />
     </AssociationSet>
-    <AssociationSet Name="FK__AlergiasD__idAle__2B0A656D" Association="MedicsModel.Store.FK__AlergiasD__idAle__2B0A656D">
+    <AssociationSet Name="FK__AlergiasD__idAle__47A6A41B" Association="MedicsModel.Store.FK__AlergiasD__idAle__47A6A41B">
       <End Role="Alergias" EntitySet="Alergias" />
       <End Role="AlergiasDiagnostico" EntitySet="AlergiasDiagnostico" />
     </AssociationSet>
-    <AssociationSet Name="FK__AlergiasDiagnost__2A164134" Association="MedicsModel.Store.FK__AlergiasDiagnost__2A164134">
+    <AssociationSet Name="FK__AlergiasDiagnost__46B27FE2" Association="MedicsModel.Store.FK__AlergiasDiagnost__46B27FE2">
       <End Role="Diagnostico" EntitySet="Diagnostico" />
       <End Role="AlergiasDiagnostico" EntitySet="AlergiasDiagnostico" />
     </AssociationSet>
-    <AssociationSet Name="FK__AnalisisC__idAna__6EF57B66" Association="MedicsModel.Store.FK__AnalisisC__idAna__6EF57B66">
+    <AssociationSet Name="FK__AnalisisC__idAna__70DDC3D8" Association="MedicsModel.Store.FK__AnalisisC__idAna__70DDC3D8">
       <End Role="Analisis" EntitySet="Analisis" />
       <End Role="AnalisisConsulta" EntitySet="AnalisisConsulta" />
     </AssociationSet>
-    <AssociationSet Name="FK__AnalisisConsulta__6E01572D" Association="MedicsModel.Store.FK__AnalisisConsulta__6E01572D">
+    <AssociationSet Name="FK__AnalisisConsulta__6FE99F9F" Association="MedicsModel.Store.FK__AnalisisConsulta__6FE99F9F">
       <End Role="Consultas" EntitySet="Consultas" />
       <End Role="AnalisisConsulta" EntitySet="AnalisisConsulta" />
     </AssociationSet>
-    <AssociationSet Name="FK__AnalisisE__idAna__5535A963" Association="MedicsModel.Store.FK__AnalisisE__idAna__5535A963">
+    <AssociationSet Name="FK__AnalisisE__idAna__4D94879B" Association="MedicsModel.Store.FK__AnalisisE__idAna__4D94879B">
       <End Role="Analisis" EntitySet="Analisis" />
       <End Role="AnalisisEspecialidades" EntitySet="AnalisisEspecialidades" />
     </AssociationSet>
-    <AssociationSet Name="FK__AnalisisE__idEsp__5629CD9C" Association="MedicsModel.Store.FK__AnalisisE__idEsp__5629CD9C">
+    <AssociationSet Name="FK__AnalisisE__idEsp__4E88ABD4" Association="MedicsModel.Store.FK__AnalisisE__idEsp__4E88ABD4">
       <End Role="Especialidades" EntitySet="Especialidades" />
       <End Role="AnalisisEspecialidades" EntitySet="AnalisisEspecialidades" />
     </AssociationSet>
-    <AssociationSet Name="FK__AnalisisI__idAna__49C3F6B7" Association="MedicsModel.Store.FK__AnalisisI__idAna__49C3F6B7">
+    <AssociationSet Name="FK__AnalisisI__idAna__3E52440B" Association="MedicsModel.Store.FK__AnalisisI__idAna__3E52440B">
       <End Role="Analisis" EntitySet="Analisis" />
       <End Role="AnalisisInstituciones" EntitySet="AnalisisInstituciones" />
     </AssociationSet>
-    <AssociationSet Name="FK__AnalisisI__idIns__4AB81AF0" Association="MedicsModel.Store.FK__AnalisisI__idIns__4AB81AF0">
+    <AssociationSet Name="FK__AnalisisI__idIns__3F466844" Association="MedicsModel.Store.FK__AnalisisI__idIns__3F466844">
       <End Role="Instituciones" EntitySet="Instituciones" />
       <End Role="AnalisisInstituciones" EntitySet="AnalisisInstituciones" />
     </AssociationSet>
-    <AssociationSet Name="FK__Anteceden__idPer__14270015" Association="MedicsModel.Store.FK__Anteceden__idPer__14270015">
+    <AssociationSet Name="FK__Anteceden__idPer__25518C17" Association="MedicsModel.Store.FK__Anteceden__idPer__25518C17">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="AntecedentesToxicosPaciente" EntitySet="AntecedentesToxicosPaciente" />
     </AssociationSet>
-    <AssociationSet Name="FK__Anteceden__idTox__1332DBDC" Association="MedicsModel.Store.FK__Anteceden__idTox__1332DBDC">
+    <AssociationSet Name="FK__Anteceden__idTox__245D67DE" Association="MedicsModel.Store.FK__Anteceden__idTox__245D67DE">
       <End Role="Toxicos" EntitySet="Toxicos" />
       <End Role="AntecedentesToxicosPaciente" EntitySet="AntecedentesToxicosPaciente" />
     </AssociationSet>
-    <AssociationSet Name="FK__Consultas__idMed__6383C8BA" Association="MedicsModel.Store.FK__Consultas__idMed__6383C8BA">
+    <AssociationSet Name="FK__Consultas__idMed__619B8048" Association="MedicsModel.Store.FK__Consultas__idMed__619B8048">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="Consultas" EntitySet="Consultas" />
     </AssociationSet>
-    <AssociationSet Name="FK__Consultas__idPac__6477ECF3" Association="MedicsModel.Store.FK__Consultas__idPac__6477ECF3">
+    <AssociationSet Name="FK__Consultas__idPac__628FA481" Association="MedicsModel.Store.FK__Consultas__idPac__628FA481">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Consultas" EntitySet="Consultas" />
     </AssociationSet>
-    <AssociationSet Name="FK__DetallesP__idPer__76969D2E" Association="MedicsModel.Store.FK__DetallesP__idPer__76969D2E">
+    <AssociationSet Name="FK__DetallesP__idPer__7C4F7684" Association="MedicsModel.Store.FK__DetallesP__idPer__7C4F7684">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="DetallesProcedimientos" EntitySet="DetallesProcedimientos" />
     </AssociationSet>
-    <AssociationSet Name="FK__DetallesP__idPro__75A278F5" Association="MedicsModel.Store.FK__DetallesP__idPro__75A278F5">
+    <AssociationSet Name="FK__DetallesP__idPro__7B5B524B" Association="MedicsModel.Store.FK__DetallesP__idPro__7B5B524B">
       <End Role="Procedimientos" EntitySet="Procedimientos" />
       <End Role="DetallesProcedimientos" EntitySet="DetallesProcedimientos" />
     </AssociationSet>
-    <AssociationSet Name="FK__DetallesP__Medic__778AC167" Association="MedicsModel.Store.FK__DetallesP__Medic__778AC167">
+    <AssociationSet Name="FK__DetallesP__Medic__7D439ABD" Association="MedicsModel.Store.FK__DetallesP__Medic__7D439ABD">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="DetallesProcedimientos" EntitySet="DetallesProcedimientos" />
     </AssociationSet>
-    <AssociationSet Name="FK__Diagnosti__idMed__236943A5" Association="MedicsModel.Store.FK__Diagnosti__idMed__236943A5">
+    <AssociationSet Name="FK__Diagnosti__idMed__3C34F16F" Association="MedicsModel.Store.FK__Diagnosti__idMed__3C34F16F">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="Diagnostico" EntitySet="Diagnostico" />
     </AssociationSet>
-    <AssociationSet Name="FK__Diagnosti__idPac__22751F6C" Association="MedicsModel.Store.FK__Diagnosti__idPac__22751F6C">
+    <AssociationSet Name="FK__Diagnosti__idPac__3B40CD36" Association="MedicsModel.Store.FK__Diagnosti__idPac__3B40CD36">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Diagnostico" EntitySet="Diagnostico" />
     </AssociationSet>
-    <AssociationSet Name="FK__Enfermeda__idEnf__02FC7413" Association="MedicsModel.Store.FK__Enfermeda__idEnf__02FC7413">
-      <End Role="Enfermedades" EntitySet="Enfermedades" />
-      <End Role="EnfermedadesConsulta" EntitySet="EnfermedadesConsulta" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Enfermeda__idEnf__2739D489" Association="MedicsModel.Store.FK__Enfermeda__idEnf__2739D489">
-      <End Role="Enfermedades" EntitySet="Enfermedades" />
-      <End Role="EnfermedadesDiagnostico" EntitySet="EnfermedadesDiagnostico" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Enfermeda__idEnf__5DCAEF64" Association="MedicsModel.Store.FK__Enfermeda__idEnf__5DCAEF64">
-      <End Role="Enfermedades" EntitySet="Enfermedades" />
-      <End Role="EnfermedadesEspecialidad" EntitySet="EnfermedadesEspecialidad" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Enfermeda__idEnf__7D439ABD" Association="MedicsModel.Store.FK__Enfermeda__idEnf__7D439ABD">
+    <AssociationSet Name="FK__Enfermeda__idEnf__04E4BC85" Association="MedicsModel.Store.FK__Enfermeda__idEnf__04E4BC85">
       <End Role="Enfermedades" EntitySet="Enfermedades" />
       <End Role="EnfermedadesHereditariasPaciente" EntitySet="EnfermedadesHereditariasPaciente" />
     </AssociationSet>
-    <AssociationSet Name="FK__Enfermeda__idEsp__5EBF139D" Association="MedicsModel.Store.FK__Enfermeda__idEsp__5EBF139D">
+    <AssociationSet Name="FK__Enfermeda__idEnf__0C85DE4D" Association="MedicsModel.Store.FK__Enfermeda__idEnf__0C85DE4D">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesConsulta" EntitySet="EnfermedadesConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEnf__41EDCAC5" Association="MedicsModel.Store.FK__Enfermeda__idEnf__41EDCAC5">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesDiagnostico" EntitySet="EnfermedadesDiagnostico" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEnf__59FA5E80" Association="MedicsModel.Store.FK__Enfermeda__idEnf__59FA5E80">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesEspecialidad" EntitySet="EnfermedadesEspecialidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEsp__5AEE82B9" Association="MedicsModel.Store.FK__Enfermeda__idEsp__5AEE82B9">
       <End Role="Especialidades" EntitySet="Especialidades" />
       <End Role="EnfermedadesEspecialidad" EntitySet="EnfermedadesEspecialidad" />
     </AssociationSet>
-    <AssociationSet Name="FK__Enfermeda__idPer__7C4F7684" Association="MedicsModel.Store.FK__Enfermeda__idPer__7C4F7684">
+    <AssociationSet Name="FK__Enfermeda__idPer__03F0984C" Association="MedicsModel.Store.FK__Enfermeda__idPer__03F0984C">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="EnfermedadesHereditariasPaciente" EntitySet="EnfermedadesHereditariasPaciente" />
     </AssociationSet>
-    <AssociationSet Name="FK__EnfermedadesCons__02084FDA" Association="MedicsModel.Store.FK__EnfermedadesCons__02084FDA">
+    <AssociationSet Name="FK__EnfermedadesCons__0B91BA14" Association="MedicsModel.Store.FK__EnfermedadesCons__0B91BA14">
       <End Role="Consultas" EntitySet="Consultas" />
       <End Role="EnfermedadesConsulta" EntitySet="EnfermedadesConsulta" />
     </AssociationSet>
-    <AssociationSet Name="FK__EnfermedadesDiag__2645B050" Association="MedicsModel.Store.FK__EnfermedadesDiag__2645B050">
+    <AssociationSet Name="FK__EnfermedadesDiag__40F9A68C" Association="MedicsModel.Store.FK__EnfermedadesDiag__40F9A68C">
       <End Role="Diagnostico" EntitySet="Diagnostico" />
       <End Role="EnfermedadesDiagnostico" EntitySet="EnfermedadesDiagnostico" />
     </AssociationSet>
-    <AssociationSet Name="FK__Examenes__IdPers__37703C52" Association="MedicsModel.Store.FK__Examenes__IdPers__37703C52">
+    <AssociationSet Name="FK__Examenes__idAnal__57DD0BE4" Association="MedicsModel.Store.FK__Examenes__idAnal__57DD0BE4">
+      <End Role="Analisis" EntitySet="Analisis" />
+      <End Role="Examenes" EntitySet="Examenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Examenes__IdPers__56E8E7AB" Association="MedicsModel.Store.FK__Examenes__IdPers__56E8E7AB">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Examenes" EntitySet="Examenes" />
     </AssociationSet>
-    <AssociationSet Name="FK__Instituci__idPro__2B3F6F97" Association="MedicsModel.Store.FK__Instituci__idPro__2B3F6F97">
+    <AssociationSet Name="FK__Instituci__idPro__1273C1CD" Association="MedicsModel.Store.FK__Instituci__idPro__1273C1CD">
       <End Role="Provincias" EntitySet="Provincias" />
       <End Role="Instituciones" EntitySet="Instituciones" />
     </AssociationSet>
-    <AssociationSet Name="FK__Medicamen__idMed__0A9D95DB" Association="MedicsModel.Store.FK__Medicamen__idMed__0A9D95DB">
+    <AssociationSet Name="FK__Medicamen__idMed__17F790F9" Association="MedicsModel.Store.FK__Medicamen__idMed__17F790F9">
       <End Role="Medicamentos" EntitySet="Medicamentos" />
       <End Role="MedicamentosConsulta" EntitySet="MedicamentosConsulta" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicamentosCons__0B91BA14" Association="MedicsModel.Store.FK__MedicamentosCons__0B91BA14">
+    <AssociationSet Name="FK__MedicamentosCons__18EBB532" Association="MedicsModel.Store.FK__MedicamentosCons__18EBB532">
       <End Role="Consultas" EntitySet="Consultas" />
       <End Role="MedicamentosConsulta" EntitySet="MedicamentosConsulta" />
     </AssociationSet>
-    <AssociationSet Name="FK__Medicos__idPerso__34C8D9D1" Association="MedicsModel.Store.FK__Medicos__idPerso__34C8D9D1">
+    <AssociationSet Name="FK__Medicos__idPerso__1FCDBCEB" Association="MedicsModel.Store.FK__Medicos__idPerso__1FCDBCEB">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Medicos" EntitySet="Medicos" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicosEs__idEsp__4222D4EF" Association="MedicsModel.Store.FK__MedicosEs__idEsp__4222D4EF">
+    <AssociationSet Name="FK__MedicosEs__idEsp__32E0915F" Association="MedicsModel.Store.FK__MedicosEs__idEsp__32E0915F">
       <End Role="Especialidades" EntitySet="Especialidades" />
       <End Role="MedicosEspecialidades" EntitySet="MedicosEspecialidades" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicosEs__idMed__412EB0B6" Association="MedicsModel.Store.FK__MedicosEs__idMed__412EB0B6">
+    <AssociationSet Name="FK__MedicosEs__idMed__31EC6D26" Association="MedicsModel.Store.FK__MedicosEs__idMed__31EC6D26">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="MedicosEspecialidades" EntitySet="MedicosEspecialidades" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicosIn__idIns__3A81B327" Association="MedicsModel.Store.FK__MedicosIn__idIns__3A81B327">
+    <AssociationSet Name="FK__MedicosIn__idIns__276EDEB3" Association="MedicsModel.Store.FK__MedicosIn__idIns__276EDEB3">
       <End Role="Instituciones" EntitySet="Instituciones" />
       <End Role="MedicosInstituciones" EntitySet="MedicosInstituciones" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicosIn__idMed__398D8EEE" Association="MedicsModel.Store.FK__MedicosIn__idMed__398D8EEE">
+    <AssociationSet Name="FK__MedicosIn__idMed__267ABA7A" Association="MedicsModel.Store.FK__MedicosIn__idMed__267ABA7A">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="MedicosInstituciones" EntitySet="MedicosInstituciones" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicosPa__idMed__5070F446" Association="MedicsModel.Store.FK__MedicosPa__idMed__5070F446">
+    <AssociationSet Name="FK__MedicosPa__idMed__46E78A0C" Association="MedicsModel.Store.FK__MedicosPa__idMed__46E78A0C">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="MedicosPacientes" EntitySet="MedicosPacientes" />
     </AssociationSet>
-    <AssociationSet Name="FK__MedicosPa__idPer__4F7CD00D" Association="MedicsModel.Store.FK__MedicosPa__idPer__4F7CD00D">
+    <AssociationSet Name="FK__MedicosPa__idPer__45F365D3" Association="MedicsModel.Store.FK__MedicosPa__idPer__45F365D3">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="MedicosPacientes" EntitySet="MedicosPacientes" />
     </AssociationSet>
-    <AssociationSet Name="FK__PacienteF__idFam__2EDAF651" Association="MedicsModel.Store.FK__PacienteF__idFam__2EDAF651">
+    <AssociationSet Name="FK__PacienteF__idFam__4D5F7D71" Association="MedicsModel.Store.FK__PacienteF__idFam__4D5F7D71">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="PacienteFamiliarConsaguineo" EntitySet="PacienteFamiliarConsaguineo" />
     </AssociationSet>
-    <AssociationSet Name="FK__PacienteF__idPer__2DE6D218" Association="MedicsModel.Store.FK__PacienteF__idPer__2DE6D218">
+    <AssociationSet Name="FK__PacienteF__idPer__4C6B5938" Association="MedicsModel.Store.FK__PacienteF__idPer__4C6B5938">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="PacienteFamiliarConsaguineo" EntitySet="PacienteFamiliarConsaguineo" />
     </AssociationSet>
-    <AssociationSet Name="FK__Personas__idProv__25869641" Association="MedicsModel.Store.FK__Personas__idProv__25869641">
+    <AssociationSet Name="FK__Personas__idProv__0AD2A005" Association="MedicsModel.Store.FK__Personas__idProv__0AD2A005">
       <End Role="Provincias" EntitySet="Provincias" />
       <End Role="Personas" EntitySet="Personas" />
     </AssociationSet>
-    <AssociationSet Name="FK__Provincia__idPai__21B6055D" Association="MedicsModel.Store.FK__Provincia__idPai__21B6055D">
+    <AssociationSet Name="FK__Provincia__idPai__0519C6AF" Association="MedicsModel.Store.FK__Provincia__idPai__0519C6AF">
       <End Role="Paises" EntitySet="Paises" />
       <End Role="Provincias" EntitySet="Provincias" />
     </AssociationSet>
@@ -305,6 +310,14 @@
     <AssociationSet Name="FK__Referimie__idPac__6B24EA82" Association="MedicsModel.Store.FK__Referimie__idPac__6B24EA82">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Referimientos" EntitySet="Referimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Resultado__idAna__1F63A897" Association="MedicsModel.Store.FK__Resultado__idAna__1F63A897">
+      <End Role="AnalisisConsulta" EntitySet="AnalisisConsulta" />
+      <End Role="ResultadoAnalisisConsulta" EntitySet="ResultadoAnalisisConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Resultado__idIns__2057CCD0" Association="MedicsModel.Store.FK__Resultado__idIns__2057CCD0">
+      <End Role="Instituciones" EntitySet="Instituciones" />
+      <End Role="ResultadoAnalisisConsulta" EntitySet="ResultadoAnalisisConsulta" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Administradores">
@@ -617,6 +630,16 @@
     <Property Name="idMedicoReferido" Type="bigint" Nullable="false" />
     <Property Name="idPaciente" Type="uniqueidentifier" Nullable="false" />
   </EntityType>
+  <EntityType Name="ResultadoAnalisisConsulta">
+    <Key>
+      <PropertyRef Name="idAnalisisConsulta" />
+      <PropertyRef Name="idInstitucion" />
+    </Key>
+    <Property Name="idAnalisisConsulta" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="idInstitucion" Type="int" Nullable="false" />
+    <Property Name="urlPath" Type="varchar" MaxLength="128" />
+    <Property Name="FechaRealizado" Type="datetime" />
+  </EntityType>
   <EntityType Name="Toxicos">
     <Key>
       <PropertyRef Name="idToxico" />
@@ -758,7 +781,7 @@
     <Property Name="Tipo de Sangre" Type="varchar" MaxLength="3" />
     <Property Name="Correo Electrónico" Type="varchar" MaxLength="45" />
   </EntityType>
-  <Association Name="FK__Administr__idIns__300424B4">
+  <Association Name="FK__Administr__idIns__1920BF5C">
     <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -772,7 +795,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AlergiasC__idAle__1DB06A4F">
+  <Association Name="FK__AlergiasC__idAle__3493CFA7">
     <End Role="Alergias" Type="MedicsModel.Store.Alergias" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -786,7 +809,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AlergiasConsulta__1CBC4616">
+  <Association Name="FK__AlergiasConsulta__339FAB6E">
     <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -802,7 +825,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AlergiasD__idAle__2B0A656D">
+  <Association Name="FK__AlergiasD__idAle__47A6A41B">
     <End Role="Alergias" Type="MedicsModel.Store.Alergias" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -816,7 +839,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AlergiasDiagnost__2A164134">
+  <Association Name="FK__AlergiasDiagnost__46B27FE2">
     <End Role="Diagnostico" Type="MedicsModel.Store.Diagnostico" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -834,7 +857,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AnalisisC__idAna__6EF57B66">
+  <Association Name="FK__AnalisisC__idAna__70DDC3D8">
     <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -848,7 +871,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AnalisisConsulta__6E01572D">
+  <Association Name="FK__AnalisisConsulta__6FE99F9F">
     <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -864,7 +887,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AnalisisE__idAna__5535A963">
+  <Association Name="FK__AnalisisE__idAna__4D94879B">
     <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -878,7 +901,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AnalisisE__idEsp__5629CD9C">
+  <Association Name="FK__AnalisisE__idEsp__4E88ABD4">
     <End Role="Especialidades" Type="MedicsModel.Store.Especialidades" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -892,7 +915,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AnalisisI__idAna__49C3F6B7">
+  <Association Name="FK__AnalisisI__idAna__3E52440B">
     <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -906,7 +929,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__AnalisisI__idIns__4AB81AF0">
+  <Association Name="FK__AnalisisI__idIns__3F466844">
     <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -920,7 +943,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Anteceden__idPer__14270015">
+  <Association Name="FK__Anteceden__idPer__25518C17">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -934,7 +957,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Anteceden__idTox__1332DBDC">
+  <Association Name="FK__Anteceden__idTox__245D67DE">
     <End Role="Toxicos" Type="MedicsModel.Store.Toxicos" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -948,7 +971,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Consultas__idMed__6383C8BA">
+  <Association Name="FK__Consultas__idMed__619B8048">
     <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1" />
     <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="*" />
     <ReferentialConstraint>
@@ -960,7 +983,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Consultas__idPac__6477ECF3">
+  <Association Name="FK__Consultas__idPac__628FA481">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -974,7 +997,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DetallesP__idPer__76969D2E">
+  <Association Name="FK__DetallesP__idPer__7C4F7684">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -988,7 +1011,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DetallesP__idPro__75A278F5">
+  <Association Name="FK__DetallesP__idPro__7B5B524B">
     <End Role="Procedimientos" Type="MedicsModel.Store.Procedimientos" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1002,7 +1025,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DetallesP__Medic__778AC167">
+  <Association Name="FK__DetallesP__Medic__7D439ABD">
     <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="0..1" />
     <End Role="DetallesProcedimientos" Type="MedicsModel.Store.DetallesProcedimientos" Multiplicity="*" />
     <ReferentialConstraint>
@@ -1014,7 +1037,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Diagnosti__idMed__236943A5">
+  <Association Name="FK__Diagnosti__idMed__3C34F16F">
     <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1" />
     <End Role="Diagnostico" Type="MedicsModel.Store.Diagnostico" Multiplicity="*" />
     <ReferentialConstraint>
@@ -1026,7 +1049,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Diagnosti__idPac__22751F6C">
+  <Association Name="FK__Diagnosti__idPac__3B40CD36">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1040,7 +1063,21 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Enfermeda__idEnf__02FC7413">
+  <Association Name="FK__Enfermeda__idEnf__04E4BC85">
+    <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesHereditariasPaciente" Type="MedicsModel.Store.EnfermedadesHereditariasPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedad" />
+      </Principal>
+      <Dependent Role="EnfermedadesHereditariasPaciente">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idEnf__0C85DE4D">
     <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1054,7 +1091,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Enfermeda__idEnf__2739D489">
+  <Association Name="FK__Enfermeda__idEnf__41EDCAC5">
     <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1068,7 +1105,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Enfermeda__idEnf__5DCAEF64">
+  <Association Name="FK__Enfermeda__idEnf__59FA5E80">
     <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1082,21 +1119,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Enfermeda__idEnf__7D439ABD">
-    <End Role="Enfermedades" Type="MedicsModel.Store.Enfermedades" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="EnfermedadesHereditariasPaciente" Type="MedicsModel.Store.EnfermedadesHereditariasPaciente" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Enfermedades">
-        <PropertyRef Name="idEnfermedad" />
-      </Principal>
-      <Dependent Role="EnfermedadesHereditariasPaciente">
-        <PropertyRef Name="idEnfermedad" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Enfermeda__idEsp__5EBF139D">
+  <Association Name="FK__Enfermeda__idEsp__5AEE82B9">
     <End Role="Especialidades" Type="MedicsModel.Store.Especialidades" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1110,7 +1133,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Enfermeda__idPer__7C4F7684">
+  <Association Name="FK__Enfermeda__idPer__03F0984C">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1124,7 +1147,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__EnfermedadesCons__02084FDA">
+  <Association Name="FK__EnfermedadesCons__0B91BA14">
     <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1140,7 +1163,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__EnfermedadesDiag__2645B050">
+  <Association Name="FK__EnfermedadesDiag__40F9A68C">
     <End Role="Diagnostico" Type="MedicsModel.Store.Diagnostico" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1158,7 +1181,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Examenes__IdPers__37703C52">
+  <Association Name="FK__Examenes__idAnal__57DD0BE4">
+    <End Role="Analisis" Type="MedicsModel.Store.Analisis" Multiplicity="1" />
+    <End Role="Examenes" Type="MedicsModel.Store.Examenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Analisis">
+        <PropertyRef Name="idAnalisis" />
+      </Principal>
+      <Dependent Role="Examenes">
+        <PropertyRef Name="idAnalisis" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Examenes__IdPers__56E8E7AB">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1" />
     <End Role="Examenes" Type="MedicsModel.Store.Examenes" Multiplicity="*" />
     <ReferentialConstraint>
@@ -1170,7 +1205,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Instituci__idPro__2B3F6F97">
+  <Association Name="FK__Instituci__idPro__1273C1CD">
     <End Role="Provincias" Type="MedicsModel.Store.Provincias" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1184,7 +1219,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Medicamen__idMed__0A9D95DB">
+  <Association Name="FK__Medicamen__idMed__17F790F9">
     <End Role="Medicamentos" Type="MedicsModel.Store.Medicamentos" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1198,7 +1233,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicamentosCons__0B91BA14">
+  <Association Name="FK__MedicamentosCons__18EBB532">
     <End Role="Consultas" Type="MedicsModel.Store.Consultas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1214,7 +1249,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Medicos__idPerso__34C8D9D1">
+  <Association Name="FK__Medicos__idPerso__1FCDBCEB">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1228,7 +1263,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicosEs__idEsp__4222D4EF">
+  <Association Name="FK__MedicosEs__idEsp__32E0915F">
     <End Role="Especialidades" Type="MedicsModel.Store.Especialidades" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1242,7 +1277,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicosEs__idMed__412EB0B6">
+  <Association Name="FK__MedicosEs__idMed__31EC6D26">
     <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1256,7 +1291,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicosIn__idIns__3A81B327">
+  <Association Name="FK__MedicosIn__idIns__276EDEB3">
     <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1270,7 +1305,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicosIn__idMed__398D8EEE">
+  <Association Name="FK__MedicosIn__idMed__267ABA7A">
     <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1" />
     <End Role="MedicosInstituciones" Type="MedicsModel.Store.MedicosInstituciones" Multiplicity="*" />
     <ReferentialConstraint>
@@ -1282,7 +1317,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicosPa__idMed__5070F446">
+  <Association Name="FK__MedicosPa__idMed__46E78A0C">
     <End Role="Medicos" Type="MedicsModel.Store.Medicos" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1296,7 +1331,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__MedicosPa__idPer__4F7CD00D">
+  <Association Name="FK__MedicosPa__idPer__45F365D3">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1" />
     <End Role="MedicosPacientes" Type="MedicsModel.Store.MedicosPacientes" Multiplicity="*" />
     <ReferentialConstraint>
@@ -1308,7 +1343,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PacienteF__idFam__2EDAF651">
+  <Association Name="FK__PacienteF__idFam__4D5F7D71">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1" />
     <End Role="PacienteFamiliarConsaguineo" Type="MedicsModel.Store.PacienteFamiliarConsaguineo" Multiplicity="*" />
     <ReferentialConstraint>
@@ -1320,7 +1355,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PacienteF__idPer__2DE6D218">
+  <Association Name="FK__PacienteF__idPer__4C6B5938">
     <End Role="Personas" Type="MedicsModel.Store.Personas" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1334,7 +1369,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Personas__idProv__25869641">
+  <Association Name="FK__Personas__idProv__0AD2A005">
     <End Role="Provincias" Type="MedicsModel.Store.Provincias" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1348,7 +1383,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Provincia__idPai__21B6055D">
+  <Association Name="FK__Provincia__idPai__0519C6AF">
     <End Role="Paises" Type="MedicsModel.Store.Paises" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
     </End>
@@ -1398,6 +1433,32 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__Resultado__idAna__1F63A897">
+    <End Role="AnalisisConsulta" Type="MedicsModel.Store.AnalisisConsulta" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ResultadoAnalisisConsulta" Type="MedicsModel.Store.ResultadoAnalisisConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AnalisisConsulta">
+        <PropertyRef Name="idAnalisisConsulta" />
+      </Principal>
+      <Dependent Role="ResultadoAnalisisConsulta">
+        <PropertyRef Name="idAnalisisConsulta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Resultado__idIns__2057CCD0">
+    <End Role="Instituciones" Type="MedicsModel.Store.Instituciones" Multiplicity="1" />
+    <End Role="ResultadoAnalisisConsulta" Type="MedicsModel.Store.ResultadoAnalisisConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instituciones">
+        <PropertyRef Name="IdInstitucion" />
+      </Principal>
+      <Dependent Role="ResultadoAnalisisConsulta">
+        <PropertyRef Name="idInstitucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <!--Errors Found During Generation:
       warning 6013: The table/view 'Medics.dbo.MedicionesRTPaciente' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
       
@@ -1406,15 +1467,6 @@
         <Property Name="Fecha" Type="datetime" />
         <Property Name="TipoMedicion" Type="varchar" MaxLength="30" />
         <Property Name="ValorDeMedicion" Type="int" />
-      </EntityType>
-      Errors Found During Generation:
-      warning 6013: The table/view 'Medics.dbo.ResultadoAnalisisConsulta' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-      
-      <EntityType Name="ResultadoAnalisisConsulta">
-        <Property Name="idAnalisisConsulta" Type="uniqueidentifier" />
-        <Property Name="idInstitucion" Type="int" />
-        <Property Name="urlPath" Type="varchar" MaxLength="128" />
-        <Property Name="FechaRealizado" Type="datetime" />
       </EntityType>
       Errors Found During Generation:
       warning 6013: The table/view 'Medics.dbo.zAlergiasConsultas' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.

@@ -213,6 +213,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ResultadoAnalisisConsulta">
+      <EntityTypeMapping TypeName="MedicsModel.ResultadoAnalisisConsulta">
+        <MappingFragment StoreEntitySet="ResultadoAnalisisConsulta">
+          <ScalarProperty Name="idAnalisisConsulta" ColumnName="idAnalisisConsulta" />
+          <ScalarProperty Name="idInstitucion" ColumnName="idInstitucion" />
+          <ScalarProperty Name="urlPath" ColumnName="urlPath" />
+          <ScalarProperty Name="FechaRealizado" ColumnName="FechaRealizado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Toxicos">
       <EntityTypeMapping TypeName="MedicsModel.Toxicos">
         <MappingFragment StoreEntitySet="Toxicos">

@@ -26,14 +26,12 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:AnalisisController.cs" caret="187" fromTop="5" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ExamenesViewModel.cs" caret="70" fromTop="4" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="370" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="5549" fromTop="88" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesEditCreate/f:ExamenesEditCreateModel.cs" caret="204" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3519" fromTop="49" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:ExamenesController.cs" caret="589" fromTop="20" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesEditCreate/f:ExamenesEditCreateModel.cs" caret="204" fromTop="8" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="990" fromTop="12" />
   </RecentFiles>
   <RecentEdits>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AlergiasDiagnostico.cs" caret="194" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:EnfermedadesDiagnostico.cs" caret="302" fromTop="9" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="2179" fromTop="16" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:AnalisisController.cs" caret="164" fromTop="12" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:AnalisisController.cs" caret="475" fromTop="15" />
@@ -62,5 +60,7 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:ExamenesController.cs" caret="202" fromTop="7" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:ExamenesController.cs" caret="1702" fromTop="20" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3519" fromTop="6" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="3286" fromTop="7" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="990" fromTop="12" />
   </RecentEdits>
 </RecentFiles>

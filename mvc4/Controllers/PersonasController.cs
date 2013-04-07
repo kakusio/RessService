@@ -40,6 +40,15 @@ namespace mvc4.Controllers
 			}
 		}
 
+		public JsonResult GetAnalisisPendientes(Guid id){
+			using (var entities = new Medics()){
+				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == id);
+				if (persona == null) return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
+				var analisis_pendientes = persona.AnalisisPendientes();
+				return Json(analisis_pendientes, JsonRequestBehavior.AllowGet);
+			}
+		}
+
 		public JsonResult GetPacientes(Guid id){
 			using (var entities = new Medics()){
 				var medico = entities.Medicos.FirstOrDefault(x => x.idPersona == id);
@@ -101,7 +110,6 @@ namespace mvc4.Controllers
 				return Json(medicoView, JsonRequestBehavior.AllowGet);
 			}
 			return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
-
 		}
 
 		public string AddPaciente([FromUri] Guid idMedico, [FromUri] Guid idPaciente){
