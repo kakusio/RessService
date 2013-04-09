@@ -1,3 +1,6 @@
+using AutoMapper;
+using mvc4.Models.EntitiesView;
+
 namespace mvc4.Models.Entities
 {
 	public partial class Instituciones
@@ -12,6 +15,11 @@ namespace mvc4.Models.Entities
 			       		Tipo = "Fake Tipo" + user_number,
 			       		idProvincia = IdProvincia
 			       	};
+		}
+		
+		public InstitucionesViewModel ToObject(){
+			Mapper.CreateMap<Instituciones, InstitucionesViewModel>();
+			return Mapper.Map<Instituciones, InstitucionesViewModel>(this);
 		}
 	}
 }

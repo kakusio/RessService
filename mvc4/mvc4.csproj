@@ -136,6 +136,7 @@
     <Compile Include="Models\EntitiesView\DescripcionViewModel.cs" />
     <Compile Include="Models\EntitiesView\DiagnosticoViewModel.cs" />
     <Compile Include="Models\EntitiesView\HistorialMedicoViewModel.cs" />
+    <Compile Include="Models\EntitiesView\InstitucionesViewModel.cs" />
     <Compile Include="Models\EntitiesView\MedicosViewModel.cs" />
     <Compile Include="Models\EntitiesView\ExamenesViewModel.cs" />
     <Compile Include="Models\EntitiesView\PersonasViewModel.cs" />
