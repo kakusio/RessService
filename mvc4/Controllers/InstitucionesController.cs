@@ -25,12 +25,24 @@ namespace mvc4.Controllers
 		public JsonResult GetDetails(int id){
 			Instituciones instituciones;
 			using (var entities = new Medics()){
-				instituciones = entities.Instituciones.FirstOrDefault(x => x.IdInstitucion== id);
+				instituciones = entities.Instituciones.FirstOrDefault(x => x.IdInstitucion == id);
 			}
 			if (instituciones == null) return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 			
 			var personasView = instituciones.ToObject();
 			return Json(personasView, JsonRequestBehavior.AllowGet);
+		}
+
+		
+
+		public JsonResult GetInstitucion ([FromUri] string Username){
+			var id = 0;
+			using (var entities = new Medics()){
+				var administradores = entities.Administradores.FirstOrDefault(x => x.Username == Username);
+				if (administradores == null) return  Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
+				if (administradores.idInstitucion != null) id = (int) administradores.idInstitucion;
+			}
+			return GetDetails(id);
 		}
 
 		public string PutResultadoAnalisis([FromUri] ResultadoAnalisisConsultaViewModel resultado){

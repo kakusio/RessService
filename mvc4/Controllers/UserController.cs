@@ -79,7 +79,11 @@ namespace mvc4.Controllers
 		private static string GetPassWordUsingUser(string user){
 			using (var entities = new Medics()){
 				var personas = entities.Personas.FirstOrDefault(x => x.Username == user);
-				return personas == null ? "Usuario o contraseña no válida." : personas.Password;
+				if (personas == null){
+					var admin = entities.Administradores.FirstOrDefault(x => x.Username == user);
+					return admin == null ? Notificaciones.ErrorUsuarioContrasena.Value : admin.Password;
+				}
+				return personas.Password;
 			}
 		}
 

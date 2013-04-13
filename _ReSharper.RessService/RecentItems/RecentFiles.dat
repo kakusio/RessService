@@ -1,7 +1,5 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:App_Start/f:RouteConfig.cs" caret="329" fromTop="0" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:IEnumerables/f:Notificaciones.cs" caret="638" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Procedimientos.cs" caret="336" fromTop="11" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AlergiasDiagnostico.cs" caret="327" fromTop="10" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:EnfermedadesDiagnostico.cs" caret="302" fromTop="9" />
@@ -10,35 +8,29 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Examenes.cs" caret="629" fromTop="27" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ExamenesViewModel.cs" caret="70" fromTop="4" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="370" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="70" fromTop="4" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Analisis.cs" caret="285" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisViewModel.cs" caret="175" fromTop="7" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesEditCreate/f:ExamenesEditCreateModel.cs" caret="76" fromTop="4" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:ResultadoAnalisisConsulta.cs" caret="140" fromTop="6" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:ExamenesController.cs" caret="1018" fromTop="15" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ResultadoAnalisisConsultaViewModel.cs" caret="289" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="204" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AlergiaViewModel.cs" caret="249" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="103" fromTop="3" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="428" fromTop="14" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionComentViewModel.cs" caret="208" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3518" fromTop="49" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="1698" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:AnalisisController.cs" caret="0" fromTop="0" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medics.Designer.cs" caret="212657" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1570" fromTop="16" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="348" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="473" fromTop="14" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisConsultaViewModel.cs" caret="248" fromTop="8" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="473" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="466" fromTop="17" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:InstitucionesViewModel.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="729" fromTop="21" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="501" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="293" fromTop="3" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="163" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:AnalisisController.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3456" fromTop="4" />
   </RecentFiles>
   <RecentEdits>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="281" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1721" fromTop="21" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="373" fromTop="13" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="507" fromTop="18" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="679" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisViewModel.cs" caret="175" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisViewModel.cs" caret="178" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1721" fromTop="11" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1721" fromTop="18" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1724" fromTop="1" />
@@ -49,18 +41,25 @@
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ResultadoAnalisisConsultaViewModel.cs" caret="286" fromTop="13" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="0" fromTop="0" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="223" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="830" fromTop="17" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="699" fromTop="13" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="362" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="709" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="108" fromTop="4" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1618" fromTop="17" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1487" fromTop="13" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1497" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="163" fromTop="4" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ResultadoAnalisisConsultaViewModel.cs" caret="281" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1641" fromTop="21" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="474" fromTop="12" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="139" fromTop="5" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="386" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3518" fromTop="1" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisConsultaViewModel.cs" caret="271" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="473" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1053" fromTop="27" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="445" fromTop="11" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="650" fromTop="17" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="706" fromTop="23" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="729" fromTop="27" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="693" fromTop="21" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="501" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="732" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3456" fromTop="4" />
   </RecentEdits>
 </RecentFiles>
