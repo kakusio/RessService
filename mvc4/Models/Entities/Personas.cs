@@ -4,7 +4,6 @@ using System.Linq;
 using AutoMapper;
 using mvc4.Models.EntitiesEditCreate;
 using mvc4.Models.EntitiesView;
-using mvc4.Models.IEnumerables;
 
 namespace mvc4.Models.Entities{
 	public partial class Personas{
@@ -25,13 +24,11 @@ namespace mvc4.Models.Entities{
 		public HistorialMedicoViewModel HistorialMedico(){
 			var diagnosticoViewModels = Diagnostico.Select(x => x.ToObject());
 			return new HistorialMedicoViewModel{
-			       		idPersona = idPersona,
-			       		Nombres = Nombres,
-			       		Apellidos = Apellidos,
-			       		AntecedentesToxicos = Toxicos.Select(x => x.ToObject()).ToList(),
-			       		AntecedentesAlergico = diagnosticoViewModels.SelectMany(x => x.AlergiasDiagnostico).ToList(),
-			       		AntecedentesProcedimientos = DetallesProcedimientos.Select(x => x.ToObject()).ToList(),
-			       		AntecedentesEnfermedades = diagnosticoViewModels.SelectMany(x => x.EnfermedadesDiagnostico).ToList(),
+			       		DatosPersonales = ToObject(),
+			       		Toxicos = Toxicos.Select(x => x.ToObject()).ToList(),
+			       		Alergias = diagnosticoViewModels.SelectMany(x => x.AlergiasDiagnostico).ToList(),
+			       		Procedimientos = DetallesProcedimientos.Select(x => x.ToObject()).ToList(),
+			       		Enfermedades = diagnosticoViewModels.SelectMany(x => x.EnfermedadesDiagnostico).ToList(),
 			       		EnfermedadesHereditarias = Enfermedades.Select(x => x.ToObject()).ToList()
 			       	};
 		}

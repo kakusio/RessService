@@ -13,28 +13,28 @@ namespace mvc4.Controllers
 	public class UserController : Controller{
 		[System.Web.Http.HttpGet]
 		public string Get([FromUri] string id, [FromUri] string url){
-			var password = ValidateGuid.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
+			var password = Tools.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
 			var realPath = GetRealPath(url, password);
 			return RequestUsing(WebRequestMethods.Http.Get, realPath);
 		}
 		
 		[System.Web.Http.HttpPost]
 		public string Post([FromUri] string id, [FromUri] string url){
-			var password = ValidateGuid.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
+			var password = Tools.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
 			var realPath = GetRealPath(url, password);
 			return RequestUsing(WebRequestMethods.Http.Post, realPath);
 		}
 		
 		[System.Web.Http.HttpPut]
 		public string Put([FromUri] string id, [FromUri] string url){
-			var password = ValidateGuid.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
+			var password = Tools.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
 			var realPath = GetRealPath(url, password);
 			return RequestUsing(WebRequestMethods.Http.Put, realPath);
 		}
 		
 		[System.Web.Http.HttpDelete]
 		public string Delete([FromUri] string id, [FromUri] string url){
-			var password = ValidateGuid.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
+			var password = Tools.IsGuid(id) ? GetPassWordUsingId(id) : GetPassWordUsingUser(id);
 			var realPath = GetRealPath(url, password);
 			return RequestUsing("DELETE", realPath);
 		}

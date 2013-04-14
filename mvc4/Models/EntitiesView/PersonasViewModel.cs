@@ -1,4 +1,5 @@
 ﻿using System;
+using mvc4.Account;
 
 namespace mvc4.Models.EntitiesView
 {
@@ -19,5 +20,16 @@ namespace mvc4.Models.EntitiesView
 		public DateTime FechaDeDefuncion { get; set; }
 		public string Username { get; set; }
 		public string Password { get; set; }
+		public int Edad {get { return Tools.CalculateAgeCorrect(FechaDeNacimiento); }}
+
+		public string Religion { get; set; }
+		public string Ocupacion { get; set; }
+		public string EstadoCivil { get; set; }
+		public int LugarNacimmiento { get; set; }
+		public string NivelEducacion { get; set; }
+		public string Raza { get; set; }
+		public float Peso { get; set; }
+		public float Altura { get; set; }
+		public string UrlPath { get; set; }
 	}
 }

@@ -3,17 +3,13 @@ using System.Collections.Generic;
 
 namespace mvc4.Models.EntitiesView
 {
-	public class HistorialMedicoViewModel
-	{
-		public Guid idPersona{ get; set; }
-		public string Nombres { get; set; }
-		public string Apellidos { get; set; }
-        
+	public class HistorialMedicoViewModel{
+		public PersonasViewModel DatosPersonales { get; set; }
 
-		public List<DescripcionViewModel> AntecedentesToxicos { get; set; }
-		public List<AlergiaViewModel> AntecedentesAlergico { get; set; }
-		public List<DescripcionComentViewModel> AntecedentesProcedimientos { get; set; }
-		public List<DescripcionComentViewModel> AntecedentesEnfermedades { get; set; }
+		public List<DescripcionViewModel> Toxicos { get; set; }
+		public List<AlergiaViewModel> Alergias { get; set; }
+		public List<DescripcionComentViewModel> Procedimientos { get; set; }
+		public List<DescripcionComentViewModel> Enfermedades { get; set; }
 		public List<DescripcionViewModel> EnfermedadesHereditarias { get; set; }
 	}
 }

@@ -122,7 +122,7 @@
     <Compile Include="Controllers\ExamenesController.cs" />
     <Compile Include="Controllers\PersonasController.cs" />
     <Compile Include="Controllers\UserController.cs" />
-    <Compile Include="Account\ValidateGuid.cs" />
+    <Compile Include="Account\Tools.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -143,16 +143,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="MedicamentosConsulta">
-      <EntityTypeMapping TypeName="MedicsModel.MedicamentosConsulta">
-        <MappingFragment StoreEntitySet="MedicamentosConsulta">
-          <ScalarProperty Name="idMedicamento" ColumnName="idMedicamento" />
-          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
-          <ScalarProperty Name="idMedico" ColumnName="idMedico" />
-          <ScalarProperty Name="Notas" ColumnName="Notas" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Medicos">
       <EntityTypeMapping TypeName="MedicsModel.Medicos">
         <MappingFragment StoreEntitySet="Medicos">
@@ -193,7 +183,15 @@
           <ScalarProperty Name="FechaDeDefuncion" ColumnName="FechaDeDefuncion" />
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="urlPath" ColumnName="urlPath" />
+          <ScalarProperty Name="UrlPath" ColumnName="UrlPath" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Ocupacion" ColumnName="Ocupacion" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="LugarNacimmiento" ColumnName="LugarNacimmiento" />
+          <ScalarProperty Name="NivelEducacion" ColumnName="NivelEducacion" />
+          <ScalarProperty Name="Raza" ColumnName="Raza" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="Altura" ColumnName="Altura" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -344,6 +342,14 @@
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="urlPath" ColumnName="urlPath" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Ocupacion" ColumnName="Ocupacion" />
+          <ScalarProperty Name="EstadoCivil" ColumnName="EstadoCivil" />
+          <ScalarProperty Name="LugarNacimmiento" ColumnName="LugarNacimmiento" />
+          <ScalarProperty Name="NivelEducacion" ColumnName="NivelEducacion" />
+          <ScalarProperty Name="Raza" ColumnName="Raza" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="Altura" ColumnName="Altura" />
           <ScalarProperty Name="FechaDeBorrado" ColumnName="FechaDeBorrado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -496,6 +502,15 @@
       </EndProperty>
       <EndProperty Name="Personas">
         <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MedicamentosConsulta" TypeName="MedicsModel.MedicamentosConsulta" StoreEntitySet="MedicamentosConsulta">
+      <EndProperty Name="Medicamentos">
+        <ScalarProperty Name="idMedicamento" ColumnName="idMedicamento" />
+      </EndProperty>
+      <EndProperty Name="Consultas">
+        <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        <ScalarProperty Name="idMedico" ColumnName="idMedico" />
       </EndProperty>
     </AssociationSetMapping>
     <AssociationSetMapping Name="MedicosEspecialidades" TypeName="MedicsModel.MedicosEspecialidades" StoreEntitySet="MedicosEspecialidades">
