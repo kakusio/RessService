@@ -21,12 +21,12 @@ namespace mvc4.Models.EntitiesView
 			FechaDeDefuncion = personas.FechaDeDefuncion;
 			Username = personas.Username;
 			Password = personas.Password;
-			IsMedico = isMedico;
 			this.InstitucionesNombre = InstitucionesNombre;
 			this.EspecialidadesDescripcion = EspecialidadesDescripcion;
 		}
 
-		public bool IsMedico { get; set; }
+		public PersonasViewModel Personas { get; set; }
+		public bool IsMedico { get { return true; } }
 		public List<string>InstitucionesNombre { get; set; }
 		public List<string> EspecialidadesDescripcion { get; set; }
 	}

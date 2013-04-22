@@ -101,13 +101,9 @@ namespace mvc4.Controllers
 		}
 
 		public JsonResult GetMedico([FromUri] Guid idMedico){
-			Medicos medico;
 			using (var entities = new Medics()){
-				medico = entities.Medicos.FirstOrDefault(x => x.idPersona == idMedico);
-			}
-			if (medico != null){
-				var medicoView = medico.ToObject();
-				return Json(medicoView, JsonRequestBehavior.AllowGet);
+				var medico = entities.Medicos.FirstOrDefault(x => x.idPersona == idMedico);
+				if (medico != null) return Json(medico.ToObject(), JsonRequestBehavior.AllowGet);
 			}
 			return Json(Notificaciones.ErrorUsuario.Value, JsonRequestBehavior.AllowGet);
 		}
