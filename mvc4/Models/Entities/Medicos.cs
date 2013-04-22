@@ -13,18 +13,11 @@ namespace mvc4.Models.Entities
 			       		idMedico = IdPersona
 			       	};
 		}
-		public MedicosViewModel ToObject()
-		{
-			using (var entities = new Medics())
-			{
-				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == idPersona);
-				if (persona != null)
-				{
-					var personas = persona.ToObject();
-					return new MedicosViewModel( personas);
-				}
-			}
-			return null;
+		public MedicosViewModel ToObject(){
+			var personas = Personas.ToObject();
+			var institucionesNombre = Instituciones.Select(x => x.Nombre).ToList();
+			var especialidadesDescripcion = Especialidades.Select(x => x.Descripcion).ToList();
+			return new MedicosViewModel( personas, institucionesNombre, especialidadesDescripcion);
 		}
 	}
 }

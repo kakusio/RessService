@@ -6,16 +6,30 @@
     <EntitySet Name="AlergiasDiagnostico" EntityType="MedicsModel.AlergiasDiagnostico" />
     <EntitySet Name="Analisis" EntityType="MedicsModel.Analisis" />
     <EntitySet Name="AnalisisConsulta" EntityType="MedicsModel.AnalisisConsulta" />
+    <EntitySet Name="AnetecedentesGinecobstetricos" EntityType="MedicsModel.AnetecedentesGinecobstetricos" />
+    <EntitySet Name="AntecedentesSocioeconómicos" EntityType="MedicsModel.AntecedentesSocioeconómicos" />
+    <EntitySet Name="AntecedentesToxicosPaciente" EntityType="MedicsModel.AntecedentesToxicosPaciente" />
+    <EntitySet Name="AntecedentesTrasfusionales" EntityType="MedicsModel.AntecedentesTrasfusionales" />
+    <EntitySet Name="AntecedentesTraumaticos" EntityType="MedicsModel.AntecedentesTraumaticos" />
     <EntitySet Name="Consultas" EntityType="MedicsModel.Consultas" />
     <EntitySet Name="DetallesProcedimientos" EntityType="MedicsModel.DetallesProcedimientos" />
     <EntitySet Name="Diagnostico" EntityType="MedicsModel.Diagnostico" />
+    <EntitySet Name="eEmbarazoActual" EntityType="MedicsModel.eEmbarazoActual" />
+    <EntitySet Name="eInmunizaciones" EntityType="MedicsModel.eInmunizaciones" />
+    <EntitySet Name="eMediciones" EntityType="MedicsModel.eMediciones" />
     <EntitySet Name="Enfermedades" EntityType="MedicsModel.Enfermedades" />
     <EntitySet Name="EnfermedadesDiagnostico" EntityType="MedicsModel.EnfermedadesDiagnostico" />
+    <EntitySet Name="EnfermedadesHereditariasPaciente" EntityType="MedicsModel.EnfermedadesHereditariasPaciente" />
+    <EntitySet Name="ePulsosArteriales" EntityType="MedicsModel.ePulsosArteriales" />
+    <EntitySet Name="eRecienNacido" EntityType="MedicsModel.eRecienNacido" />
     <EntitySet Name="Especialidades" EntityType="MedicsModel.Especialidades" />
     <EntitySet Name="Examenes" EntityType="MedicsModel.Examenes" />
+    <EntitySet Name="ExamenFisico" EntityType="MedicsModel.ExamenFisico" />
     <EntitySet Name="Instituciones" EntityType="MedicsModel.Instituciones" />
     <EntitySet Name="Medicamentos" EntityType="MedicsModel.Medicamentos" />
+    <EntitySet Name="MedicamentosConsulta" EntityType="MedicsModel.MedicamentosConsulta" />
     <EntitySet Name="Medicos" EntityType="MedicsModel.Medicos" />
+    <EntitySet Name="Organos" EntityType="MedicsModel.Organos" />
     <EntitySet Name="Paises" EntityType="MedicsModel.Paises" />
     <EntitySet Name="Personas" EntityType="MedicsModel.Personas" />
     <EntitySet Name="Procedimientos" EntityType="MedicsModel.Procedimientos" />
@@ -23,9 +37,9 @@
     <EntitySet Name="Referimientos" EntityType="MedicsModel.Referimientos" />
     <EntitySet Name="ResultadoAnalisisConsulta" EntityType="MedicsModel.ResultadoAnalisisConsulta" />
     <EntitySet Name="Toxicos" EntityType="MedicsModel.Toxicos" />
+    <EntitySet Name="Vacunas" EntityType="MedicsModel.Vacunas" />
     <EntitySet Name="zAnalisisEspecialidades" EntityType="MedicsModel.zAnalisisEspecialidades" />
     <EntitySet Name="zAnalisisInstituciones" EntityType="MedicsModel.zAnalisisInstituciones" />
-    <EntitySet Name="zAntecedentesToxicosPaciente" EntityType="MedicsModel.zAntecedentesToxicosPaciente" />
     <EntitySet Name="zInstituciones" EntityType="MedicsModel.zInstituciones" />
     <EntitySet Name="zMedicos" EntityType="MedicsModel.zMedicos" />
     <EntitySet Name="zMedicosEspecialidades" EntityType="MedicsModel.zMedicosEspecialidades" />
@@ -67,6 +81,34 @@
       <End Role="AnalisisConsulta" EntitySet="AnalisisConsulta" />
       <End Role="ResultadoAnalisisConsulta" EntitySet="ResultadoAnalisisConsulta" />
     </AssociationSet>
+    <AssociationSet Name="FK__Anetecede__idPer__7A3223E8" Association="MedicsModel.FK__Anetecede__idPer__7A3223E8">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AnetecedentesGinecobstetricos" EntitySet="AnetecedentesGinecobstetricos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__14E61A24" Association="MedicsModel.FK__Anteceden__idPer__14E61A24">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesSocioeconómicos" EntitySet="AntecedentesSocioeconómicos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__6BE40491" Association="MedicsModel.FK__Anteceden__idPer__6BE40491">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesToxicosPaciente" EntitySet="AntecedentesToxicosPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idTox__6AEFE058" Association="MedicsModel.FK__Anteceden__idTox__6AEFE058">
+      <End Role="Toxicos" EntitySet="Toxicos" />
+      <End Role="AntecedentesToxicosPaciente" EntitySet="AntecedentesToxicosPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idOrg__76619304" Association="MedicsModel.FK__Anteceden__idOrg__76619304">
+      <End Role="Organos" EntitySet="Organos" />
+      <End Role="AntecedentesTrasfusionales" EntitySet="AntecedentesTrasfusionales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__7755B73D" Association="MedicsModel.FK__Anteceden__idPer__7755B73D">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesTrasfusionales" EntitySet="AntecedentesTrasfusionales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Anteceden__idPer__73852659" Association="MedicsModel.FK__Anteceden__idPer__73852659">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="AntecedentesTraumaticos" EntitySet="AntecedentesTraumaticos" />
+    </AssociationSet>
     <AssociationSet Name="FK__Consultas__idMed__6A30C649" Association="MedicsModel.FK__Consultas__idMed__6A30C649">
       <End Role="Medicos" EntitySet="Medicos" />
       <End Role="Consultas" EntitySet="Consultas" />
@@ -74,6 +116,10 @@
     <AssociationSet Name="FK__Consultas__idPac__6B24EA82" Association="MedicsModel.FK__Consultas__idPac__6B24EA82">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Consultas" EntitySet="Consultas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MedicamentosCons__084B3915" Association="MedicsModel.FK__MedicamentosCons__084B3915">
+      <End Role="Consultas" EntitySet="Consultas" />
+      <End Role="MedicamentosConsulta" EntitySet="MedicamentosConsulta" />
     </AssociationSet>
     <AssociationSet Name="FK__DetallesP__idPer__00200768" Association="MedicsModel.FK__DetallesP__idPer__00200768">
       <End Role="Personas" EntitySet="Personas" />
@@ -99,13 +145,53 @@
       <End Role="Diagnostico" EntitySet="Diagnostico" />
       <End Role="EnfermedadesDiagnostico" EntitySet="EnfermedadesDiagnostico" />
     </AssociationSet>
+    <AssociationSet Name="FK__eEmbarazo__idPer__047AA831" Association="MedicsModel.FK__eEmbarazo__idPer__047AA831">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="eEmbarazoActual" EntitySet="eEmbarazoActual" />
+    </AssociationSet>
+    <AssociationSet Name="FK__eInmuniza__idPer__7DCDAAA2" Association="MedicsModel.FK__eInmuniza__idPer__7DCDAAA2">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="eInmunizaciones" EntitySet="eInmunizaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__eInmuniza__idVac__7CD98669" Association="MedicsModel.FK__eInmuniza__idVac__7CD98669">
+      <End Role="Vacunas" EntitySet="Vacunas" />
+      <End Role="eInmunizaciones" EntitySet="eInmunizaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__eMedicion__idPer__0F2D40CE" Association="MedicsModel.FK__eMedicion__idPer__0F2D40CE">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="eMediciones" EntitySet="eMediciones" />
+    </AssociationSet>
     <AssociationSet Name="FK__Enfermeda__idEnf__30C33EC3" Association="MedicsModel.FK__Enfermeda__idEnf__30C33EC3">
       <End Role="Enfermedades" EntitySet="Enfermedades" />
       <End Role="EnfermedadesDiagnostico" EntitySet="EnfermedadesDiagnostico" />
     </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idEnf__6FB49575" Association="MedicsModel.FK__Enfermeda__idEnf__6FB49575">
+      <End Role="Enfermedades" EntitySet="Enfermedades" />
+      <End Role="EnfermedadesHereditariasPaciente" EntitySet="EnfermedadesHereditariasPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Enfermeda__idPer__6EC0713C" Association="MedicsModel.FK__Enfermeda__idPer__6EC0713C">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="EnfermedadesHereditariasPaciente" EntitySet="EnfermedadesHereditariasPaciente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ePulsosAr__idPer__1209AD79" Association="MedicsModel.FK__ePulsosAr__idPer__1209AD79">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="ePulsosArteriales" EntitySet="ePulsosArteriales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__eRecienNa__idPer__019E3B86" Association="MedicsModel.FK__eRecienNa__idPer__019E3B86">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="eRecienNacido" EntitySet="eRecienNacido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__eRecienNacido__00AA174D" Association="MedicsModel.FK__eRecienNacido__00AA174D">
+      <End Role="ExamenFisico" EntitySet="ExamenFisico" />
+      <End Role="eRecienNacido" EntitySet="eRecienNacido" />
+    </AssociationSet>
     <AssociationSet Name="FK__Examenes__IdPers__40058253" Association="MedicsModel.FK__Examenes__IdPers__40058253">
       <End Role="Personas" EntitySet="Personas" />
       <End Role="Examenes" EntitySet="Examenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ExamenFis__idPer__4C364F0E" Association="MedicsModel.FK__ExamenFis__idPer__4C364F0E">
+      <End Role="Personas" EntitySet="Personas" />
+      <End Role="ExamenFisico" EntitySet="ExamenFisico" />
     </AssociationSet>
     <AssociationSet Name="FK__Instituci__idPro__2D27B809" Association="MedicsModel.FK__Instituci__idPro__2D27B809">
       <End Role="Provincias" EntitySet="Provincias" />
@@ -114,6 +200,10 @@
     <AssociationSet Name="FK__Resultado__idIns__797309D9" Association="MedicsModel.FK__Resultado__idIns__797309D9">
       <End Role="Instituciones" EntitySet="Instituciones" />
       <End Role="ResultadoAnalisisConsulta" EntitySet="ResultadoAnalisisConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Medicamen__idMed__075714DC" Association="MedicsModel.FK__Medicamen__idMed__075714DC">
+      <End Role="Medicamentos" EntitySet="Medicamentos" />
+      <End Role="MedicamentosConsulta" EntitySet="MedicamentosConsulta" />
     </AssociationSet>
     <AssociationSet Name="FK__Medicos__idPerso__35BCFE0A" Association="MedicsModel.FK__Medicos__idPerso__35BCFE0A">
       <End Role="Personas" EntitySet="Personas" />
@@ -155,10 +245,6 @@
       <End Role="Analisis" EntitySet="Analisis" />
       <End Role="Instituciones" EntitySet="Instituciones" />
     </AssociationSet>
-    <AssociationSet Name="AntecedentesToxicosPaciente" Association="MedicsModel.AntecedentesToxicosPaciente">
-      <End Role="Personas" EntitySet="Personas" />
-      <End Role="Toxicos" EntitySet="Toxicos" />
-    </AssociationSet>
     <AssociationSet Name="EnfermedadesConsulta" Association="MedicsModel.EnfermedadesConsulta">
       <End Role="Enfermedades" EntitySet="Enfermedades" />
       <End Role="Consultas" EntitySet="Consultas" />
@@ -166,14 +252,6 @@
     <AssociationSet Name="EnfermedadesEspecialidad" Association="MedicsModel.EnfermedadesEspecialidad">
       <End Role="Enfermedades" EntitySet="Enfermedades" />
       <End Role="Especialidades" EntitySet="Especialidades" />
-    </AssociationSet>
-    <AssociationSet Name="EnfermedadesHereditariasPaciente" Association="MedicsModel.EnfermedadesHereditariasPaciente">
-      <End Role="Enfermedades" EntitySet="Enfermedades" />
-      <End Role="Personas" EntitySet="Personas" />
-    </AssociationSet>
-    <AssociationSet Name="MedicamentosConsulta" Association="MedicsModel.MedicamentosConsulta">
-      <End Role="Medicamentos" EntitySet="Medicamentos" />
-      <End Role="Consultas" EntitySet="Consultas" />
     </AssociationSet>
     <AssociationSet Name="MedicosEspecialidades" Association="MedicsModel.MedicosEspecialidades">
       <End Role="Especialidades" EntitySet="Especialidades" />
@@ -253,6 +331,77 @@
     <NavigationProperty Name="Consultas" Relationship="MedicsModel.FK__AnalisisConsulta__74AE54BC" FromRole="AnalisisConsulta" ToRole="Consultas" />
     <NavigationProperty Name="ResultadoAnalisisConsulta" Relationship="MedicsModel.FK__Resultado__idAna__787EE5A0" FromRole="AnalisisConsulta" ToRole="ResultadoAnalisisConsulta" />
   </EntityType>
+  <EntityType Name="AnetecedentesGinecobstetricos">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Gesta" Type="Int32" />
+    <Property Name="Parto" Type="Int32" />
+    <Property Name="Aborto" Type="Int32" />
+    <Property Name="Cesarea" Type="Int32" />
+    <Property Name="FUM" Type="DateTime" />
+    <Property Name="FUPap" Type="DateTime" />
+    <Property Name="FUA" Type="DateTime" />
+    <Property Name="FUC" Type="DateTime" />
+    <Property Name="AbortosExpontaneos" Type="Int32" />
+    <Property Name="AbortosProvocados" Type="Int32" />
+    <Property Name="Legrados" Type="Int32" />
+    <Property Name="Menarquia" Type="DateTime" />
+    <Property Name="HijosVivos" Type="Int32" />
+    <Property Name="HijosMuertos" Type="Int32" />
+    <Property Name="RitmoMenstrual" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Lactancia" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Disminorrea" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="Telarquia" Type="Int32" />
+    <Property Name="Pubarquia" Type="Int32" />
+    <Property Name="NumeroDeParejasSexuales" Type="Int32" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Anetecede__idPer__7A3223E8" FromRole="AnetecedentesGinecobstetricos" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="AntecedentesSocioeconómicos">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Notas" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Anteceden__idPer__14E61A24" FromRole="AntecedentesSocioeconómicos" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="AntecedentesToxicosPaciente">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idToxico" Type="Guid" />
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Anteceden__idPer__6BE40491" FromRole="AntecedentesToxicosPaciente" ToRole="Personas" />
+    <NavigationProperty Name="Toxicos" Relationship="MedicsModel.FK__Anteceden__idTox__6AEFE058" FromRole="AntecedentesToxicosPaciente" ToRole="Toxicos" />
+  </EntityType>
+  <EntityType Name="AntecedentesTrasfusionales">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idOrgano" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="idOrgano" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="Notas" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Organos" Relationship="MedicsModel.FK__Anteceden__idOrg__76619304" FromRole="AntecedentesTrasfusionales" ToRole="Organos" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Anteceden__idPer__7755B73D" FromRole="AntecedentesTrasfusionales" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="AntecedentesTraumaticos">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Descripción" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Anteceden__idPer__73852659" FromRole="AntecedentesTraumaticos" ToRole="Personas" />
+  </EntityType>
   <EntityType Name="Consultas">
     <Key>
       <PropertyRef Name="Fecha" />
@@ -266,9 +415,9 @@
     <NavigationProperty Name="AnalisisConsulta" Relationship="MedicsModel.FK__AnalisisConsulta__74AE54BC" FromRole="Consultas" ToRole="AnalisisConsulta" />
     <NavigationProperty Name="Medicos" Relationship="MedicsModel.FK__Consultas__idMed__6A30C649" FromRole="Consultas" ToRole="Medicos" />
     <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Consultas__idPac__6B24EA82" FromRole="Consultas" ToRole="Personas" />
+    <NavigationProperty Name="MedicamentosConsulta" Relationship="MedicsModel.FK__MedicamentosCons__084B3915" FromRole="Consultas" ToRole="MedicamentosConsulta" />
     <NavigationProperty Name="Alergias" Relationship="MedicsModel.AlergiasConsultas" FromRole="Consultas" ToRole="Alergias" />
     <NavigationProperty Name="Enfermedades" Relationship="MedicsModel.EnfermedadesConsulta" FromRole="Consultas" ToRole="Enfermedades" />
-    <NavigationProperty Name="Medicamentos" Relationship="MedicsModel.MedicamentosConsulta" FromRole="Consultas" ToRole="Medicamentos" />
   </EntityType>
   <EntityType Name="DetallesProcedimientos">
     <Key>
@@ -300,6 +449,44 @@
     <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Diagnosti__idPac__2BFE89A6" FromRole="Diagnostico" ToRole="Personas" />
     <NavigationProperty Name="EnfermedadesDiagnostico" Relationship="MedicsModel.FK__EnfermedadesDiag__2FCF1A8A" FromRole="Diagnostico" ToRole="EnfermedadesDiagnostico" />
   </EntityType>
+  <EntityType Name="eEmbarazoActual">
+    <Key>
+      <PropertyRef Name="FPP" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="FPP" Type="DateTime" Nullable="false" />
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Peso" Type="Double" />
+    <Property Name="Tamaño" Type="Double" />
+    <Property Name="Antitetánica1" Type="Boolean" />
+    <Property Name="Antitetánica2" Type="Boolean" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__eEmbarazo__idPer__047AA831" FromRole="eEmbarazoActual" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="eInmunizaciones">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="idVacuna" Type="Guid" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__eInmuniza__idPer__7DCDAAA2" FromRole="eInmunizaciones" ToRole="Personas" />
+    <NavigationProperty Name="Vacunas" Relationship="MedicsModel.FK__eInmuniza__idVac__7CD98669" FromRole="eInmunizaciones" ToRole="Vacunas" />
+  </EntityType>
+  <EntityType Name="eMediciones">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="TASistolica" Type="Int32" />
+    <Property Name="TADiastolica" Type="Int32" />
+    <Property Name="FR" Type="Int32" />
+    <Property Name="FC" Type="Int32" />
+    <Property Name="Posicion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__eMedicion__idPer__0F2D40CE" FromRole="eMediciones" ToRole="Personas" />
+  </EntityType>
   <EntityType Name="Enfermedades">
     <Key>
       <PropertyRef Name="idEnfermedad" />
@@ -308,9 +495,9 @@
     <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="EsHereditaria" Type="Boolean" />
     <NavigationProperty Name="EnfermedadesDiagnostico" Relationship="MedicsModel.FK__Enfermeda__idEnf__30C33EC3" FromRole="Enfermedades" ToRole="EnfermedadesDiagnostico" />
+    <NavigationProperty Name="EnfermedadesHereditariasPaciente" Relationship="MedicsModel.FK__Enfermeda__idEnf__6FB49575" FromRole="Enfermedades" ToRole="EnfermedadesHereditariasPaciente" />
     <NavigationProperty Name="Consultas" Relationship="MedicsModel.EnfermedadesConsulta" FromRole="Enfermedades" ToRole="Consultas" />
     <NavigationProperty Name="Especialidades" Relationship="MedicsModel.EnfermedadesEspecialidad" FromRole="Enfermedades" ToRole="Especialidades" />
-    <NavigationProperty Name="Personas" Relationship="MedicsModel.EnfermedadesHereditariasPaciente" FromRole="Enfermedades" ToRole="Personas" />
   </EntityType>
   <EntityType Name="EnfermedadesDiagnostico">
     <Key>
@@ -326,6 +513,50 @@
     <Property Name="Fecha" Type="DateTime" Nullable="false" />
     <NavigationProperty Name="Diagnostico" Relationship="MedicsModel.FK__EnfermedadesDiag__2FCF1A8A" FromRole="EnfermedadesDiagnostico" ToRole="Diagnostico" />
     <NavigationProperty Name="Enfermedades" Relationship="MedicsModel.FK__Enfermeda__idEnf__30C33EC3" FromRole="EnfermedadesDiagnostico" ToRole="Enfermedades" />
+  </EntityType>
+  <EntityType Name="EnfermedadesHereditariasPaciente">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idEnfermedad" />
+      <PropertyRef Name="Familiar" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="idEnfermedad" Type="Guid" Nullable="false" />
+    <Property Name="Familiar" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Enfermedades" Relationship="MedicsModel.FK__Enfermeda__idEnf__6FB49575" FromRole="EnfermedadesHereditariasPaciente" ToRole="Enfermedades" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Enfermeda__idPer__6EC0713C" FromRole="EnfermedadesHereditariasPaciente" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="ePulsosArteriales">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="CarotidaDerecho" Type="Int32" />
+    <Property Name="CarotidaIzquierdo" Type="Int32" />
+    <Property Name="FemoralDerecho" Type="Int32" />
+    <Property Name="FemoralIzquierdo" Type="Int32" />
+    <Property Name="PopliteoDerecho" Type="Int32" />
+    <Property Name="PopliteoIzquierdo" Type="Int32" />
+    <Property Name="TibialPosteriorDerecho" Type="Int32" />
+    <Property Name="TibialPosteriorIzquierdo" Type="Int32" />
+    <Property Name="PedioDerecho" Type="Int32" />
+    <Property Name="PedioIzquierdo" Type="Int32" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__ePulsosAr__idPer__1209AD79" FromRole="ePulsosArteriales" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="eRecienNacido">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="EdadGestacional" Type="Int32" />
+    <Property Name="Fecha" Type="DateTime" />
+    <Property Name="Alimentacion" Type="String" MaxLength="70" Unicode="false" FixedLength="false" />
+    <Property Name="NombrePadre" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="NombreMadre" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__eRecienNa__idPer__019E3B86" FromRole="eRecienNacido" ToRole="Personas" />
+    <NavigationProperty Name="ExamenFisico" Relationship="MedicsModel.FK__eRecienNacido__00AA174D" FromRole="eRecienNacido" ToRole="ExamenFisico" />
   </EntityType>
   <EntityType Name="Especialidades">
     <Key>
@@ -350,6 +581,34 @@
     <NavigationProperty Name="Analisis" Relationship="MedicsModel.FK__Examenes__idAnal__40F9A68C" FromRole="Examenes" ToRole="Analisis" />
     <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__Examenes__IdPers__40058253" FromRole="Examenes" ToRole="Personas" />
   </EntityType>
+  <EntityType Name="ExamenFisico">
+    <Key>
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="Fecha" />
+    </Key>
+    <Property Name="idPersona" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="InspeccionGeneral" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="peso" Type="Int32" />
+    <Property Name="Cabeza" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Ojos" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Oidos" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Nariz" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Boca" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Dientes" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Torax" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Corazon" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Pulmones" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Abdomen" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Piel" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Genitales" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TactoRectal" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="HuesosMusculosArticulaciones" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="SistemaNervioso" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ImpresionDiagnostica" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="eRecienNacido" Relationship="MedicsModel.FK__eRecienNacido__00AA174D" FromRole="ExamenFisico" ToRole="eRecienNacido" />
+    <NavigationProperty Name="Personas" Relationship="MedicsModel.FK__ExamenFis__idPer__4C364F0E" FromRole="ExamenFisico" ToRole="Personas" />
+  </EntityType>
   <EntityType Name="Instituciones">
     <Key>
       <PropertyRef Name="IdInstitucion" />
@@ -373,7 +632,20 @@
     </Key>
     <Property Name="idMedicamento" Type="Guid" Nullable="false" />
     <Property Name="Descripcion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="Consultas" Relationship="MedicsModel.MedicamentosConsulta" FromRole="Medicamentos" ToRole="Consultas" />
+    <NavigationProperty Name="MedicamentosConsulta" Relationship="MedicsModel.FK__Medicamen__idMed__075714DC" FromRole="Medicamentos" ToRole="MedicamentosConsulta" />
+  </EntityType>
+  <EntityType Name="MedicamentosConsulta">
+    <Key>
+      <PropertyRef Name="idMedicamento" />
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="idMedico" />
+    </Key>
+    <Property Name="idMedicamento" Type="Guid" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="idMedico" Type="Int64" Nullable="false" />
+    <Property Name="Notas" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Consultas" Relationship="MedicsModel.FK__MedicamentosCons__084B3915" FromRole="MedicamentosConsulta" ToRole="Consultas" />
+    <NavigationProperty Name="Medicamentos" Relationship="MedicsModel.FK__Medicamen__idMed__075714DC" FromRole="MedicamentosConsulta" ToRole="Medicamentos" />
   </EntityType>
   <EntityType Name="Medicos">
     <Key>
@@ -390,6 +662,14 @@
     <NavigationProperty Name="Especialidades" Relationship="MedicsModel.MedicosEspecialidades" FromRole="Medicos" ToRole="Especialidades" />
     <NavigationProperty Name="Instituciones" Relationship="MedicsModel.MedicosInstituciones" FromRole="Medicos" ToRole="Instituciones" />
     <NavigationProperty Name="Personas1" Relationship="MedicsModel.MedicosPacientes" FromRole="Medicos" ToRole="Personas" />
+  </EntityType>
+  <EntityType Name="Organos">
+    <Key>
+      <PropertyRef Name="idOrgano" />
+    </Key>
+    <Property Name="idOrgano" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="AntecedentesTrasfusionales" Relationship="MedicsModel.FK__Anteceden__idOrg__76619304" FromRole="Organos" ToRole="AntecedentesTrasfusionales" />
   </EntityType>
   <EntityType Name="Paises">
     <Key>
@@ -433,16 +713,26 @@
     <Property Name="Raza" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
     <Property Name="Peso" Type="Double" />
     <Property Name="Altura" Type="Double" />
+    <NavigationProperty Name="AnetecedentesGinecobstetricos" Relationship="MedicsModel.FK__Anetecede__idPer__7A3223E8" FromRole="Personas" ToRole="AnetecedentesGinecobstetricos" />
+    <NavigationProperty Name="AntecedentesSocioeconómicos" Relationship="MedicsModel.FK__Anteceden__idPer__14E61A24" FromRole="Personas" ToRole="AntecedentesSocioeconómicos" />
+    <NavigationProperty Name="AntecedentesToxicosPaciente" Relationship="MedicsModel.FK__Anteceden__idPer__6BE40491" FromRole="Personas" ToRole="AntecedentesToxicosPaciente" />
+    <NavigationProperty Name="AntecedentesTrasfusionales" Relationship="MedicsModel.FK__Anteceden__idPer__7755B73D" FromRole="Personas" ToRole="AntecedentesTrasfusionales" />
+    <NavigationProperty Name="AntecedentesTraumaticos" Relationship="MedicsModel.FK__Anteceden__idPer__73852659" FromRole="Personas" ToRole="AntecedentesTraumaticos" />
     <NavigationProperty Name="Consultas" Relationship="MedicsModel.FK__Consultas__idPac__6B24EA82" FromRole="Personas" ToRole="Consultas" />
     <NavigationProperty Name="DetallesProcedimientos" Relationship="MedicsModel.FK__DetallesP__idPer__00200768" FromRole="Personas" ToRole="DetallesProcedimientos" />
     <NavigationProperty Name="Diagnostico" Relationship="MedicsModel.FK__Diagnosti__idPac__2BFE89A6" FromRole="Personas" ToRole="Diagnostico" />
+    <NavigationProperty Name="eEmbarazoActual" Relationship="MedicsModel.FK__eEmbarazo__idPer__047AA831" FromRole="Personas" ToRole="eEmbarazoActual" />
+    <NavigationProperty Name="eInmunizaciones" Relationship="MedicsModel.FK__eInmuniza__idPer__7DCDAAA2" FromRole="Personas" ToRole="eInmunizaciones" />
+    <NavigationProperty Name="eMediciones" Relationship="MedicsModel.FK__eMedicion__idPer__0F2D40CE" FromRole="Personas" ToRole="eMediciones" />
+    <NavigationProperty Name="EnfermedadesHereditariasPaciente" Relationship="MedicsModel.FK__Enfermeda__idPer__6EC0713C" FromRole="Personas" ToRole="EnfermedadesHereditariasPaciente" />
+    <NavigationProperty Name="ePulsosArteriales" Relationship="MedicsModel.FK__ePulsosAr__idPer__1209AD79" FromRole="Personas" ToRole="ePulsosArteriales" />
+    <NavigationProperty Name="eRecienNacido" Relationship="MedicsModel.FK__eRecienNa__idPer__019E3B86" FromRole="Personas" ToRole="eRecienNacido" />
     <NavigationProperty Name="Examenes" Relationship="MedicsModel.FK__Examenes__IdPers__40058253" FromRole="Personas" ToRole="Examenes" />
+    <NavigationProperty Name="ExamenFisico" Relationship="MedicsModel.FK__ExamenFis__idPer__4C364F0E" FromRole="Personas" ToRole="ExamenFisico" />
     <NavigationProperty Name="Medicos" Relationship="MedicsModel.FK__Medicos__idPerso__35BCFE0A" FromRole="Personas" ToRole="Medicos" />
     <NavigationProperty Name="Provincias" Relationship="MedicsModel.FK__Personas__idProv__25869641" FromRole="Personas" ToRole="Provincias" />
     <NavigationProperty Name="Provincias1" Relationship="MedicsModel.FK__Personas__LugarN__267ABA7A" FromRole="Personas" ToRole="Provincias" />
     <NavigationProperty Name="Referimientos" Relationship="MedicsModel.FK__Referimie__idPac__71D1E811" FromRole="Personas" ToRole="Referimientos" />
-    <NavigationProperty Name="Toxicos" Relationship="MedicsModel.AntecedentesToxicosPaciente" FromRole="Personas" ToRole="Toxicos" />
-    <NavigationProperty Name="Enfermedades" Relationship="MedicsModel.EnfermedadesHereditariasPaciente" FromRole="Personas" ToRole="Enfermedades" />
     <NavigationProperty Name="Medicos1" Relationship="MedicsModel.MedicosPacientes" FromRole="Personas" ToRole="Medicos" />
     <NavigationProperty Name="Personas1" Relationship="MedicsModel.PacienteFamiliarConsaguineo" FromRole="Personas" ToRole="Personas1" />
     <NavigationProperty Name="Personas2" Relationship="MedicsModel.PacienteFamiliarConsaguineo" FromRole="Personas1" ToRole="Personas" />
@@ -500,7 +790,15 @@
     </Key>
     <Property Name="idToxico" Type="Guid" Nullable="false" />
     <Property Name="descripcion" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="Personas" Relationship="MedicsModel.AntecedentesToxicosPaciente" FromRole="Toxicos" ToRole="Personas" />
+    <NavigationProperty Name="AntecedentesToxicosPaciente" Relationship="MedicsModel.FK__Anteceden__idTox__6AEFE058" FromRole="Toxicos" ToRole="AntecedentesToxicosPaciente" />
+  </EntityType>
+  <EntityType Name="Vacunas">
+    <Key>
+      <PropertyRef Name="idVacuna" />
+    </Key>
+    <Property Name="idVacuna" Type="Guid" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="eInmunizaciones" Relationship="MedicsModel.FK__eInmuniza__idVac__7CD98669" FromRole="Vacunas" ToRole="eInmunizaciones" />
   </EntityType>
   <EntityType Name="zAnalisisEspecialidades">
     <Key>
@@ -517,15 +815,6 @@
     <Property Name="idAnalisis" Type="Guid" />
     <Property Name="idInstitucion" Type="Int32" />
     <Property Name="FechaDeBorrado" Type="DateTime" Nullable="false" />
-  </EntityType>
-  <EntityType Name="zAntecedentesToxicosPaciente">
-    <Key>
-      <PropertyRef Name="idToxico" />
-      <PropertyRef Name="idPersona" />
-    </Key>
-    <Property Name="idToxico" Type="Guid" Nullable="false" />
-    <Property Name="idPersona" Type="Guid" Nullable="false" />
-    <Property Name="FechaDeBorrado" Type="DateTime" />
   </EntityType>
   <EntityType Name="zInstituciones">
     <Key>
@@ -801,6 +1090,94 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__Anetecede__idPer__7A3223E8">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="AnetecedentesGinecobstetricos" Type="MedicsModel.AnetecedentesGinecobstetricos" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AnetecedentesGinecobstetricos">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__14E61A24">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="AntecedentesSocioeconómicos" Type="MedicsModel.AntecedentesSocioeconómicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesSocioeconómicos">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__6BE40491">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesToxicosPaciente" Type="MedicsModel.AntecedentesToxicosPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesToxicosPaciente">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idTox__6AEFE058">
+    <End Role="Toxicos" Type="MedicsModel.Toxicos" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AntecedentesToxicosPaciente" Type="MedicsModel.AntecedentesToxicosPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Toxicos">
+        <PropertyRef Name="idToxico" />
+      </Principal>
+      <Dependent Role="AntecedentesToxicosPaciente">
+        <PropertyRef Name="idToxico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idOrg__76619304">
+    <End Role="Organos" Type="MedicsModel.Organos" Multiplicity="1" />
+    <End Role="AntecedentesTrasfusionales" Type="MedicsModel.AntecedentesTrasfusionales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organos">
+        <PropertyRef Name="idOrgano" />
+      </Principal>
+      <Dependent Role="AntecedentesTrasfusionales">
+        <PropertyRef Name="idOrgano" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__7755B73D">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="AntecedentesTrasfusionales" Type="MedicsModel.AntecedentesTrasfusionales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesTrasfusionales">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Anteceden__idPer__73852659">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="AntecedentesTraumaticos" Type="MedicsModel.AntecedentesTraumaticos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="AntecedentesTraumaticos">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Consultas__idMed__6A30C649">
     <End Role="Medicos" Type="MedicsModel.Medicos" Multiplicity="1" />
     <End Role="Consultas" Type="MedicsModel.Consultas" Multiplicity="*" />
@@ -824,6 +1201,22 @@
       </Principal>
       <Dependent Role="Consultas">
         <PropertyRef Name="idPaciente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MedicamentosCons__084B3915">
+    <End Role="Consultas" Type="MedicsModel.Consultas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicamentosConsulta" Type="MedicsModel.MedicamentosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultas">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
+      </Principal>
+      <Dependent Role="MedicamentosConsulta">
+        <PropertyRef Name="Fecha" />
+        <PropertyRef Name="idMedico" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -911,6 +1304,54 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__eEmbarazo__idPer__047AA831">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="eEmbarazoActual" Type="MedicsModel.eEmbarazoActual" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="eEmbarazoActual">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__eInmuniza__idPer__7DCDAAA2">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="eInmunizaciones" Type="MedicsModel.eInmunizaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="eInmunizaciones">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__eInmuniza__idVac__7CD98669">
+    <End Role="Vacunas" Type="MedicsModel.Vacunas" Multiplicity="0..1" />
+    <End Role="eInmunizaciones" Type="MedicsModel.eInmunizaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vacunas">
+        <PropertyRef Name="idVacuna" />
+      </Principal>
+      <Dependent Role="eInmunizaciones">
+        <PropertyRef Name="idVacuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__eMedicion__idPer__0F2D40CE">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="eMediciones" Type="MedicsModel.eMediciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="eMediciones">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Enfermeda__idEnf__30C33EC3">
     <End Role="Enfermedades" Type="MedicsModel.Enfermedades" Multiplicity="1">
       <OnDelete Action="Cascade" />
@@ -925,6 +1366,72 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__Enfermeda__idEnf__6FB49575">
+    <End Role="Enfermedades" Type="MedicsModel.Enfermedades" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesHereditariasPaciente" Type="MedicsModel.EnfermedadesHereditariasPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Enfermedades">
+        <PropertyRef Name="idEnfermedad" />
+      </Principal>
+      <Dependent Role="EnfermedadesHereditariasPaciente">
+        <PropertyRef Name="idEnfermedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Enfermeda__idPer__6EC0713C">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EnfermedadesHereditariasPaciente" Type="MedicsModel.EnfermedadesHereditariasPaciente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="EnfermedadesHereditariasPaciente">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ePulsosAr__idPer__1209AD79">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="ePulsosArteriales" Type="MedicsModel.ePulsosArteriales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="ePulsosArteriales">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__eRecienNa__idPer__019E3B86">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="eRecienNacido" Type="MedicsModel.eRecienNacido" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="eRecienNacido">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__eRecienNacido__00AA174D">
+    <End Role="ExamenFisico" Type="MedicsModel.ExamenFisico" Multiplicity="0..1" />
+    <End Role="eRecienNacido" Type="MedicsModel.eRecienNacido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExamenFisico">
+        <PropertyRef Name="idPersona" />
+        <PropertyRef Name="Fecha" />
+      </Principal>
+      <Dependent Role="eRecienNacido">
+        <PropertyRef Name="idPersona" />
+        <PropertyRef Name="Fecha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Examenes__IdPers__40058253">
     <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
     <End Role="Examenes" Type="MedicsModel.Examenes" Multiplicity="*" />
@@ -934,6 +1441,18 @@
       </Principal>
       <Dependent Role="Examenes">
         <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ExamenFis__idPer__4C364F0E">
+    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="1" />
+    <End Role="ExamenFisico" Type="MedicsModel.ExamenFisico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personas">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="ExamenFisico">
+        <PropertyRef Name="idPersona" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -960,6 +1479,20 @@
       </Principal>
       <Dependent Role="ResultadoAnalisisConsulta">
         <PropertyRef Name="idInstitucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Medicamen__idMed__075714DC">
+    <End Role="Medicamentos" Type="MedicsModel.Medicamentos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MedicamentosConsulta" Type="MedicsModel.MedicamentosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicamentos">
+        <PropertyRef Name="idMedicamento" />
+      </Principal>
+      <Dependent Role="MedicamentosConsulta">
+        <PropertyRef Name="idMedicamento" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1065,10 +1598,6 @@
     <End Role="Analisis" Type="MedicsModel.Analisis" Multiplicity="*" />
     <End Role="Instituciones" Type="MedicsModel.Instituciones" Multiplicity="*" />
   </Association>
-  <Association Name="AntecedentesToxicosPaciente">
-    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="*" />
-    <End Role="Toxicos" Type="MedicsModel.Toxicos" Multiplicity="*" />
-  </Association>
   <Association Name="EnfermedadesConsulta">
     <End Role="Enfermedades" Type="MedicsModel.Enfermedades" Multiplicity="*" />
     <End Role="Consultas" Type="MedicsModel.Consultas" Multiplicity="*" />
@@ -1076,14 +1605,6 @@
   <Association Name="EnfermedadesEspecialidad">
     <End Role="Enfermedades" Type="MedicsModel.Enfermedades" Multiplicity="*" />
     <End Role="Especialidades" Type="MedicsModel.Especialidades" Multiplicity="*" />
-  </Association>
-  <Association Name="EnfermedadesHereditariasPaciente">
-    <End Role="Enfermedades" Type="MedicsModel.Enfermedades" Multiplicity="*" />
-    <End Role="Personas" Type="MedicsModel.Personas" Multiplicity="*" />
-  </Association>
-  <Association Name="MedicamentosConsulta">
-    <End Role="Medicamentos" Type="MedicsModel.Medicamentos" Multiplicity="*" />
-    <End Role="Consultas" Type="MedicsModel.Consultas" Multiplicity="*" />
   </Association>
   <Association Name="MedicosEspecialidades">
     <End Role="Especialidades" Type="MedicsModel.Especialidades" Multiplicity="*" />

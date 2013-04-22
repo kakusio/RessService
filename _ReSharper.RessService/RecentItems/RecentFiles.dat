@@ -1,66 +1,66 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Diagnostico.cs" caret="389" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DiagnosticoViewModel.cs" caret="139" fromTop="5" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Examenes.cs" caret="629" fromTop="27" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ExamenesViewModel.cs" caret="70" fromTop="4" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Analisis.cs" caret="285" fromTop="8" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisViewModel.cs" caret="175" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesEditCreate/f:ExamenesEditCreateModel.cs" caret="76" fromTop="4" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:ResultadoAnalisisConsulta.cs" caret="140" fromTop="6" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:ExamenesController.cs" caret="1018" fromTop="15" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ResultadoAnalisisConsultaViewModel.cs" caret="289" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="103" fromTop="3" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="428" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionComentViewModel.cs" caret="208" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="348" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisConsultaViewModel.cs" caret="248" fromTop="8" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="473" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="466" fromTop="17" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="729" fromTop="21" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:AnalisisController.cs" caret="0" fromTop="0" />
     <File id="DDF39C67-03A1-47F0-9468-E8633F74458D/d:Account/f:Login.aspx" caret="433" fromTop="10" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:IEnumerables/f:Enumeration.cs" caret="166" fromTop="8" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:IEnumerables/f:Notificaciones.cs" caret="118" fromTop="4" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:InstitucionesViewModel.cs" caret="360" fromTop="12" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="615" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="2514" fromTop="24" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1782" fromTop="13" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Account/f:Tools.cs" caret="398" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="2621" fromTop="9" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medicos.cs" caret="443" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="91" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:MedicosViewModel.cs" caret="1011" fromTop="27" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DiagnosticoViewModel.cs" caret="145" fromTop="5" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Procedimientos.cs" caret="133" fromTop="5" />
     <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3518" fromTop="49" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1130" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="3258" fromTop="4" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medics.Designer.cs" caret="506" fromTop="0" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="2542" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AlergiaViewModel.cs" caret="249" fromTop="8" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AlergiasDiagnostico.cs" caret="324" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AlergiaViewModel.cs" caret="87" fromTop="4" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ToxicoViewModel.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:SocioEconomicoViewModel.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:EnfermedadHereditariaViewModel.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AntecedentesSocioeconómicos.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:EnfermedadesHereditariasPaciente.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AntecedentesToxicosPaciente.cs" caret="178" fromTop="6" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Diagnostico.cs" caret="591" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="412" fromTop="11" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="73" fromTop="4" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Enfermedades.cs" caret="0" fromTop="0" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1061" fromTop="10" />
   </RecentFiles>
   <RecentEdits>
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:PersonasController.cs" caret="4154" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="478" fromTop="15" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ResultadoAnalisisConsultaViewModel.cs" caret="286" fromTop="13" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="0" fromTop="0" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="223" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1956" fromTop="13" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1966" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="163" fromTop="4" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:ResultadoAnalisisConsultaViewModel.cs" caret="281" fromTop="8" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1641" fromTop="21" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="474" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="139" fromTop="5" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Consultas.cs" caret="386" fromTop="9" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AnalisisConsultaViewModel.cs" caret="271" fromTop="8" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AnalisisConsulta.cs" caret="473" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="445" fromTop="11" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="706" fromTop="23" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="729" fromTop="27" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="693" fromTop="21" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Instituciones.cs" caret="501" fromTop="15" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:PersonasViewModel.cs" caret="732" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3518" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="2123" fromTop="26" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1520" fromTop="24" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="810" fromTop="7" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medics.Designer.cs" caret="506" fromTop="11" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1452" fromTop="14" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:InstitucionesController.cs" caret="1133" fromTop="10" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Controllers/f:UserController.cs" caret="2866" fromTop="12" />
-    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:InstitucionesViewModel.cs" caret="145" fromTop="5" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medicos.cs" caret="623" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:MedicosViewModel.cs" caret="1128" fromTop="20" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:MedicosViewModel.cs" caret="256" fromTop="3" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:MedicosViewModel.cs" caret="1004" fromTop="16" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Medicos.cs" caret="451" fromTop="11" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Procedimientos.cs" caret="310" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/f:Web.config" caret="3518" fromTop="10" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="167" fromTop="7" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="291" fromTop="18" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="963" fromTop="11" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="291" fromTop="15" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="442" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="291" fromTop="18" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="291" fromTop="12" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="291" fromTop="18" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="293" fromTop="26" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="442" fromTop="16" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:AlergiaViewModel.cs" caret="87" fromTop="4" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:AlergiasDiagnostico.cs" caret="317" fromTop="9" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="443" fromTop="6" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Toxicos.cs" caret="294" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Diagnostico.cs" caret="936" fromTop="27" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Diagnostico.cs" caret="919" fromTop="17" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="202" fromTop="9" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="292" fromTop="9" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="130" fromTop="5" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:HistorialMedicoViewModel.cs" caret="638" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Diagnostico.cs" caret="505" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:Entities/f:Personas.cs" caret="1453" fromTop="14" />
+    <File id="A4B96479-E3FB-4F02-8E61-21B62325F38B/d:Models/d:EntitiesView/f:DescripcionViewModel.cs" caret="407" fromTop="16" />
   </RecentEdits>
 </RecentFiles>

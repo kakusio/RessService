@@ -7,8 +7,7 @@ namespace mvc4.Models.Entities
 			return new AlergiaViewModel{
 			    Comentarios = Comentarios,
 				ElemmentoAlergico = Alergias.ElemmentoAlergico,
-				TipoDeAlergia = Alergias.TipoDeAlergia,
-				Fecha = Fecha
+				TipoDeAlergia = Alergias.TipoDeAlergia
 			};
 		}
 	}

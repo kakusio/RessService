@@ -25,11 +25,14 @@ namespace mvc4.Models.Entities{
 			var diagnosticoViewModels = Diagnostico.Select(x => x.ToObject());
 			return new HistorialMedicoViewModel{
 			       		DatosPersonales = ToObject(),
-			       		Toxicos = Toxicos.Select(x => x.ToObject()).ToList(),
+			       		Socioeconomicos = AntecedentesSocioeconómicos.Select(x => x.ToObject()).ToList(),
+			       		Toxicos = AntecedentesToxicosPaciente.Select(x => x.ToObject()).ToList(),
 			       		Alergias = diagnosticoViewModels.SelectMany(x => x.AlergiasDiagnostico).ToList(),
 			       		Procedimientos = DetallesProcedimientos.Select(x => x.ToObject()).ToList(),
 			       		Enfermedades = diagnosticoViewModels.SelectMany(x => x.EnfermedadesDiagnostico).ToList(),
-			       		EnfermedadesHereditarias = Enfermedades.Select(x => x.ToObject()).ToList()
+			       		EnfermedadesHereditarias = EnfermedadesHereditariasPaciente.Select(x => x.ToObject()).ToList(),
+			       		Transfusionales = AntecedentesTrasfusionales.Select(x => x.ToObject()).ToList(),
+			       		Traumaticos = AntecedentesTraumaticos.Select(x => x.ToObject()).ToList()
 			       	};
 		}
 		public IEnumerable<AnalisisConsultaViewModel> AnalisisPendientes(){
