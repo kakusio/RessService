@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Http;
 using System.Web.Mvc;
 using AutoMapper;
+using mvc4.Account;
 using mvc4.Models.Entities;
 using mvc4.Models.EntitiesEditCreate;
 using mvc4.Models.IEnumerables;
@@ -69,7 +70,7 @@ namespace mvc4.Controllers
 			}
 		}
 
-		public string AddPariente([FromUri] Guid idPersona, [FromUri] Guid idPariente){
+		public string AddPariente([FromUri] Guid idPersona, [FromUri] Guid idPariente, [FromUri] String Familiar){
 			using (var entities = new Medics()){
 				var persona = entities.Personas.FirstOrDefault(x => x.idPersona == idPersona);
 				var pariente = entities.Personas.FirstOrDefault(x => x.idPersona == idPariente);
@@ -78,6 +79,29 @@ namespace mvc4.Controllers
 				try{
 					persona.Personas2.Add(pariente);
 					pariente.Personas2.Add(persona);
+					var relacion = Tools.getFamiliaRelacion(Familiar, persona.sexo);
+					
+					foreach (var enfermedadesDiagnostico in persona.Diagnostico.SelectMany(
+						diagnostico => diagnostico.EnfermedadesDiagnostico.Where(
+							enfermedadesDiagnostico => enfermedadesDiagnostico.Enfermedades.EsHereditaria == true))){
+								pariente.EnfermedadesHereditariasPaciente.Add( 
+									new EnfermedadesHereditariasPaciente(){
+											Personas = persona, 
+											Enfermedades = enfermedadesDiagnostico.Enfermedades, 
+											Familiar = Familiar
+										});
+					}
+					
+					foreach (var enfermedadesDiagnostico in pariente.Diagnostico.SelectMany(
+						diagnostico => diagnostico.EnfermedadesDiagnostico.Where(
+							enfermedadesDiagnostico => enfermedadesDiagnostico.Enfermedades.EsHereditaria == true))){
+								persona.EnfermedadesHereditariasPaciente.Add( 
+									new EnfermedadesHereditariasPaciente(){
+											Personas = pariente, 
+											Enfermedades = enfermedadesDiagnostico.Enfermedades, 
+											Familiar = relacion
+										});
+					}
 					entities.SaveChanges();
 				}
 				catch (Exception e){

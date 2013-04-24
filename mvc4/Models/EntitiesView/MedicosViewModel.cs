@@ -25,7 +25,6 @@ namespace mvc4.Models.EntitiesView
 			this.EspecialidadesDescripcion = EspecialidadesDescripcion;
 		}
 
-		public PersonasViewModel Personas { get; set; }
 		public bool IsMedico { get { return true; } }
 		public List<string>InstitucionesNombre { get; set; }
 		public List<string> EspecialidadesDescripcion { get; set; }
